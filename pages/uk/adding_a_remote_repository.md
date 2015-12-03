@@ -14,4 +14,4 @@ title: "47. Додавання віддаленого репозиторію"
 <pre class="instructions">cd hello
 git remote add shared ../hello.git</pre>
 
-<p style="color:red;"><strong><span class="caps">Примітка</span>: Зараз ми знаходимось у репозиторію <ins>hello</ins>.</strong></p>
+<p style="color:red;"><strong><span class="caps">Примітка</span>: Зараз ми знаходимось в репозиторії <ins>hello</ins>.</strong></p>

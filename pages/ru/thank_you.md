@@ -15,3 +15,5 @@ title: "Спасибо!"
 ## Лицензия
 
 Содержимое этого сайта находится под лицензией <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons, Attribution-NonCommercial-ShareAlike</a>.
+
+Содержимое сайта <a href="https://github.com/shvetsgroup/githowto-content">доступно на Github</a>. Если вы нашли ошибку или хотите сделать правку, можете создать <a href="https://github.com/shvetsgroup/githowto-content/pulls">Pull Request</a> с вашим исправлением, либо просто создать новую <a href="https://github.com/shvetsgroup/githowto-content/issues">Issue</a>.
