@@ -71,7 +71,7 @@ title: "9. Changes, not files"
 #	modified:   hello.html
 #</pre>
 
-<p>Please note that hello.html is listed in the status twice. The first change (the addition of default tags) is istaged and ready for a commit. The second change (adding HTML headers) is unstaged. If you were making a commit right now, headers would not have been saved to the repository.</p>
+<p>Please note that hello.html is listed in the status twice. The first change (the addition of default tags) is staged and ready for a commit. The second change (adding HTML headers) is unstaged. If you were making a commit right now, headers would not have been saved to the repository.</p>
 
 <p>Let&#8217;s check.</p>
 
