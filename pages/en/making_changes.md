@@ -37,7 +37,7 @@ title: "5. Making changes"
 #
 no changes added to commit (use "git add" and/or "git commit -a")</pre>
 
-<p>The first important ascpect here is that git knows <code>hello.html</code> file has been changed, but these changes are not yet committed to the repository.</p>
+<p>The first important aspect here is that git knows <code>hello.html</code> file has been changed, but these changes are not yet committed to the repository.</p>
 
 <p>Another aspect is that the status message hints about what to do next. If you want to add these changes to the repository, use <code>git add</code>. To undo the changes use <code>git checkout</code>.</p>
 
