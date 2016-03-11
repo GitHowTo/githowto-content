@@ -1,15 +1,15 @@
 ---
 view: page
-title: "22. Inside Git: .Git directory"
+title: "22. Dentro do Git: diretório .Git "
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn about Git directory structure<code>.git</code></li></ul>
+<ul><li>Aprender sobre a estrutura do diretório <code>.git</code></li></ul>
 
-<h2><em>01</em> The <code>.git</code> directory</h2>
+<h2><em>01</em> O diretório <code>.git</code></h2>
 
-<p>It is time to do some research. Starting from the project’s root directory...</p>
+<p>É hora de fazer alguma pesquisa. Começando pelo diretório raíz do projeto...</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -21,9 +21,9 @@ title: "22. Inside Git: .Git directory"
 COMMIT_EDITMSG	MERGE_RR	config		hooks		info		objects		rr-cache
 HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 
-<p>This is a special folder where all the git stuff is. Let us explore the directory.</p>
+<p>Essa é uma pasta especial onde todas as coisas do git estão. Vamos explorar o diretório.</p>
 
-<h2><em>02</em> Object Database</h2>
+<h2><em>02</em> Banco de Dados de Objetos</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -35,9 +35,9 @@ HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 09	24	28	45	59	6a	77	80	8c	97	af	c4	e7	info
 11	27	43	56	69	6b	78	84	91	9c	b5	e4	fa	pack</pre>
 
-<p>You should see a lot of folders named with two characters. The first two letters sha1 hash of the object stored in git are the directory names.</p>
+<p>Você deve ver várias pastas nomeadas com dois caracteres. As duas primeiras letras do hash sha1 do objeto armazenado no git são o nome dos seus diretórios.</p>
 
-<h2><em>03</em> inquire the database objects</h2>
+<h2><em>03</em> Investigue os objetos do banco de dados</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -48,9 +48,9 @@ HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 <pre class="sample">$ ls -C .git/objects/09
 6b74c56bfc6b40e754fc0725b8c70b2038b91e	9fb6f9d3a104feb32fcac22354c4d0e8a182c1</pre>
 
-<p>Let us look at one of the folders named with two characters. There should be files with names of 38 characters. These files contain objects stored in git. They are compressed and encrypted, so it’s impossible to view their content directly. Let us have a better look at Git directory</p>
+<p>Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos contem os objetos armazenados no git. Eles são comprimidos e encriptados, então é impossível ver seu conteúdo diretamente. Vamos dar uma olhada melhor no diretório Git.</p>
 
-<h2><em>04</em> Config File</h2>
+<h2><em>04</em> Arquivo Config</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -69,9 +69,9 @@ HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 	name = Alexander Shvets
 	email = alex@githowto.com</pre>
 
-<p>This configuration file is created for each individual project. At least in this project, entries in this file will overwrite the entries in the <code>.gitconfig</code> file of your main directory.</p>
+<p>Esse arquivo de configurações é criado para cada projeto individual. Pelo menos nesse projeto, as entradas nesse arquivo vão sobrescrever as entradas no arquivo <code>.gitconfig</code> do seu diretório principal.</p>
 
-<h2><em>05</em> Branches and tags</h2>
+<h2><em>05</em> Branches e tags</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -93,11 +93,11 @@ v1-beta
 $ cat .git/refs/tags/v1
 fa3c1411aa09441695a9e645d4371e8d749da1dc</pre>
 
-<p>Files in tags subdirectory should be familiar to you. Each file corresponds to the tag previously created using the git tag command. Its content is nothing but a hash commit attached to the tag.</p>
+<p>Arquivos no subdiretório de tags devem ser familiares pra você. Cada arquivo corresponde a tag anteriormente criada usando o comando <code>git tag</code>. Seu conteúdo não é nada mais que um ahsh de um commit associado à tag.</p>
 
-<p>The <em>heads</em> folder is almost identical and is used not for tags, but branches. At the moment we have only one branch, and everything you see in this folder is a <em>master</em> branch.</p>
+<p>A pasta <em>heads</em> é quase idêntica e é usada não para tags, mas para branches. No momento, nós só temos um branch e tudo que você vê nessa pasta é um branch <em>master</em>.</p>
 
-<h2><em>06</em> HEAD File</h2>
+<h2><em>06</em> Arquivo HEAD</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -108,4 +108,4 @@ fa3c1411aa09441695a9e645d4371e8d749da1dc</pre>
 <pre class="sample">$ cat .git/HEAD
 ref: refs/heads/master</pre>
 
-<p>There is a reference to the current branch in the HEAD file. At the moment it must be the master branch.</p>
+<p>Existe uma referência para o branch atual no arquivo HEAD. Nesse momento, ela tem que ser para o branch master.</p>

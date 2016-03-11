@@ -1,21 +1,21 @@
 ---
 view: page
-title: "12. Getting older versions"
+title: "12. Usando versões anteriores"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to checkout any previous snapshot into the working directory.</li></ul>
+<ul><li>Aprender como aplicar qualquer snapshot anterior ao diretório de trabalho.</li></ul>
 
-<p>Going back in history is very simple.  The checkout command can copy any snapshot from the repo to the working directory.</p>
+<p>Voltar no histórico é bem simples. O comando checkout pode copiar qualquer snapshot do repositório para o diretório de trabalho.</p>
 
-<h2><em>01</em> Getting hashes for the previous versions</h2>
+<h2><em>01</em> Conseguindo os hashes das versões anteriores</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git hist</pre>
 
-<p class="note"><strong>Note:</strong> Do not forget to define <code>hist</code> in your <code>.gitconfig</code> file?  If you do not remember how, review the lesson on aliases.</p>
+<p class="note"><strong>Nota:</strong> Não esqueça de definir o alias <code>hist</code> no seu arquivo <code>.gitconfig</code>. Se você não lembra como fazer isso, reveja a lição sobre aliases.</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -25,16 +25,16 @@ title: "12. Getting older versions"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Check the log data and find the hash for the first commit.  You will find it in the last line of the <code>git hist</code> data.  Use the code (its first 7 chars are enough) in the command below.  After that check the contents of the hello.html file.</p>
+<p>Confira a data do log e encontre o hash do primeiro commit. Você vai achar ele na última linha do <code>git hist</code> Use o código (os seus 7 primeiros caracteres são suficientes) no comando abaixo. Depois disso, cheque o conteúdo do arquivo hello.html.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git checkout &lt;hash&gt;
 cat hello.html</pre>
 
-<p class="note"><strong>Note:</strong> Many commands depend on the hash values in the repository. Since my hash values will be different from yours, substitute in the appropriate hash value for your repository everytime you see <code>&lt;hash&gt;</code> or <code>&lt;treehash&gt;</code> in the command.</p>
+<p class="note"><strong>Nota:</strong> Vários comandos dependem dos valores de hash do repositório. Já que os meus valores de hash serão diferentes dos seus, faça as substituições apropriadas no seu hash do repositório todas as vezes que você ver <code>&lt;hash&gt;</code> ou <code>&lt;treehash&gt;</code> no comando.</p>
 
-<p>You will see &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -54,18 +54,18 @@ HEAD is now at 911e8c9... First Commit
 $ cat hello.html
 Hello, World</pre>
 
-<p>The <code>checkout</code> command output totally clarifies the situation.  Older git versions will complain about not being on a local branch.  But you don&#8217;t need to worry about that right now.</p>
+<p>O resultado do comando <code>checkout</code> esclarece completamente a situação. Versões mais antigas do git vão reclamar sobre não estarem em um branch local. Mas você não precisa de preocupar com isso agora.</p>
 
-<p>Note that the content of the hello.html file is the default content.</p>
+<p>Perceba que o conteúdo do arquivo hello.html é o conteúdo padrão.</p>
 
-<h2><em>02</em> Returning to the latest version in the master branch </h2>
+<h2><em>02</em> Voltando para a versão mais atual no branch master</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git checkout master
 cat hello.html</pre>
 
-<p>You will see &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -82,4 +82,4 @@ $ cat hello.html
 &lt;/html&gt;
 </pre>
 
-<p>&#8216;master&#8217; is the name of the default branch.  By checking out a branch by name, you go to its lastest version.</p>
+<p>&#8216;master&#8217; é o nome do branch padrão. Ao entrar em um branch pelo seu nome, você vai para a sua versão mais atual.</p>

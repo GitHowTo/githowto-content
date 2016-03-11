@@ -1,28 +1,28 @@
 ---
 view: page
-title: "24. Creating a Branch"
+title: "24. Criando um Branch"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to create a local branch in the repository</li></ul>
+<ul><li>Aprender como criar um branch local no repositório</li></ul>
 
-<p>It is time to make our hello world more expressive. Since it may take some time, it is best to move these changes into a new branch to isolate them from master branch changes.</p>
+<p>É hora de fazer o nosso hello world ser mais expressivo. Como isso pode demorar um pouco, é melhor mover essas modificações para um novo branch, isolando-as das modificações do branch master.</p>
 
-<h2><em>01</em> Create a branch</h2>
+<h2><em>01</em> Crie um branch</h2>
 
-<p>Let us name our new branch «style».</p>
+<p>Vamos nomear o nosso novo branch como «style».</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git checkout -b style
 git status</pre>
 
-<p class="note"><strong>Note: </strong><code>git checkout -b &lt;branch name&gt;</code> is the shortcuts for <code>git branch &lt;branch name&gt;</code> followed by a <code>git checkout &lt;branch name&gt;</code>.</p>
+<p class="note"><strong>Nota: </strong><code>git checkout -b &lt;branch name&gt;</code> é o atalho de <code>git branch &lt;branch name&gt;</code> seguido por <code>git checkout &lt;branch name&gt;</code>.</p>
 
-<p>Note that the <code>git status</code> command reports that you are in the style branch.</p>
+<p>Note que o comando <code>git status</code> avisa que você está no branch style.</p>
 
-<h2><em>02</em>Add style.css file</h2>
+<h2><em>02</em> Adicione o arquivo style.css</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -39,9 +39,9 @@ git status</pre>
 <pre class="instructions">git add lib/style.css
 git commit -m "Added css stylesheet"</pre>
 
-<h2><em>03</em>Change the main page</h2>
+<h2><em>03</em> Mude a página principal</h2>
 
-<p>Update the <code>hello.html</code> file, to use style.css.</p>
+<p>Atualize o arquivo <code>hello.html</code> para usar o style.css.</p>
 
 <h4 class="h4-pre">Arquivo: <em>lib/hello.html</em></h4>
 
@@ -60,9 +60,9 @@ git commit -m "Added css stylesheet"</pre>
 <pre class="instructions">git add lib/hello.html
 git commit -m "Hello uses style.css"</pre>
 
-<h2><em>04</em>Change index.html</h2>
+<h2><em>04</em> Mude o index.html</h2>
 
-<p>Update the <code>index.html</code> file,so it could use <code>style.css</code></p>
+<p>Atualide o arquivo <code>index.html</code> para que ele use <code>style.css</code></p>
 
 <h4 class="h4-pre">Arquivo: <em>index.html</em></h4>
 
@@ -80,6 +80,6 @@ git commit -m "Hello uses style.css"</pre>
 <pre class="instructions">git add index.html
 git commit -m "Updated index.html"</pre>
 
-<h2><em>05</em> Next</h2>
+<h2><em>05</em> Próximo</h2>
 
-<p>We now have a new branch named style with three new commits. Next lesson will show how to navigate and switch between branches.</p>
+<p>Agora nós temos um novo branch chamado style com três novos commits. A próxima lição vai te mostrar como navegar e alternar entre branches.</p>

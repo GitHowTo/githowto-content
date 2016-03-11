@@ -1,11 +1,11 @@
 ---
 view: page
-title: "42. Fetching changes"
+title: "42. Trazendo modificações"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to pull changes from a remote repository.</li></ul>
+<ul><li>Aprender como trazer modificações de um repositório remoto.</li></ul>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -13,7 +13,7 @@ title: "42. Fetching changes"
 git fetch
 git hist --all</pre>
 
-<p style="color:red;"><strong><span class="caps">NOTA</span>: We are now in the repository <em>cloned_hello</em></strong></p>
+<p style="color:red;"><strong><span class="caps">NOTA</span>: Nós estamos agora no repositório <em>cloned_hello</em></strong></p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -34,17 +34,17 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>At the moment the repository contains all the commits from the original repo, however they aren&#8217;t integrated into the local branches of the cloned repository.</p>
+<p>Neste momento, o repositório contém todos os commits do repositório original. Porém, eles não estão integrafos com os branchs locais do repositório clonado.</p>
 
-<p>You&#8217;ll find the commit named &#8220;Changed <span class="caps">README</span> in original repo&#8221; in the history.  Notice that the commit includes &#8220;origin/master&#8221; and &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
+<p>Você vai ver o commit de nome &#8220;Changed <span class="caps">README</span> in original repo&#8221; no histórico. Perceba que o commit inclui &#8220;origin/master&#8221; e &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
 
-<p>Now let&#8217;s take a look at the &#8220;Updated index.html&#8221; commit.  You&#8217;ll see that the local master branch points to this very commit, not the new commit we&#8217;ve just fetched.</p>
+<p>Agora vamos dar uma olhada no commit &#8220;Updated index.html&#8221;. Você vai ver que o branch master local aponta para esse commit, não para o commit que acabamos de trazer.</p>
 
-<p>This brings us to the conclusion that the &#8220;git fetch&#8221; command will fetch new commits from the remote repo, but won&#8217;t merge them into the local branches.</p>
+<p>Isso nos mostra que o comando &#8220;git fetch&#8221; vai trazer os novos commits do repositório remoto, mas não vai fundir eles com os branches locais.</p>
 
-<h2><em>01</em>Check the <span class="caps">README</span></h2>
+<h2><em>01</em> Cheque o <span class="caps">README</span></h2>
 
-<p>We can show that the cloned <span class="caps">README</span> file has not been changed.</p>
+<p>Nós podemos mostrar que o arquivo <span class="caps">README</span> clonado não foi modificado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -54,4 +54,4 @@ $ git hist --all
 <pre class="sample">$ cat README
 This is the Hello World example from the git tutorial.</pre>
 
-<p>No changes, as you can see.</p>
+<p>Nenhuma mudança, como você pode ver</p>

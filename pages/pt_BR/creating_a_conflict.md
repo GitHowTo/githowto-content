@@ -1,15 +1,15 @@
 ---
 view: page
-title: "29. Creating a conflict"
+title: "29. Criando um conflito"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Creating a conflicting of changes in the master branch.</li></ul>
+<ul><li>Criar um conflito de mudanças no branch master.</li></ul>
 
-<h2><em>01</em> Return to the master and create conflict</h2>
+<h2><em>01</em> Voltar para o master e criar o conflito</h2>
 
-<p>Return to the master branch and make the following changes:</p>
+<p>Volte para o branch master e faça as seguintes alterações:</p>
 
 <pre class="instructions">git checkout master</pre>
 
@@ -30,9 +30,9 @@ title: "29. Creating a conflict"
 <pre class="instructions">git add lib/hello.html
 git commit -m 'Life is great!'</pre>
 
-(<b>Warning:</b> make sure you've used single-quotes to avoid problems with bash and <code>!</code> character)
+(<b>Aviso:</b> tenha certeza que você usou aspas simples para evitar problemas com o bash e o caractere <code>!</code>)
 
-<h2><em>02</em> View branches</h2>
+<h2><em>02</em> Visualize os branches</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -59,8 +59,8 @@ git commit -m 'Life is great!'</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>After an Added README commit master branch has been merged with the style branch, but at there is an additional master commit, which was not merged back to the style.</p>
+<p>Depois de um commit "Added README" o branch master foi fundido com o branch style, mas existe um commit aditional do master, que não foi fundido com o branch style.</p>
 
-<h2><em>03</em> Next</h2>
+<h2><em>03</em> Próximo</h2>
 
-<p>The last change in master conflicts with some changes in style. In the next step we will solve this conflict.</p>
+<p>A última modificação feita no master entra em conflito com algumas mudanças do style. No próximo passo nós vamos resolver esse conflito.</p>

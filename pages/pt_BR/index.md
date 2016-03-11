@@ -1,27 +1,27 @@
 ---
 view: page
-title: "Git How To: Guided Git Tutorial"
-description: "Git How To is a guided tour that walks through the fundamentals of Git, inspired by the premise that to know a thing is to do it. The surest path to mastering Git is to immerse oneself in its utilities and operations, to experience it first-hand."
+title: "Git How To: Tutorial Guiado de Git"
+description: "Git How To é um tour guiado que passa pelos fundamentos de Git, inspirado pela premissa que saber sobre algo é fazê-lo. O mais certo caminho para o domínio de Git é a imersão em suas utilidades e operações, a experiência em primeira mão."
 
 ---
 
 <div class="row">
 <div class="col-sm-6">
-<h1 class="title-big">What is this?</h1>
+<h1 class="title-big">O que é isso?</h1>
 
-<p><b class="inline">Git How To</b> is a guided tour that walks through the fundamentals of Git, inspired by the premise that to know a thing is to do it.</p>
-<p>By the way, if you know Ruby, you might better like the original <a href="http://gitimmersion.com/">Git Immersion</a>.</p>
+<p><b class="inline">Git How To</b> é um tour guiado que passa pelos fundamentos de Git, inspirado pela premissa que saber sobre algo é fazê-lo.</p>
+<p>Aliás, se você sabe Ruby, você talvez goste mais do original, o <a href="http://gitimmersion.com/">Git Immersion</a>.</p>
 </div>
 <div class="col-sm-6">
 <h1 class="title-big">Git?</h1>
 
-<p class=""><b class="inline">Git</b> is a powerful, sophisticated system for distributed version control. Gaining an understanding of its features opens to developers a new and liberating approach to source code management. The surest path to mastering Git is to immerse oneself in its utilities and operations, to experience it first-hand.</p>
+<p class=""><b class="inline">Git</b> é um poderoso e sofisticado sistema para controle de versão distribuído. Ganhar entendimento de suas funcionalidades abre para os desenvolvedores uma nova e libertadora abordagem à manutenção de código. O mais certo caminho para o domínio de Git é a imersão em suas utilidades e operações, a experiência em primeira mão.</p>
 </div>
 </div>
 
 
 
-## Before we begin, you have to install a Git client
+## Antes de começarmos, você deve instalar o Git
 
 <div class="row">
 <div class="col-sm-4">
@@ -46,6 +46,6 @@ description: "Git How To is a guided tour that walks through the fundamentals of
 
 <div class="row go-block">
   <div class="col-sm-12">
-    <a class="btn btn-hg btn-primary go" href="/setup"><i class="fa fa-flag"></i> Start!</a>
+    <a class="btn btn-hg btn-primary go" href="/setup"><i class="fa fa-flag"></i> Começar!</a>
   </div>
 </div>
