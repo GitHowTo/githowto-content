@@ -1,21 +1,21 @@
 ---
 view: page
-title: "49. Removing common changes"
+title: "49. Removendo modificações comuns"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to extract changes from the common repository.</li></ul>
+<ul><li>Aprender como extrair modificações de um repositório comum.</li></ul>
 
-<p>Quickly switch to the cloned repository and extract the changes, just sent in a common repository.</p>
+<p>Rapidamente mude para o repositório clonado e extraia as modificações recém enviadas ao repositório comum.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">cd ../cloned_hello</pre>
 
-<p style="color:red;"><strong>Note: We are now in the <em>cloned_hello</em> repository.</strong></p>
+<p style="color:red;"><strong>Nota: Estamos agora no repositório <em>cloned_hello</em>.</strong></p>
 
-<p>Continue with …</p>
+<p>Continue com …</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

@@ -1,15 +1,15 @@
 ---
 view: page
-title: "18. Removing the oops tag"
+title: "18. Removendo a tag oops"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Removing the oops tag (cleaning up)</li></ul>
+<ul><li>Remover a tag oops (limpar)</li></ul>
 
-<h2><em>01</em> Removal of the oops tag</h2>
+<h2><em>01</em> Remoção da tag oops</h2>
 
-<p>Oops tag has performed it’s function. Let us remove that tag and permit the garbage collector to delete referenced commit.</p>
+<p>A tag oops já fez o seu trabalho. Vamos removê-la e permitir que o coletor de lixo delete o commit referenciado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -26,4 +26,4 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Oops tag will no longer appear in the repository.</p>
+<p>A tag oops não aparecerá mais no repositório.</p>

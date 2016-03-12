@@ -1,15 +1,15 @@
 ---
 view: page
-title: "33. Reset of the Master branch"
+title: "33. Reset do branch master"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Reset the master branch to the point prior to the conflicting commit.</li></ul>
+<ul><li>Resetar o branch master para um ponto anterior ao commit conflitante.</li></ul>
 
-<h2><em>01</em> Resetting the master branch</h2>
+<h2><em>01</em> Resetando branch master</h2>
 
-<p> The interactive mode we added to the master branch has become a change conflicting with the changes in the style branch. Let&#8217;s revert the changes in the master branch up to the point before the conflict change was made.  This allows us to demonstrate the rebase command without having to worry about conflicts.</p>
+<p> O modo interativo que adicionamos ao branch master se tornou uma mudança que conflita com as mudanças do branch style. Vamos reverter as mudanças do branch master para o ponto anterior à mudança conflitante. Isso nos permite demonstrar o comando rebase sem nos preocupar com conflitos.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -29,13 +29,13 @@ git hist</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>The "Added <span class="caps">README</span>" commit goes directly before the conflicting interactive mode we added. Right now we need to reset the master branch to the "Added <span class="caps">README</span>" branch.</p>
+<p>O commit "Added <span class="caps">README</span>" está imediatamente antes do modo interativo conflitante ser adicionado. Agora precisamos resetar o branch master para o commit "Added <span class="caps">README</span>" .</p>
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git reset --hard &lt;hash&gt;
 git hist --all</pre>
 
-<p>Examine the log. It should look as if we rewound the repository to a point in time, prior to any mergers.</p>
+<p>Examine o log. Ele deve parecer como se tivéssemos retrocedido o repositório para um ponto no tempo anterior a qualquer merge.</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 

@@ -1,31 +1,31 @@
 ---
 view: page
-title: "17. Removing a commit from a branch"
+title: "17. Removendo um commit de um branch"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn to delete the branch's latest commits</li></ul>
+<ul><li>Aprender a deletar os commits mais recentes de um branch</li></ul>
 
-<p><code>Revert</code> is a powerful command of the previous section that allows you to cancel any commits to the repository. However, both original and cancelled commits are seen in the history of the branch (when using <code>git log</code> command).</p>
+<p><code>Revert</code> é um comando poderoso da seção anterior que te permite cancelar quaisquer commits para um repositório. Apesar disso, tanto os commits originais quanto os cancelados permanecem visíveis no histórico do branch (quando usamos o comando <code>git log</code>).</p>
 
-<p>Often after commit is already made, we realize that it was a mistake. It would be nice to have undo option command allowing deleting incorrect commit immediately. This command would prevent the appearance of unwanted commit in the <code>git log</code> history.</p>
+<p>Frequentemente depois que um commit é feito percebemos que ele era um erro. Seria legal ter um comando de desfazer que permitisse deletar o commit incorreto imediatamente. Esse comando preveniria a aparição de um commit indesejado no histórico do <code>git log</code>.</p>
 
-<h2><em>01</em> The <code>reset</code> command</h2>
+<h2><em>01</em> O comando <code>reset</code></h2>
 
-<p>We have already used reset command to match the buffer zone and the selected commit (HEAD commit was used in the previous lesson).</p>
+<p>Nós já usamos o comando reset para equiparar o buffer zone e o commit selecionado (commit HEAD foi usado na lição anterior).</p>
 
-<p>When a commit reference is given (ie, a branch, hash, or tag name), the <code>reset</code> command will...</p>
+<p>Quando uma referência a um commit é dada (Exemplo: um branch, hash, ou tag name), o comando <code>reset</code> vai...</p>
 
 <ol>
-<li>Overwrite the current branch so it will point to the correct commit</li>
-<li>Optionally reset the buffer zone so it will comply with the specified commit</li>
-<li>Optionally reset the working directory so it will match the specified commit</li>
+<li>Sobrescrever o branch atual para que ele aponte para o commit correto</li>
+<li>Opcionalmente resetar o buffer zone para que ele satisfazer o commit especificado</li>
+<li>Opcionalmente resetar o dirétorio de trabalho para que ele equipare-se ao commit especificado</li>
 </ol>
 
-<h2><em>02</em> Check our history</h2>
+<h2><em>02</em> Cheque nosso histórico</h2>
 
-<p>Let us do a quick scan of our commit history.</p>
+<p>Vamos fazer um rápido scan do nosso histórico de commits.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -41,19 +41,18 @@ title: "17. Removing a commit from a branch"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>We see that the last two commits in this branch are "Oops" and "Revert Oops". Let us remove them with reset command.</p>
+<p>Nós vemos que os dois últimos commits desse branch são "Oops" and "Revert Oops". Vamos removê-los com o comando reset.</p>
 
-<h2><em>03</em> Mark this branch first</h2>
+<h2><em>03</em> Marque esse branch primeiro</h2>
 
-<p>Let us mark the last commit with tag, so you can find it after removing commits.</p>
-
+<p>Vamos marcar nosso último commit com tag, para que possamos achá-lo após remover commits.</p>
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git tag oops</pre>
 
-<h2><em>04</em> Reset commit to previous Oops</h2>
+<h2><em>04</em> Resete o commit para o Oops anterior</h2>
 
-<p>At the history log (see above), the commit tagged «v1» is committing previous wrong commit. Let us reset the branch to that point. As the branch has a tag, we can use the tag name in the reset command (if it does not have a tag, we can use the hash value).</p>
+<p>No log de histórico (veja acima), o commit com tag «v1» está fazendo commit sobre um commit anterior incorreto. Vamos resetar o branch para aquele ponto. Como o branch tem uma tag, podemos usar o nome da tag no comando reset (se não possuir uma tag, podemos usar o valor hash).</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -70,10 +69,10 @@ $ git hist
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Our master branch is poiting at commit v1 and "Revert Oops" and "Oops" commits no longer exist in the branch. The  <code>--hard</code> parameter points out that the working directory must be updated to reflect the new branch head.</p>
-<h2><em>05</em> Nothing is ever lost</h2>
+<p>Nosso branch master está apontando para o commit v1 e "Revert Oops", e commits "Oops" não mais existem no branch. O parâmetro  <code>--hard</code> aponta que o diretório de trabalho deve ser atualizado para refletir o novo head do branch.</p>
+<h2><em>05</em> Nada é perdido para sempre</h2>
 
-<p>What happens to the wrong commits? They are still in the repository. Actually, we still can refer to them. At the beginning of the lesson, we created «oops» tag for the canceled commit. Let us take a look at <em>all</em> commits.</p>
+<p>O que acontece com os commits errados? Eles ainda estão no repositório. Na verdade, ainda podemos nos referir a eles. No início da lição, criamos a tag «oops» para o commit cancelado. Vamos dar uma olhada em <em>all</em>(todos) commits.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -89,10 +88,10 @@ $ git hist
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>We can see that the wrong commits haven’t gone. They are not listed in the master branch anymore but still remain in the repository. They would be still in the repository if we did not tag them, but then we could reference them only by their hash names. Unreferenced commits remain in the repository until the garbage collection software is run by system.</p>
+<p>Podemos ver que os commits errados não foram embora. Eles não estão listados mais no branch master mas ainda permanecem no repositório. Eles ainda estariam no repositório caso não tivéssemos colocado uma tag neles, mas só poderíamos referenciá-los por seus nomes hash. Commits não referenciados continuam no repositório até que um software coletor de lixo é acionado pelo sistema.</p>
 
-<h2><em>06</em> Reset dangers</h2>
+<h2><em>06</em> Perigos de resetar</h2>
 
-<p>Resets on local branches are usually harmless. The consequences of any "accident" can be reverted by using the proper commit.</p>
+<p>Resets em branches locais geralmente são inofensivos. As consequências de quaisquer "acidentes" podem ser revertidos usando um commit apropriado.</p>
 
-<p>Though, other users sharing the branch can be confused if the branch is shared on remote repositories.</p>
+<p>Apesar disso, outros usuários que compartilham o branch podem ficar confusos se o branch compartilhado fica armazenado em repositórios remotos.</p>

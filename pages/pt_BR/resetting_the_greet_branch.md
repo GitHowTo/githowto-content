@@ -1,17 +1,17 @@
 ---
 view: page
-title: "32. Resetting the style branch"
+title: "32. Resetando o branch style"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Resetting the branch style to the point prior to the first merge.</li></ul>
+<ul><li>Resetar o branch style para o ponto anterior ao primeiro merge.</li></ul>
 
-<h2><em>01</em> Resetting the style branch</h2>
+<h2><em>01</em> Resetando o branch style</h2>
 
-<p>Let us go on style branch to the point <em>before</em> we merged it with master branch. We can <strong>reset</strong> branch to any commit. In fact, this changes branch pointer to point at any commit in the tree.</p>
+<p>Vamos para o branch style no ponto <em>antes</em> de darmos merge com o branch ,aster. Podemos <strong>resetar</strong> o branch para qualquer commit. Na verdade, isso faz com que o ponteiro do branch aponte para qualquer commit contido na árvore.</p>
 
-<p>Here, we want to come back in style branch to a point before merging with the master. We have to find the last commit prior the merge.</p>
+<p>Aqui, queremos voltar no style branch para um ponto anterior ao merge com o master. Temos que encontrar o último commit antes do merge</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -42,7 +42,7 @@ $ git hist
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>It's a little hard to read, but we can see from the data that Updated index.html commit was the latest on the style branch prior merging. Let us reset the style branch to this commit.</p>
+<p>É um pouco difícil de ler, mas podemos perceber pelos dados que o commit Updated index.html foi o último no branch style anterior ao merging. Vamos resetar o style branch para esse commit.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -53,9 +53,9 @@ $ git hist
 <pre class="sample">$ git reset --hard 07a2a46
 HEAD is now at 07a2a46 Updated index.html</pre>
 
-<h2><em>02</em> Check the branch.</h2>
+<h2><em>02</em> Cheque o branch.</h2>
 
-<p>Look for the style branch log. There are no merge commits In our history.</p>
+<p>Procure pelo log do branch style. Não existem commits de merge no nosso histórico.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

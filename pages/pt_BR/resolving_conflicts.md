@@ -1,15 +1,15 @@
 ---
 view: page
-title: "30. Resolving Conflicts"
+title: "30. Resolvendo conflitos"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn to resolve merging conflicts </li></ul>
+<ul><li>Aprender a resolver conflitos de merge</li></ul>
 
-<h2><em>01</em> Merge the master branch with style</h2>
+<h2><em>01</em> Fazer merge do branch master com o style</h2>
 
-<p>Let us go back to the style branch and merge it with a new master branch.</p>
+<p>Vamos voltar para o branch style e fazer um merge dele com um novo master.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -25,7 +25,7 @@ Auto-merging lib/hello.html
 CONFLICT (content): Merge conflict in lib/hello.html
 Automatic merge failed; fix conflicts and then commit the result.</pre>
 
-<p>If you open the <code>lib/hello.html</code> you will see:</p>
+<p>Se você abrir o <code>lib/hello.html</code> você verá:</p>
 
 <h4 class="h4-pre">Arquivo: <em>lib/hello.html</em></h4>
 
@@ -44,11 +44,11 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
 &lt;/html&gt;
 </pre>
 
-<p>The first section is the version of the current branch (style) head. The second section is the version of master branch.</p>
+<p>A primeira seção e a versão do branch atual (style) head. A segunda seção é a versão do branch master.</p>
 
-<h2><em>02</em> Resolution of the conflict</h2>
+<h2><em>02</em> Resolução do conflito</h2>
 
-<p>You need to resolve the conflict manually. Make changes to <code>lib/hello.html</code> to achieve the following result.</p>
+<p>Você precisa resolver o conflito manualmente. Faça mudanças no <code>lib/hello.html</code> para alcançar o seguinte resultado.</p>
 
 <h4 class="h4-pre">Arquivo: <em>lib/hello.html</em></h4>
 
@@ -62,7 +62,7 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h2><em>03</em> Make a commit of conflict resolution</h2>
+<h2><em>03</em> Faça o commit de uma resolução de conflito/h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -76,6 +76,6 @@ $ git commit -m "Merged master fixed conflict."
 Recorded resolution for 'lib/hello.html'.
 [style 645c4e6] Merged master fixed conflict.</pre>
 
-<h2><em>04</em> Advanced Merging</h2>
+<h2><em>04</em> Merging avançado</h2>
 
-<p>Git has no graphical merging tools, but will accept any third-party merge tool (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">read more about such tools on StackOverflow</a>.)</p>
+<p>Git não tem ferramentas gráficas de merging, mas aceita qualquer ferramenta de merge produzida por terceiros. (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">leia mais sobre essas ferramentas no StackOverflow</a>.)</p>

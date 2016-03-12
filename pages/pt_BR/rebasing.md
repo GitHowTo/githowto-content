@@ -5,11 +5,11 @@ title: "34. Rebase"
 
 <h3>Metas</h3>
 
-<ul><li>To use rebase instead of the merge command.</li></ul>
+<ul><li>Usar o comando rebase ao invés do merge.</li></ul>
 
-<p>So we went back in history before the first merge and wanna relocate the changes in master to our style branch.</p>
+<p>Então nós voltamos no histórico até antes do primeiro merge e queremos realocar as mudanças do master para o nosso branch style.</p>
 
-<p>This time we are going to use the rebase command rather than merge.</p>
+<p>Dessa vez nós vamos usar o comando rebase ao invés do merge.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -41,17 +41,17 @@ $ git hist
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<h2><em>01</em> Merging VS rebasing</h2>
+<h2><em>01</em> Merge VS Rebase</h2>
 
-<p>Result of the rebase command looks much like that of the merge.  The style branch currently contains all its changes, plus all the changes of the master branch.  The commit tree, however, is a bit different.  The style branch commit tree has been rewritten to make the master branch a part of the commit history.  This makes the chain of commits linear and more readable.</p>
+<p>O resultado do comando rebase parece muito com o do merge. O branch style atualmente contém todas as suas mudanças, além das mudanças do branch master. A árvore de commits, porém, está um pouco diferente. A árvore de commit do branch style foi reescrita para fazer o branch master parte do histórico de commits. Isso faz com que a cadeia de commits seja mais linear e legível.</p>
 
-<h2><em>02</em> When to use the rebase, when the merge?</h2>
+<h2><em>02</em> Quando usar rebase, quando usar merge?</h2>
 
-<p>Don&#8217;t use the rebase command &#8230;</p>
+<p>Não use o comando rebase &#8230;</p>
 
 <ol>
-	<li>If the branch is public and shared.  Rewriting such branches will hinder the work of other team members.</li>
-	<li>When the <em>exact</em> commit branch history is important (because the rebase command rewrites the history of commits).</li>
+	<li>Se o branch é público e compartilhado. Reescrever tais branches vai atrapalhar o trabalho de outros colegas.</li>
+	<li>Quando o histórico <em>exato</em> de commits do branch é importante (porque o comando rebase reescreve o histórico de commits).</li>
 </ol>
-<p>Given the above recommendations, I prefer to use rebase for short-term, local branches and the merge command for branches in the public repository.</p>
+<p>Dadas as recomendações acima, eu prefiro usar rebase para branches locais e de curto prazo e merge para branches em repositórios públicos.</p>
   </div>

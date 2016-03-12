@@ -1,13 +1,13 @@
 ---
 view: page
-title: "40. Remote branches"
+title: "40. Branches remotos"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn about local and remote branches</li></ul>
+<ul><li>Aprender sobre branches locais e remotos</li></ul>
 
-<p>Let&#8217;s take a look at the branches in our cloned repository.</p>
+<p>Vamos dar uma olhada nos branches do nosso repositório clonado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -18,10 +18,10 @@ title: "40. Remote branches"
 <pre class="sample">$ git branch
 * master</pre>
 
-<p>As we can see only the master branch is listed in it. Where is the style branch? <code>git branch</code> only lists the local branches by default.</p>
-<h2><em>01</em> 01 List of the remote branches</h2>
+<p>Como podemos ver, apenas o branch master está listado. Onde está o branch style? <code>git branch</code> lista apenas os branches locais, por padrão.</p>
+<h2><em>01</em> Lista dos branches remotos</h2>
 
-<p>To see all the branches, try the following command:</p>
+<p>Para ver todos os branches, use o seguinte comando:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -35,4 +35,4 @@ title: "40. Remote branches"
   remotes/origin/style
   remotes/origin/master</pre>
 
-<p>Git lists all the commits from the original repo, but the remote repository branches are not treated as local ones.  If we need our own <strong>style</strong> branch, we need to create on our own. In a minute you will see how it is done.</p>
+<p>O Git lista todos os commits do repositório original, mas os branches do repositório remoto não são tratados como os locais. Se nós precisamos do nosso próprio branch <strong>style</strong>, teremos que criá-lo. Em um minuto você verá como isso é feito.</p>

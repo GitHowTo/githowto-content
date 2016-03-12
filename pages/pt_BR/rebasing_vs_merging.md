@@ -1,14 +1,14 @@
 ---
 view: page
-title: "31. Relocating as an alternative to merging"
+title: "31. Realocando como uma alternativa à fusão"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn the difference between relocating and merging.</li></ul>
+<ul><li>Aprender a diferença entre realocar e fundir.</li></ul>
 
-<h3>Discussion</h3>
+<h3>Discussão</h3>
 
-<p>Let us look at the differences between relocating and merging. To do this, we need to get back into the repository at the time prior to the first merge, and then repeat the same steps but using relocating instead of merging.</p>
+<p>Vamos olhar para as diferenças entre realocação e fusão. Para fazer isso, precisamos de voltar no repositório no momento antes do primeiro merge e então repetir os mesmos passos realocando ao invés de fundindo.</p>
 
-<p>We will use the reset command to return the branch to a previous state.</p>
+<p>Nós usaremos o comando reset para voltar o branch para um estado anterior.</p>
