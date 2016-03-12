@@ -1,13 +1,13 @@
 ---
 view: page
-title: "43. Merging pulled changes"
+title: "43. Fundindo modificações baixadas"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn to get the fetched changes into the current branch and working directory.</li></ul>
+<ul><li>Aprender como colocar as modificações baixadas no branch atual e no diretório de trabalho.</li></ul>
 
-<h2><em>01</em>Merge the pulled changes into the local master branch</h2>
+<h2><em>01</em> Funda as modificações baixadas no branch master local</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -21,9 +21,9 @@ Fast-forward
  README |    1 +
  1 files changed, 1 insertions(+), 0 deletions(-)</pre>
 
-<h2><em>02</em>Check the <span class="caps">README</span> again</h2>
+<h2><em>02</em> Confira o <span class="caps">README</span> novamente</h2>
 
-<p>Now we should see the changes.</p>
+<p>Agora você deve ver as modificações.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -35,7 +35,7 @@ Fast-forward
 This is the Hello World example from the git tutorial.
 (changed in original)</pre>
 
-<p>These are the changes.  Although &#8220;git fetch&#8221; does not merge the changes, we can manually merge them from the remote repo.</p>
+<p>Essas são as modificações. Apesar do comando &#8220;git fetch&#8221; não fundir as mudanças, nós podemos fundi-las manualmente pelo repositório remoto.</p>
 
-<h2><em>03</em>Next</h2>
-<p>Now let&#8217;s have a look at combining fetch &amp; merge into a single command.</p>
+<h2><em>03</em> Próximo</h2>
+<p>Agora vamos dar uma olhada na combinação de fetch e merge em um único comando.</p>

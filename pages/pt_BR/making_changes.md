@@ -1,29 +1,29 @@
 ---
 view: page
-title: "5. Making changes"
+title: "5. Fazendo modificações"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn to monitor the working directory’s state</li></ul>
+<ul><li>Aprender a monitorar o estado do dirétorio de trabalho</li></ul>
 
-<h2><em>01</em> Changing the “Hello, World” page</h2>
+<h2><em>01</em> Modificar a página de “Hello, World”</h2>
 
-<p>Let&#8217;s add some HTML-tags to our greeting. Change the file contents to:</p>
+<p>Vamos adicionar algumas tags HTML para a nossa saudação. Modifique os conteúdos do arquivo para:</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
 <pre class="file"><strong>&lt;h1&gt;</strong>Hello, World!<strong>&lt;/h1&gt;</strong></pre>
 
-<h2><em>02</em> Checking the status</h2>
+<h2><em>02</em> Conferindo o status</h2>
 
-<p>Check the working directory’s status.</p>
+<p>Confira o status do diretório de trabalho.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git status</pre>
 
-<p>You will see &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -37,10 +37,10 @@ title: "5. Making changes"
 #
 no changes added to commit (use "git add" and/or "git commit -a")</pre>
 
-<p>The first important aspect here is that git knows <code>hello.html</code> file has been changed, but these changes are not yet committed to the repository.</p>
+<p>O primeiro aspecto importante aqui é que o git sabe que o arquivo <code>hello.html</code> foi modificado, mas essas modificações ainda não sofreram commit para o repositório.</p>
 
-<p>Another aspect is that the status message hints about what to do next. If you want to add these changes to the repository, use <code>git add</code>. To undo the changes use <code>git checkout</code>.</p>
+<p>Outro aspecto é que a mensagem de status oferece dicas sobre o que fazer em seguida. Se você quiser adicionar essas modificações para o repositório, use <code>git add</code>. Para desfazer as modificações use <code>git checkout</code>.</p>
 
-<h2><em>03</em> Next ...</h2>
+<h2><em>03</em> Próximo...</h2>
 
-<p>Staging the changes.</p>
+<p>Colocando as modificações no stage.</p>

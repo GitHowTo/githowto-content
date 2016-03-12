@@ -1,15 +1,15 @@
 ---
 view: page
-title: "28. Merging"
+title: "28. Fundindo"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to merge two distinct branches to restore changes to a single branch.</li></ul>
+<ul><li>Aprender como fundir dois branches diferens para restaurar as modificações para um único branch.</li></ul>
 
-<h2><em>01</em> Merging to a single branch</h2>
+<h2><em>01</em> Fundindo em um único branch</h2>
 
-<p>Merging brings changes from two branches into one. Let us go back to the style branch and merge it with master.</p>
+<p>Fundir junta as modificações de dois branches em um. Vamos voltar para o branch style e fundi-lo com o master.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -42,10 +42,10 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Through periodic master branch merging with the style branch you can pick up to the master any changes or modifications to maintain compatibility with the style changes in the mainline.</p>
+<p>Pelo merge periodico entre os branches master e style, você pode acompanhar quaisquer mudanças ou modificações ocorridas para manter a compatibilidade das mudanças de estilo na linha principal.</p>
 
-<p>However, this makes the commit graphics look ugly. Later we will consider relocation as an alternative to fusion.</p>
+<p>Porém, isso faz com que os gráficos de commits fiquem feios. Mais tarde vamos considerar a relocação como uma alternativa à fusão.</p>
 
-<h2><em>02</em> Next</h2>
+<h2><em>02</em> Próximo</h2>
 
-<p>But what if changes to the master branch conflict with changes in style?</p>
+<p>Mas e se as modificações no branch master conflitarem com as modificações do style?</p>

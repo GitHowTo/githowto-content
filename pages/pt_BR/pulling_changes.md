@@ -1,19 +1,19 @@
 ---
 view: page
-title: "44. Pulling and merging changes"
+title: "44. Fazendo pull e merge de modificações"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn that <code>git pull</code> command is identical to <code>git fetch</code> plus <code>git merge</code>.</li></ul>
+<ul><li>Aprender que <code>git pull</code> é idêntico a fazer <code>git fetch</code> mais <code>git merge</code>.</li></ul>
 
-<h3>Discussion</h3>
+<h3>Discussão</h3>
 
-<p>We are not going to run through the entire process of making and pulling a new change, but we want you to know that: </p>
+<p>Não iremos passar por todo o processo de fazer e dar pull em uma mudança, mas queremos que vocês saibam que: </p>
 
 <pre class="instructions">git pull</pre>
 
-<p>is actually equivalent to the following two steps:</p>
+<p>é, na verdade, equivalente a fazer os seguintes passos:</p>
 
 <pre class="instructions">git fetch
 git merge origin/master</pre>

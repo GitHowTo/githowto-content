@@ -1,13 +1,13 @@
 ---
 view: page
-title: "35. Merging to the Master branch"
+title: "35. Fundindo com o branch master"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>We have kept our style greet branch up to date with the master branch (using rebase), but now let&#8217;s merge the style branch changes back into the master.</li></ul>
+<ul><li>Nós mantivemos nosso branch style atualizado em relação ao branch master (usando rebase), mas agora vamos fundir as modificações de volta no master.</li></ul>
 
-<h2><em>01</em> Merging style into master</h2>
+<h2><em>01</em> Fundindo style no master</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -28,11 +28,11 @@ Fast-forward
  3 files changed, 13 insertions(+), 3 deletions(-)
  create mode 100644 lib/style.css</pre>
 
-<p> Since the last master commit directly precedes the last commit of the style branch, git can merge fast-forward by simply moving the branch pointer forward, pointing to the same commit as the style branch.</p>
+<p>Já que o último commit do master é anterior ao o último commit do branch style, o git consegue fundir em modo de avanço rápido - simplesmente movendo o ponteiro do branch para frente, apontando para o mesmo commit que o branch style.</p>
 
-<p>Conflicts do not arise in the fast-forward merge.</p>
+<p>Conflitos não surgem no fast-forward merge.</p>
 
-<h2><em>02</em> Check the logs </h2>
+<h2><em>02</em> Confira os logs</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 <pre class="instructions">git hist</pre>
@@ -50,4 +50,4 @@ Fast-forward
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Now style and master are identical.</p>
+<p>Agora o style e o master são idênticos.</p>

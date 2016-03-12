@@ -1,13 +1,13 @@
 ---
 view: page
-title: "25. Navigating Branches"
+title: "25. Navegando em Branches"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to navigate between the repository branches </li></ul>
+<ul><li>Aprender como navegar entre branches de repositórios.</li></ul>
 
-<p>Now your project has two branches:</p>
+<p>Agora o seu projeto possui dois branches:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -27,9 +27,9 @@ title: "25. Navigating Branches"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<h2><em>01</em> Switching to the Master branch</h2>
+<h2><em>01</em> Trocando para o branch master</h2>
 
-<p>To switch between branches simply use the  <code>git checkout</code> command.</p>
+<p>Para trocar o branch atual simplesmente use o comando <code>git checkout</code>.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -50,9 +50,9 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Now we are on the Master branch. It can be proven by the <code>hello.html</code> file that does not use styles from <code>style.css</code>.</p>
+<p>Agora estamos no branch master. Isso pode ser provado pelo arquivo <code>hello.html</code> que não usa os styles do <code>style.css</code>.</p>
 
-<h2><em>02</em> Let us return to the style branch.</h2>
+<h2><em>02</em> Vamos retornar para o branch do style.</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -74,4 +74,4 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>We are back to a <strong>style</strong> branch that can be proven by the contents of <code>lib/hello.html</code>.</p>
+<p>Agora estamos de volta a um branch <strong>style</strong> que pode ser provado pelos conteúdos de <code>lib/hello.html</code>.</p>

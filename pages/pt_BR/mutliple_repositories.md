@@ -1,14 +1,14 @@
 ---
 view: page
-title: "36. Multiple repositories"
+title: "36. Repositórios múltiplos"
 ---
 
-<p>So far we have been working with only one git repository. However, git is great for working with several repositories.  These additional repositories can be stored locally, or accessed via network connection.</p>
+<p>Até agora só trabalhamos com um repositório git. Apesar disso, git é ótimo para trabalhar com vários repositórios. Os repositórios adicionais podem ser armazenados localmente ou acessados por conexão de rede.</p>
 
-<p>In the next section we will create a new repo called &#8220;cloned_hello&#8221;.  We will discuss moving changes from one repo to another, and dealing with conflicts when working with two repositories.</p>
+<p>Na próxima seção iremos criar um novo repositório chamado "cloned_hello".  Nós iremos discutir como mover mudanças de um repositório para o outro, lidando com conflitos que possam surgir.</p>
 
 <img src="/git_clone_en.png" alt="" />
 
-<p>Meanwhile, we will work with local repositories (the ones stored on your local HDD). Most of the information in this section can be also applied to working with multiple repositories no matter if they are stored locally or shared over a network.</p>
+<p>Enquanto isso, nós trabalharemos com repositórios locais (os que estão armazenados no nosso próprio HD). A maioria da informação nessa seção também pode ser aplicada no trabalho com múltiplos repósitorios independente se eles são armazenados localmente ou compartilhados por uma rede.</p>
 
-<p style="color:red;"><strong><span class="caps">NOTA</span>:</strong> We will make changes to both copies of our repositories. Notice the repository you are on every stage of the next lessons.</p>
+<p style="color:red;"><strong><span class="caps">NOTA</span>:</strong> Nós faremos mudanças em ambas as cópias do nosso repositório. Preste atenção no repositório em que você está em cada estágio das próximas lições.</p>

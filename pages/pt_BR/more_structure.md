@@ -1,15 +1,15 @@
 ---
 view: page
-title: "21. More information about the structure"
+title: "21. Mais informação sobre a estrutura"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Add one more file in our repository</li></ul>
+<ul><li>Adicionar mais um arquivo no nosso repositório</li></ul>
 
-<h2><em>01</em> Adding index.html</h2>
+<h2><em>01</em> Adicionando index.html</h2>
 
-<p>Let us add an <code>index.html</code> file to the repository. The following file is perfect for this purpose.</p>
+<p>Vamos adicionar um arquivo <code>index.html</code> ao nosso repositório. O arquivo a seguir é perfeito para esse propósito.</p>
 
 <h4 class="h4-pre">Arquivo: <em>index.html</em></h4>
 
@@ -19,11 +19,11 @@ title: "21. More information about the structure"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Add the file and make a commit.</p>
+<p>Adicione o arquivo e faça um commit.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git add index.html
 git commit -m "Added index.html."</pre>
 
-<p>Now when you open <code>index.html</code>, you should see a part of the hello page in a small window.</p>
+<p>Agora quando você abrir <code>index.html</code>, você deverá ver uma parte da página hello em uma pequena janela.</p>
