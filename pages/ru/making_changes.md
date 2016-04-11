@@ -11,7 +11,7 @@ title: "5. Внесение изменений"
 
 <p>Добавим кое-какие HTML-теги к нашему приветствию. Измените содержимое файла на:</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file"><strong>&lt;h1&gt;</strong>Hello, World!<strong>&lt;/h1&gt;</strong></pre>
 

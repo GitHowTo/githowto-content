@@ -13,7 +13,7 @@ title: "29. Создание конфликта"
 
 <pre class="instructions">git checkout master</pre>
 
-<h4 class="h4-pre">Файл: <em>lib/hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">lib/hello.html</em></h4>
 
 <pre class="file">&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;
 &lt;html&gt;

@@ -17,7 +17,7 @@ title: "3. Создание проекта"
 cd hello
 touch hello.html</pre>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file">Hello, World</pre>
 
