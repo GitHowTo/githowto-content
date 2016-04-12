@@ -17,7 +17,7 @@ title: "16. Отмена коммитов"
 
 <p>Измените файл <code>hello.html</code> на следующий.</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file">&lt;html&gt;
   &lt;head&gt;

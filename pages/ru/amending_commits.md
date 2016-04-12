@@ -11,7 +11,7 @@ title: "19. Внесение изменений в коммиты"
 
 <p>Добавьте в страницу комментарий автора.</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file"><strong>&lt;!-- Author: Alexander Shvets --&gt;</strong>
 &lt;html&gt;
@@ -31,7 +31,7 @@ git commit -m "Add an author comment"</pre>
 
 <p>После совершения коммита вы понимаете, что любой хороший комментарий должен включать электронную почту автора. Обновите страницу hello, включив в нее email.</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em  style="text-transform: none">hello.html</em></h4>
 
 <pre class="file"><strong>&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;</strong>
 &lt;html&gt;

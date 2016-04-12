@@ -11,7 +11,7 @@ title: "21. Подробнее о структуре"
 
 <p>Давайте добавим файл index.html в наш репозиторий. Следующий файл отлично подойдет для этой цели.</p>
 
-<h4 class="h4-pre">Файл: <em>index.html</em></h4>
+<h4 class="h4-pre">Файл: <em  style="text-transform: none">index.html</em></h4>
 
 <pre class="file">&lt;html&gt;
   &lt;body&gt;
