@@ -9,7 +9,11 @@ title: "26. Изменения в ветке master"
 
 <p>Пока вы меняли ветку «style», кто-то решил обновить ветку master. Они добавили <span class="caps">README</span>.</p>
 
-<h2><em>01</em> Обновите файл <span class="caps">README</span> с изменениями.</h2>
+<h2><em>01</em> Создайте файл <span class="caps">README</span> в ветке master.</h2>
+
+<h4 class="h4-pre">Выполните:</h4>
+
+<pre class="instructions">git checkout master</pre>
 
 <h4 class="h4-pre">Файл: <em><span class="caps">README</span></em></h4>
 
@@ -19,6 +23,5 @@ title: "26. Изменения в ветке master"
 
 <h4 class="h4-pre">Выполните:</h4>
 
-<pre class="instructions">git checkout master
-git add README
+<pre class="instructions">git add README
 git commit -m "Added README"</pre>

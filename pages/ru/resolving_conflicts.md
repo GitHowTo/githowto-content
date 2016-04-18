@@ -27,7 +27,7 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
 
 <p>Если вы откроете lib/hello.html, вы увидите:</p>
 
-<h4 class="h4-pre">Файл: <em>lib/hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">lib/hello.html</em></h4>
 
 <pre class="file">&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;
 &lt;html&gt;
@@ -50,7 +50,7 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
 
 <p>Вам необходимо вручную разрешить конфликт. Внесите изменения в  <code>lib/hello.html</code> для достижения следующего результата.</p>
 
-<h4 class="h4-pre">Файл: <em>lib/hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">lib/hello.html</em></h4>
 
 <pre class="file">&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;
 &lt;html&gt;

@@ -28,7 +28,7 @@ git status</pre>
 
 <pre class="instructions">touch lib/style.css</pre>
 
-<h4 class="h4-pre">Файл: <em>lib/style.css</em></h4>
+<h4 class="h4-pre">Файл: <em  style="text-transform: none">lib/style.css</em></h4>
 
 <pre class="file">h1 {
   color: red;
@@ -43,7 +43,7 @@ git commit -m "Added css stylesheet"</pre>
 
 <p>Обновите файл hello.html, чтобы использовать стили style.css.</p>
 
-<h4 class="h4-pre">Файл: <em>lib/hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em  style="text-transform: none">lib/hello.html</em></h4>
 
 <pre class="file">&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;
 &lt;html&gt;
@@ -64,7 +64,7 @@ git commit -m "Hello uses style.css"</pre>
 
 <p>Обновите файл index.html, чтобы он тоже использовал style.css</p>
 
-<h4 class="h4-pre">Файл: <em>index.html</em></h4>
+<h4 class="h4-pre">Файл: <em  style="text-transform: none">index.html</em></h4>
 
 <pre class="file">&lt;html&gt;
 <strong>  &lt;head&gt;

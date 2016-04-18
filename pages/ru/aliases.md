@@ -24,7 +24,7 @@ git config --global alias.dump 'cat-file -p'</pre>
 
 <p>Добавьте следующее в файл .gitconfig в вашем $<span class="caps">HOME</span> каталоге.</p>
 
-<h4 class="h4-pre">Файл: <em>.gitconfig</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">.gitconfig</em></h4>
 
 <pre class="file">[alias]
   co = checkout
@@ -51,7 +51,7 @@ git config --global alias.dump 'cat-file -p'</pre>
 
 <p>Если ваша оболочка поддерживает алиасы или шорткаты, вы можете добавить алиасы и на этом уровне. Я использую:</p>
 
-<h4 class="h4-pre">Файл: <em>.profile</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">.profile</em></h4>
 
 <pre class="file">alias gs='git status '
 alias ga='git add '

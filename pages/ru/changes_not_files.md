@@ -17,7 +17,7 @@ title: "9. Изменения, а не файлы"
 
 <p>Измените страницу «Hello, World», чтобы она содержала стандартные теги <code>&lt;html&gt;</code> и <code>&lt;body&gt;</code>.</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file"><strong>&lt;html&gt;
   &lt;body&gt;</strong>
@@ -37,7 +37,7 @@ title: "9. Изменения, а не файлы"
 
 <p>Теперь добавьте заголовки HTML (секцию <code>&lt;head&gt;</code>) к странице «Hello, World».</p>
 
-<h4 class="h4-pre">Файл: <em>hello.html</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">hello.html</em></h4>
 
 <pre class="file">&lt;html&gt;
 <strong>  &lt;head&gt;
