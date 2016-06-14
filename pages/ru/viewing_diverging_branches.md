@@ -31,6 +31,6 @@ title: "27. Просмотр отличающихся веток"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Это наша первая возможность увидеть в действии <code>--graph</code> в <code>git hist</code>. Добавление опции <code>--graph</code> в <code>git log</code> вызывает построение дерева коммитов с помощью простых <span class="caps">ASCII</span> символов. Мы видим обе ветки (style и master), и то, что ветка master является текущей <span class="caps">HEAD</span>. Общим предшественником обеих веток является ветка «Added index.html».</p>
+<p>Это наша первая возможность увидеть в действии <code>--graph</code> в <code>git hist</code>. Добавление опции <code>--graph</code> в <code>git log</code> вызывает построение дерева коммитов с помощью простых <span class="caps">ASCII</span> символов. Мы видим обе ветки (style и master), и то, что ветка master является текущей <span class="caps">HEAD</span>. Общим предшественником обеих веток является коммит «Added index.html».</p>
 
 <p>Метка <code>--all</code> гарантированно означает, что мы видим все ветки. По умолчанию показывается только текущая ветка.</p>
