@@ -9,7 +9,7 @@ title: "27. View the different branches"
 
 <h2><em>01</em> View current branches</h2>
 
-<p>Now we have a repository with two different branches. To view branches and their differences use log command as following.</p>
+<p>Now we have a repository with two different branches. To view branches and their differences use log command as follows.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
@@ -31,6 +31,6 @@ title: "27. View the different branches"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>We have opportunity to see <code>--graph</code> of <code>git hist</code> in action. Adding the <code>--graph</code> option to <code>git log</code> causes building a commit tree with the help of simple ASCII characters. We see both branches (style and master) and that the current branch is master HEAD. The Added index.html branch goes prior to both branches.</p>
+<p>We have opportunity to see <code>--graph</code> of <code>git hist</code> in action. Adding the <code>--graph</code> option to <code>git log</code> causes the construction of a commit tree with the help of simple ASCII characters. We see both branches (style and master) and that the current branch is master HEAD. The Added index.html branch goes prior to both branches.</p>
 
 <p>The <code>--all</code> flag guarantees that we see all the branches. By default, only the current branch is displayed.</p>
