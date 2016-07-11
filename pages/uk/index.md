@@ -25,7 +25,7 @@ description: "Git How To — це інтерактивний тур, який п
 <div class="col-sm-4">
 <h3><i class="fa fa-linux"></i> Linux</h3>
 <code>yum install git-core</code><br/>
-<code>apt-get install git-core</code><br/>
+<code>apt-get install git</code><br/>
 <code>zypper in git-core</code>
 </div>
 
