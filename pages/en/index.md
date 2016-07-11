@@ -26,9 +26,9 @@ description: "Git How To is a guided tour that walks through the fundamentals of
 <div class="row">
 <div class="col-sm-4">
 <h3><i class="fa fa-linux"></i> Linux</h3>
-<code>yum install git-core</code><br/>
+<code>yum install git</code><br/>
 <code>apt-get install git</code><br/>
-<code>zypper in git-core</code>
+<code>zypper in git</code>
 </div>
 
 
