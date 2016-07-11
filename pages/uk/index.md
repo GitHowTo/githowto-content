@@ -37,7 +37,7 @@ description: "Git How To — це інтерактивний тур, який п
 
 <div class="col-sm-4">
 <h3><i class="fa fa-windows"></i> Windows</h3>
-<a href="http://msysgit.github.io/">msysgit</a>
+<a href="http://git-for-windows.github.io//">git for windows</a>
 </div>
 
 </div>
