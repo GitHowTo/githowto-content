@@ -31,7 +31,8 @@ description: "Git How To — це інтерактивний тур, який п
 
 <div class="col-sm-4">
 <h3><i class="fa fa-apple"></i> Mac</h3>
-<a href="http://git-scm.com/download/mac">Git for Mac OS X</a>
+<a href="http://git-scm.com/download/mac">Git for Mac OS X</a><br/>
+<code>brew install git</code><br/>
 </div>
 
 <div class="col-sm-4">
