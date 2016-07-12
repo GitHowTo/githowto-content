@@ -26,20 +26,21 @@ description: "Git How To is a guided tour that walks through the fundamentals of
 <div class="row">
 <div class="col-sm-4">
 <h3><i class="fa fa-linux"></i> Linux</h3>
-<code>yum install git-core</code><br/>
-<code>apt-get install git-core</code><br/>
-<code>zypper in git-core</code>
+<code>yum install git</code><br/>
+<code>apt-get install git</code><br/>
+<code>zypper in git</code>
 </div>
 
 
 <div class="col-sm-4">
 <h3><i class="fa fa-apple"></i> Mac</h3>
-<a href="http://git-scm.com/download/mac">Git for Mac OS X</a>
+<a href="http://git-scm.com/download/mac">Git for Mac OS X</a><br/>
+<code>brew install git</code><br/>
 </div>
 
 <div class="col-sm-4">
 <h3><i class="fa fa-windows"></i> Windows</h3>
-<a href="http://msysgit.github.io/">msysgit</a>
+<a href="http://git-for-windows.github.io//">git for windows</a>
 </div>
 
 </div>
