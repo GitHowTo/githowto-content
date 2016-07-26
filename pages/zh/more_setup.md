@@ -1,23 +1,23 @@
 ---
 view: page
-title: "2. The final preparation"
+title: "二、最后的准备"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>Install the materials from the tutorial and get them ready for work.</li></ul>
+<ul><li>下载安装该教程所需的资料，以备后续学习之用。</li></ul>
 
-<h2><em>01</em> Download the tutorial materials</h2>
+<h2><em>01</em> 下载该教程的资料</h2>
 
-<p>Download the tutorial materials here:</p>
+<p>从以下地址下载资料：</p>
 
 <ul><li>http://githowto.com/git_tutorial.zip</li></ul>
 
-<h2><em>02</em> Extract the tutorial materials</h2>
+<h2><em>02</em> 解压教程资料压缩包</h2>
 
-<p>The tutorial package should contain the main folder “git_tutorial” with two subfolders:</p>
+<p>该压缩包内有一个名为『git_tutorial』的主文件夹，其中包含两个子目录：</p>
 
 <ul>
-<li>work — an empty working directory. Your repositories will be created here.</li>
-<li>files — prepackaged files to let you continue working with the tutorial on any stage. If you get stuck, simply copy the desired lesson into your working folder.</li>
+<li>work - 一个空的工作目录。你的版本库将会在这里创建。 </li>
+<li>files — 一些预先打包好的文件，以便你在任何阶段都可以持续学习该教程。如果你被卡在某一课，可以直接将其对应的打包文件拷贝到工作目录中即可。</li>
 </ul>
