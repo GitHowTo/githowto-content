@@ -1,52 +1,52 @@
 ---
 view: page
-title: "3. Creating a Project"
+title: "三、创建一个项目"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to create a git repository from scratch.</li></ul>
+<ul><li>学习如何从头开始创建一个git版本库</li></ul>
 
-<h2><em>01</em> Create a “Hello, World” page</h2>
+<h2><em>01</em> 创建一个『Hello, World』（『你好，世界』）页面</h2>
 
-<p>Get started in an empty working directory (for example, Work, if you downloaded the file from the previous step) and create an empty directory named “hello”, then create a <code>hello.html</code> file in it with the following contents.</p>
+<p>首先进入到一个空的工作目录下（例如，在前一课中下载的压缩文件中的Work目录），创建一个空目录并命名为『hello』，然后在该目录下创建一个名为<code>hello.html</code>的文件，在其中写入下面的内容。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">mkdir hello
 cd hello
 touch hello.html</pre>
 
-<h4 class="h4-pre">File: <em>hello.html</em></h4>
+<h4 class="h4-pre">文件: <em>hello.html</em></h4>
 
 <pre class="file">Hello, World</pre>
 
-<h2><em>02</em> Create a repository</h2>
+<h2><em>02</em> 创建一个版本库</h2>
 
-<p>So you have a directory that contains one file. Run the git init in order to create a git repo from that directory.</p>
+<p>现在你已经有了一个包含有一个文件的目录，运行git init命令就可以在该目录中创建一个git版本库。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git init</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git init
 Initialized empty Git repository in /Users/alex/Documents/Presentations/githowto/auto/hello/.git/
 </pre>
 
-<h2><em>03</em> Add the page to the repository</h2>
+<h2><em>03</em> 在版本库中添加一个页面</h2>
 
-<p>Now let&#8217;s add the “Hello, World” page to the repository.</p>
+<p>现在让我们将刚才的『Hello, World』页面添加到版本库中。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git add hello.html
 git commit -m "First Commit"</pre>
 
-<p>You will see &#8230;</p>
+<p>你将会看到：</p>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git add hello.html
 $ git commit -m "First Commit"
