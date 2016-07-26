@@ -1,28 +1,28 @@
 ---
 view: page
-title: "4. Checking the status of the repository"
+title: "四、查看版本库的状态"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to check the repository’s status</li></ul>
+<ul><li>学习如何查看版本库的状态</li></ul>
 
-<h2><em>01</em> Check the status of the repository</h2>
+<h2><em>01</em> 查看版本库的状态</h2>
 
-<p>Use the <code>git status</code> command, to check the current state of the repository.</p>
+<p>使用<code>git status</code>命令，查看版本库的当前状态。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git status</pre>
 
-<p>You will see</p>
+<p>你将会看到：</p>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git status
 # On branch master
 nothing to commit (working directory clean)</pre>
 
-<p>The command checks the status and reports that there’s nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.</p>
+<p>该命令检查了当前的状态并报告没有任何可以提交的修改，这表明版本库中保存的就是工作目录的当前状态，没有任何修改记录。</p>
 
-<p>We will use the git status, to keep monitoring the states of both the working directory and the repository.</p>
+<p>我们会使用 git status 命令频繁地检查工作目录与版本库的状态。</p>
