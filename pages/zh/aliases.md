@@ -1,17 +1,17 @@
 ---
 view: page
-title: "11. Aliases"
+title: "十一、别名"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to setup aliases and shortcuts for git commands</li></ul>
+<ul><li>学会如何为git命令设置别名与快捷方式</li></ul>
 
-<h2><em>01</em> Common aliases</h2>
+<h2><em>01</em> 一些常用的别名</h2>
 
-<p>For Windows users:</p>
+<p>对Windows用户来说：</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git config --global alias.co checkout
 git config --global alias.ci commit
@@ -21,13 +21,13 @@ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --grap
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'</pre>
 
-<p>Also, for users of Unix/Mac:</p>
+<p>对Unix/Mac用户来说：</p>
 
-<p><ins>git status</ins>, <ins>git add</ins>, <ins>git commit</ins>, and <ins>git checkout</ins> are common commands so it is a good idea to have abbreviations for them.</p>
+<p><ins>git status</ins>、<ins>git add</ins>、<ins>git commit</ins>以及<ins>git checkout</ins>都是一些常用的命令，因此为它们设置缩写别名是一个好主意。</p>
 
-<p>Add the following to the <code>.gitconfig</code> file in your <code>$<span class="caps">HOME</span></code> directory.</p>
+<p>将以下内容添加到<code>$<span class="caps">HOME</span></code>目录下的<code>.gitconfig</code>文件中。</p>
 
-<h4 class="h4-pre">File: <em>.gitconfig</em></h4>
+<h4 class="h4-pre">文件：<em>.gitconfig</em></h4>
 
 <pre class="file">[alias]
   co = checkout
@@ -38,23 +38,23 @@ git config --global alias.dump 'cat-file -p'</pre>
   type = cat-file -t
   dump = cat-file -p</pre>
 
-<p>We&#8217;ve already talked about commit and status  commands.  In the previous lesson we covered the <code>log</code> command and will get to know the checkout command very soon. The most important thing to learn from this lesson is that you can type <code>git st</code> wherever you had to type <code>git status</code>.  Best of all, the <code>git hist</code> command will help you avoid the really long <code>log</code> command.</p>
+<p>我们已经学习过提交（commit）和状态查看（status）命令。在之前的课程中，我们学习过<code>log</code>命令，并将很快学习分支切换命令（checkout）。在本课中所学的最重要的事情是在你需要使用<code>git status</code>命令的时候，你只需要输入<code>git st</code>即可。而其中最好的命令之一，<code>git hist</code>免去了你输入冗长的<code>log</code>命令参数之苦。</p>
 
-<p>Go ahead and try using the new commands.</p>
+<p>让我们直接动手来尝试一下这些新的命令。</p>
 
-<h2><em>02</em> Define the <code>hist</code> alias in the .gitconfig file</h2>
+<h2><em>02</em> 在.gitconfig文件中定义<code>hist</code>别名。</h2>
 
-<p>For the most part, I will continue to type out the full command in these instructions.  The only exception is that I will use the <code>hist</code> alias defined above, when I need to see the git log.  Make sure you have a <code>hist</code> alias setup in your <code>.gitconfig</code> file before continuing if you wish to repeat my actions.</p>
+<p>在本教程的大多数时间里，我将会继续使用命令的全称。唯一的例外是<code>hist</code>别名，每当我需要查看git历史记录时，我都会使用<code>hist</code>。如果你希望重复我的命令输入，请先确保你在<code>.gitconfig</code>文件中进行了<code>hist</code>别名的设置。</p>
 
-<h2><em>03</em> <code>Type</code> and <code>Dump</code></h2>
+<h2><em>03</em> <code>Type</code>和<code>Dump</code></h2>
 
-<p>We&#8217;ve added a few aliases for commands we haven&#8217;t yet discussed. We will talk about the <code>git branch</code> command very soon, and the <code>git cat-file</code> command is useful for exploring git.</p>
+<p>我们刚才添加了一些我们还未讨论过的别名。其中，我们很快便将会学习<code>git branch</code>命令，而<code>git cat-file </code>命令则对探索git很有帮助。</p>
 
-<h2><em>04</em> Command aliases (optional)</h2>
+<h2><em>04</em> 命令别名（可选的）</h2>
 
-<p>If your shell supports aliases, or shortcuts, you can add aliases on this level, too. I use:</p>
+<p>如果你的shell支持别名或者快捷方式设置，你也可以在这一层面上添加一些别名。我使用以下这些：</p>
 
-<h4 class="h4-pre">File: <em>.profile</em></h4>
+<h4 class="h4-pre">文件: <em>.profile</em></h4>
 
 <pre class="file">alias gs='git status '
 alias ga='git add '
@@ -68,10 +68,10 @@ alias gx='gitx --all'
 alias got='git '
 alias get='git '</pre>
 
-<p>The <code>go</code> abbreviation for <code>git checkout</code> is very useful, allowing me to type:</p>
+<p>其中的<code>go</code>是对<code>git checkout</code>的快捷简写方式，它允许我进行以下的输入：</p>
 
 <pre class="instructions">go &lt;branch&gt;</pre>
 
-<p>to checkout a particular branch.</p>
+<p>以切换至某个分支。</p>
 
-<p>Also, I often mistype <code>git</code> as <code>get</code> or <code>got</code> so I created aliases for them too.</p>
+<p>另外，我经常会将<code>git</code>误写成<code>get</code>或者<code>got</code>，所以我也为它们设置了别名。</p>
