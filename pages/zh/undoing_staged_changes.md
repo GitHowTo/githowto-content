@@ -1,17 +1,17 @@
 ---
 view: page
-title: "15. Cancel Staged changes (before committing)"
+title: "十五、（在提交之前）取消暂存的修改"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to undo changes that have been staged</li></ul>
+<ul><li>学会如何撤销已被暂存的修改</li></ul>
 
-<h2><em>01</em> Edit file and stage changes</h2>
+<h2><em>01</em> 编辑文件，并暂存修改</h2>
 
-<p>Make changes to the <code>hello.html</code> file in the form of an unwanted comment</p>
+<p>在<code>hello.html</code>文件中添加一句无用的注释。</p>
 
-<h4 class="h4-pre">File: <em>hello.html</em></h4>
+<h4 class="h4-pre">文件：<em>hello.html</em></h4>
 
 <pre class="file">&lt;html&gt;
   &lt;head&gt;
@@ -22,21 +22,21 @@ title: "15. Cancel Staged changes (before committing)"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Stage the modified file.</p>
+<p>暂存被修改的文件。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git add hello.html</pre>
 
-<h2><em>02</em> Check the status </h2>
+<h2><em>02</em> 查看状态 </h2>
 
-<p>Check the status of unwanted changes .</p>
+<p>查看需撤销的修改的状态</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git status</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git status
 # On branch master
@@ -46,37 +46,37 @@ title: "15. Cancel Staged changes (before committing)"
 #	modified:   hello.html
 #</pre>
 
-<p>Status shows that the change has been staged and is ready to commit.</p>
+<p>状态结果表明本次修改已被暂存并准备好可以提交。</p>
 
-<h2><em>03</em> Reset the buffer zone</h2>
+<h2><em>03</em> 重置缓冲区</h2>
 
-<p>Fortunately, the displayed status shows us exactly what we should do to cancel staged changes.</p>
+<p>幸运的是，状态信息准确无误地告诉了我们应该如何撤销已暂存的修改。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git reset HEAD hello.html</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git reset HEAD hello.html
 Unstaged changes after reset:
 M	hello.html</pre>
 
-<p>The <code>reset</code> command resets the buffer zone to HEAD. This clears the buffer zone from the changes that we have just staged.</p>
+<p><code>reset</code>命令将缓冲区重置至HEAD。它清空了我们刚刚暂存至缓冲区的修改。</p>
 
-<p>The <code>reset</code> command (default) does not change the working directory. Therefore, the working directory still contains unwanted comments. We can use the checkout command from the previous tutorial to remove unwanted changes from working directory.</p>
+<p><code>reset</code>命令（在默认的情况下）并不修改工作目录。因此，工作目录任然保存着之前的修改。我们可以使用上一课程中学习过的切换命令（checkout）撤销工作目录中的修改。</p>
 
-<h2><em>04</em> Switch to commit version</h2>
+<h2><em>04</em> 切换至提交版本</h2>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git checkout hello.html
 git status</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git status
 # On branch master
 nothing to commit (working directory clean)</pre>
 
-<p>Our working directory is clean again.</p>
+<p>我们的工作目录又一次成为了干净的状态。</p>

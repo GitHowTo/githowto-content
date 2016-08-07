@@ -1,23 +1,23 @@
 ---
 view: page
-title: "16. Cancelling commits"
+title: "十六、取消提交"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to undo commits to the local repository.</li></ul>
+<ul><li>学会如何撤销已提交至版本库中的对象。</li></ul>
 
-<h2><em>01</em> Cancelling commits</h2>
+<h2><em>01</em> 撤销提交</h2>
 
-<p>Sometimes you realize that the new commits are wrong, and you want to cancel them. There are several ways to handle the issue, we use the safest here.</p>
+<p>有时你会发现新的提交出错了，并想撤销它们。有好几种方法都可以处理这种问题，而我们选择最安全的一种。</p>
 
-<p>To cancel the commit we will create a new commit, cancelling the unwanted changes.</p>
+<p>为了撤销提交对象，我们将先创建一个提交对象，然后再撤销这次意外的修改。</p>
 
-<h2><em>02</em> Edit the file and make a commit</h2>
+<h2><em>02</em> 编辑文件，并进行提交</h2>
 
-<p>Replace  <code>hello.html</code> with the following file.</p>
+<p>使用以下内容替换<code>hello.html</code>文件。</p>
 
-<h4 class="h4-pre">File: <em>hello.html</em></h4>
+<h4 class="h4-pre">文件：<em>hello.html</em></h4>
 
 <pre class="file">&lt;html&gt;
   &lt;head&gt;
@@ -28,42 +28,42 @@ title: "16. Cancelling commits"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git add hello.html
 git commit -m "Oops, we didn't want this commit"</pre>
 
-<h2><em>03</em> Make a commit with new changes that discard previous changes </h2>
+<h2><em>03</em>用新的修改创建一个提交对象，并撤销之前的修改</h2>
 
-<p>To cancel the commit, we need to create a commit that deletes the changes saved by unwanted commit.</p>
+<p>为了撤销提交，我们需要创建一个提交对象，以删除需要被撤销的提交中的修改。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git revert HEAD</pre>
 
-<p>Go to the editor, where you can edit the default commit message or leave it as is. Save and close the file.</p>
+<p>进入编辑器，编辑默认的提交注释或保持原样。保存并关闭文件。</p>
 
-<p>You will see &#8230;</p>
+<p>你将会看到：</p>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git revert HEAD --no-edit
 [master 45fa96b] Revert "Oops, we didn't want this commit"
  1 files changed, 1 insertions(+), 1 deletions(-)</pre>
 
-<p>Since we have cancelled the last commit, we can use <code>HEAD</code> as the argument for cancelling. We may cancel any random commit in history, pointing out its hash value.</p>
+<p>由于我们取消的是最新的一次提交，因此我们可以直接使用<code>HEAD</code>。我们也可以撤销历史中任意一次提交，只需要使用它的哈希值即可。</p>
 
-<p class="note"><strong>Note:</strong> The <code>--no-edit</code> command can be ignored. It was necessary to generate the output data without opening the editor.</p>
+<p class="note"><strong>注：</strong><code>--no-edit</code>命令参数可以省略。之前的操作不需要打开编辑器也可以产生我们预期的输出数据。</p>
 
-<h2><em>04</em> Check the log</h2>
+<h2><em>04</em>查看历史记录</h2>
 
-<p>Checking the log shows the unwanted cancellations and commits in our repository.</p>
+<p>查看历史记录以确认在版本库中需要被删除的提交对象已被撤销。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git hist</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git hist
 * 45fa96b 2011-03-09 | Revert "Oops, we didn't want this commit" (HEAD, master) [Alexander Shvets]
@@ -73,8 +73,8 @@ git commit -m "Oops, we didn't want this commit"</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>This technique can be applied to any commit (however there may be conflicts). It is safe to use even in public branches of remote repositories.</p>
+<p>这个技巧可以被用于任何提交对象（虽然有可能会产生冲突）。它甚至可以在远程版本库中的公共分支上使用。</p>
 
-<h2><em>05</em> Next</h2>
+<h2><em>05</em> 接下来</h2>
 
-<p>Next let us look at athe technique that can be used to remove the last commit from the history of the repository.</p>
+<p>接下来，让我们学习一个可以被用来删除版本库历史中上一次提交的技巧。</p>
