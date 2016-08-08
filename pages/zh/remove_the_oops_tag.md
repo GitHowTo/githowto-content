@@ -1,22 +1,22 @@
 ---
 view: page
-title: "18. Removing the oops tag"
+title: "十八、删除oops标签"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>Removing the oops tag (cleaning up)</li></ul>
+<ul><li>删除oops标签（清理工作）</li></ul>
 
-<h2><em>01</em> Removal of the oops tag</h2>
+<h2><em>01</em> oops标签的删除操作</h2>
 
-<p>Oops tag has performed it’s function. Let us remove that tag and permit the garbage collector to delete referenced commit.</p>
+<p>Oops标签已经完成了它的使命。让我们删除这个标签，以允许垃圾回收器清除掉被该标签引用的提交对象。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git tag -d oops
 git hist --all</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git tag -d oops
 Deleted tag 'oops' (was 45fa96b)
@@ -26,4 +26,4 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Oops tag will no longer appear in the repository.</p>
+<p>Oops标签已经从版本库中删除了。</p>
