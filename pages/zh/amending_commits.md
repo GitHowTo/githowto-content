@@ -1,17 +1,17 @@
 ---
 view: page
-title: "19. Changing commits"
+title: "十九、修改提交对象"
 ---
 
-<h3>Goals</h3>
+<h3>目标</h3>
 
-<ul><li>To learn how to modify an already existing commit</li></ul>
+<ul><li>学会如何修改一个已经存在的提交对象</li></ul>
 
-<h2><em>01</em> Change the page and commit</h2>
+<h2><em>01</em> 修改页面并提交</h2>
 
-<p>Post an author comment on the page.</p>
+<p>在页面上添加一项作者注释。</p>
 
-<h4 class="h4-pre">File: <em>hello.html</em></h4>
+<h4 class="h4-pre">文件：<em>hello.html</em></h4>
 
 <pre class="file"><strong>&lt;!-- Author: Alexander Shvets --&gt;</strong>
 &lt;html&gt;
@@ -22,16 +22,16 @@ title: "19. Changing commits"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git add hello.html
 git commit -m "Add an author comment"</pre>
 
-<h2><em>02</em> Oops... email required</h2>
+<h2><em>02</em> 啊哦，忘记电子邮件了</h2>
 
-<p>After making the commit you understand that every good comment should include the author's email.Refresh the hello page, to provide an email.</p>
+<p>在提交之后你想起每个优秀的注释都应该包括作者的邮箱。接下来更新hello页面，添加邮箱信息。</p>
 
-<h4 class="h4-pre">File: <em>hello.html</em></h4>
+<h4 class="h4-pre">文件：<em>hello.html</em></h4>
 
 <pre class="file"><strong>&lt;!-- Author: Alexander Shvets (alex@githowto.com) --&gt;</strong>
 &lt;html&gt;
@@ -42,29 +42,29 @@ git commit -m "Add an author comment"</pre>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h2><em>03</em> Change the previous commit</h2>
+<h2><em>03</em> 修改前一次提交对象</h2>
 
-<p>We do not want to create another commit for e-mail. Let us change the previous commit and add an e-mail address.</p>
+<p>我们并不想为添加邮箱的修改创建一个新的提交对象。让我们直接修改前一次提交对象来完成添加邮箱的修改。</p>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git add hello.html
 git commit --amend -m "Add an author/email comment"</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git add hello.html
 $ git commit --amend -m "Add an author/email comment"
 [master 6a78635] Add an author/email comment
  1 files changed, 2 insertions(+), 1 deletions(-)</pre>
 
-<h2><em>04</em> View history</h2>
+<h2><em>04</em> 查看历史</h2>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">运行：</h4>
 
 <pre class="instructions">git hist</pre>
 
-<h4 class="h4-pre">Result:</h4>
+<h4 class="h4-pre">结果：</h4>
 
 <pre class="sample">$ git hist
 * 6a78635 2011-03-09 | Add an author/email comment (HEAD, master) [Alexander Shvets]
@@ -73,4 +73,4 @@ $ git commit --amend -m "Add an author/email comment"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>The new "author/email" commit replaces the original "author" commit. The same effect can be achieved by resetting the last commit in the branch, and recommitting new changes.</p>
+<p>可以看到，新的『author/email』的提交已经取代了原来的『author』提交对象。而同样的效果也可以通过先重置分支中的上一次提交，然后再重新提交一次新的修改来完成。</p>
