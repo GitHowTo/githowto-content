@@ -9,7 +9,7 @@ title: "11. Aliases"
 
 <h2><em>01</em> Aliases comuns</h2>
 
-<p>Para usuários do Windows:</p>
+<p>Para usu&aacute;rios do Windows:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -21,11 +21,11 @@ git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --grap
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'</pre>
 
-<p>Além disso, para usuários de Unix/Mac:</p>
+<p>Al&eacute;m disso, para usu&aacute;rios de Unix/Mac:</p>
 
-<p><ins>git status</ins>, <ins>git add</ins>, <ins>git commit</ins>, e <ins>git checkout</ins> são comandos comuns, então é uma boa ideia ter abreviações para eles.</p>
+<p><ins>git status</ins>, <ins>git add</ins>, <ins>git commit</ins>, e <ins>git checkout</ins> s&atilde;o comandos comuns, ent&atilde;o &eacute; uma boa ideia ter abrevia&ccedil;&otilde;es para eles.</p>
 
-<p>Adicione o seguinte no arquivo <code>.gitconfig</code> no seu diretório <code>$<span class="caps">HOME</span></code>.</p>
+<p>Adicione o seguinte no arquivo <code>.gitconfig</code> no seu diret&oacute;rio <code>$<span class="caps">HOME</span></code>.</p>
 
 <h4 class="h4-pre">Arquivo: <em>.gitconfig</em></h4>
 
@@ -38,21 +38,21 @@ git config --global alias.dump 'cat-file -p'</pre>
   type = cat-file -t
   dump = cat-file -p</pre>
 
-<p>Nós já falamos sobre os comandos commit e status. Nas lições anteriores, nós cobrimos o comando <code>log</code> e vamos conhecer o comando checkout em breve. O mais importante a se aprender dessa lição é que você pode digitar <code>git st</code> onde você antes tinha que digitar <code>git status</code>. O melhor de tudo é que o comando <code>git hist</code> evita que você precise do comando <code>log</code>, que é muito comprido.</p>
+<p>N&oacute;s j&aacute; falamos sobre os comandos commit e status. Nas li&ccedil;&otilde;es anteriores, n&oacute;s cobrimos o comando <code>log</code> e vamos conhecer o comando checkout em breve. O mais importante a se aprender dessa li&ccedil;&atilde;o &eacute; que voc&ecirc; pode digitar <code>git st</code> onde voc&ecirc; antes tinha que digitar <code>git status</code>. O melhor de tudo &eacute; que o comando <code>git hist</code> evita que voc&ecirc; precise do comando <code>log</code>, que &eacute; muito comprido.</p>
 
-<p>Vá em frente e teste os novos comandos.</p>
+<p>V&aacute; em frente e teste os novos comandos.</p>
 
 <h2><em>02</em> Defina o alias <code>hist</code> no arquivo .gitconfig</h2>
 
-<p>Na maioria das vezes, eu vou continuar a escrever o comando completo nessas instruções. A única exceção vai ser o alias <code>hist</code> definido acima, que eu vou usar quando precisar de verificar o git log. Tenha certeza que você tem um <code>hist</code> alias configurado em seu arquivo <code>.gitconfig</code> antes de continuar se você deseja repetir minhas ações.</p>
+<p>Na maioria das vezes, eu vou continuar a escrever o comando completo nessas instru&ccedil;&otilde;es. A &uacute;nica exce&ccedil;&atilde;o vai ser o alias <code>hist</code> definido acima, que eu vou usar quando precisar de verificar o git log. Tenha certeza que voc&ecirc; tem um <code>hist</code> alias configurado em seu arquivo <code>.gitconfig</code> antes de continuar se voc&ecirc; deseja repetir minhas a&ccedil;&otilde;es.</p>
 
 <h2><em>03</em> <code>Type</code> e <code>Dump</code></h2>
 
-<p>Nós adicionamos alguns aliases para comandos que nós ainda não discutimos. Nós vamos falar sobre o comando <code>git branch</code> em breve, e o comando <code>git cat-file</code> é muito útil para explorar o git.</p>
+<p>N&oacute;s adicionamos alguns aliases para comandos que n&oacute;s ainda n&atilde;o discutimos. N&oacute;s vamos falar sobre o comando <code>git branch</code> em breve, e o comando <code>git cat-file</code> &eacute; muito &uacute;til para explorar o git.</p>
 
 <h2><em>04</em> Aliases de comandos (opcional)</h2>
 
-<p>Se sua shell suporta aliases ou atalhos, você pode adicioná-los por lá também. Eu uso:</p>
+<p>Se sua shell suporta aliases ou atalhos, voc&ecirc; pode adicion&aacute;-los por l&aacute; tamb&eacute;m. Eu uso:</p>
 
 <h4 class="h4-pre">Arquivo: <em>.profile</em></h4>
 
@@ -68,10 +68,10 @@ alias gx='gitx --all'
 alias got='git'
 alias get='git'</pre>
 
-<p>A abreviação <code>go</code> para <code>git checkout</code> é muito útil, pois me permite digitar:</p>
+<p>A abrevia&ccedil;&atilde;o <code>go</code> para <code>git checkout</code> &eacute; muito &uacute;til, pois me permite digitar:</p>
 
 <pre class="instructions">go &lt;branch&gt;</pre>
 
-<p>para mudar para um branch em específico.</p>
+<p>para mudar para um branch em espec&iacute;fico.</p>
 
-<p>Além disso, eu costumo digitar <code>get</code> ou <code>got</code> quando vou digitar <code>git</code>, então criei aliases para eles também.</p>
+<p>Al&eacute;m disso, eu costumo digitar <code>get</code> ou <code>got</code> quando vou digitar <code>git</code>, ent&atilde;o criei aliases para eles tamb&eacute;m.</p>

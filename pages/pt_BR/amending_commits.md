@@ -5,11 +5,11 @@ title: "19. Mudando commits"
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como modificar um commit já existente</li></ul>
+<ul><li>Aprender como modificar um commit j&aacute; existente</li></ul>
 
-<h2><em>01</em> Mude a página e faça um commit</h2>
+<h2><em>01</em> Mude a p&aacute;gina e fa&ccedil;a um commit</h2>
 
-<p>Coloque um comentário de autor na página.</p>
+<p>Coloque um coment&aacute;rio de autor na p&aacute;gina.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -29,7 +29,7 @@ git commit -m "Add an author comment"</pre>
 
 <h2><em>02</em> Oops... precisa do e-mail</h2>
 
-<p>Depois de fazer o commit, você percebe que todo bom comentário deveria incluir o e-mail do autor. Edite a página hello para fornecer um e-mail.</p>
+<p>Depois de fazer o commit, voc&ecirc; percebe que todo bom coment&aacute;rio deveria incluir o e-mail do autor. Edite a p&aacute;gina hello para fornecer um e-mail.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -44,7 +44,7 @@ git commit -m "Add an author comment"</pre>
 
 <h2><em>03</em> Mude o commit anterior</h2>
 
-<p>Nós não queremos criar outro commit apenas para o e-mail. Vamos mudar o commit anterior e adicionar o endereço de e-mail.</p>
+<p>N&oacute;s n&atilde;o queremos criar outro commit apenas para o e-mail. Vamos mudar o commit anterior e adicionar o endere&ccedil;o de e-mail.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -58,7 +58,7 @@ $ git commit --amend -m "Add an author/email comment"
 [master 6a78635] Add an author/email comment
  1 files changed, 2 insertions(+), 1 deletions(-)</pre>
 
-<h2><em>04</em> Olhar o histórico</h2>
+<h2><em>04</em> Olhar o hist&oacute;rico</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -73,4 +73,4 @@ $ git commit --amend -m "Add an author/email comment"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>O novo commit "author/email" substitui o commit original "author". O mesmo pode ser obtido usando o comando <code>reset</code> no branch e fazendo novamente o commit com as mudanças.</p>
+<p>O novo commit "author/email" substitui o commit original "author". O mesmo pode ser obtido usando o comando <code>reset</code> no branch e fazendo novamente o commit com as mudan&ccedil;as.</p>

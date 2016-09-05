@@ -9,7 +9,7 @@ title: "33. Reset do branch master"
 
 <h2><em>01</em> Resetando branch master</h2>
 
-<p> O modo interativo que adicionamos ao branch master se tornou uma mudança que conflita com as mudanças do branch style. Vamos reverter as mudanças do branch master para o ponto anterior à mudança conflitante. Isso nos permite demonstrar o comando rebase sem nos preocupar com conflitos.</p>
+<p> O modo interativo que adicionamos ao branch master se tornou uma mudan&ccedil;a que conflita com as mudan&ccedil;as do branch style. Vamos reverter as mudan&ccedil;as do branch master para o ponto anterior &agrave; mudan&ccedil;a conflitante. Isso nos permite demonstrar o comando rebase sem nos preocupar com conflitos.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -29,13 +29,13 @@ git hist</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>O commit "Added <span class="caps">README</span>" está imediatamente antes do modo interativo conflitante ser adicionado. Agora precisamos resetar o branch master para o commit "Added <span class="caps">README</span>" .</p>
+<p>O commit "Added <span class="caps">README</span>" est&aacute; imediatamente antes do modo interativo conflitante ser adicionado. Agora precisamos resetar o branch master para o commit "Added <span class="caps">README</span>" .</p>
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git reset --hard &lt;hash&gt;
 git hist --all</pre>
 
-<p>Examine o log. Ele deve parecer como se tivéssemos retrocedido o repositório para um ponto no tempo anterior a qualquer merge.</p>
+<p>Examine o log. Ele deve parecer como se tiv&eacute;ssemos retrocedido o reposit&oacute;rio para um ponto no tempo anterior a qualquer merge.</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 

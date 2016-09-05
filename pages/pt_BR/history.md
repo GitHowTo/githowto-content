@@ -1,19 +1,19 @@
 ---
 view: page
-title: "10. Histórico"
+title: "10. Hist&oacute;rico"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender a visualizar o histórico do projeto.</li></ul>
+<ul><li>Aprender a visualizar o hist&oacute;rico do projeto.</li></ul>
 
-<p>Conseguir uma lista das modificações feitas é uma função do comando <code>git log</code>.</p>
+<p>Conseguir uma lista das modifica&ccedil;&otilde;es feitas &eacute; uma fun&ccedil;&atilde;o do comando <code>git log</code>.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git log</pre>
 
-<p>Você verá &#8230;</p>
+<p>Voc&ecirc; ver&aacute; &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -42,17 +42,17 @@ Date:   Wed Mar 9 10:27:54 2011 -0500
 
     First Commit</pre>
 
-<p>Aqui está uma lista de todos os quatro commits do repositório, que nós fizemos até agora.</p>
+<p>Aqui est&aacute; uma lista de todos os quatro commits do reposit&oacute;rio, que n&oacute;s fizemos at&eacute; agora.</p>
 
-<h2><em>01</em> Histórico em uma linha</h2>
+<h2><em>01</em> Hist&oacute;rico em uma linha</h2>
 
-<p>Você controla completamente o que o <code>log</code> mostra. Eu gosto do formato de linha única</p>
+<p>Voc&ecirc; controla completamente o que o <code>log</code> mostra. Eu gosto do formato de linha &uacute;nica</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git log --pretty=oneline</pre>
 
-<p>Você verá &#8230;</p>
+<p>Voc&ecirc; ver&aacute; &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -62,9 +62,9 @@ fa3c1411aa09441695a9e645d4371e8d749da1dc Added HTML header
 43628f779cb333dd30d78186499f93638107f70b Added h1 tag
 911e8c91caeab8d30ad16d56746cbd6eef72dc4c First Commit</pre>
 
-<h2><em>02</em> Controlando a exibição de entradas</h2>
+<h2><em>02</em> Controlando a exibi&ccedil;&atilde;o de entradas</h2>
 
-<p>Existem muitas opções para escolher quais entradas aparecem no log. Brinque um pouco com os parâmetros a seguir:</p>
+<p>Existem muitas op&ccedil;&otilde;es para escolher quais entradas aparecem no log. Brinque um pouco com os par&acirc;metros a seguir:</p>
 
 <pre class="instructions">git log --pretty=oneline --max-count=2
 git log --pretty=oneline --since='5 minutes ago'
@@ -72,17 +72,17 @@ git log --pretty=oneline --until='5 minutes ago'
 git log --pretty=oneline --author=&lt;your name&gt;
 git log --pretty=oneline --all</pre>
 
-<p>Detalhes são fornecidos nas instruções do <code>git-log</code>.</p>
+<p>Detalhes s&atilde;o fornecidos nas instru&ccedil;&otilde;es do <code>git-log</code>.</p>
 
 <h2><em>03</em> Ficando chique</h2>
 
-<p>Isso é como eu faço para rever as modificações feitas na última semana. Eu adiciono <code>--author=alex</code> se eu quero ver apenas as modificações que eu fiz.</p>
+<p>Isso &eacute; como eu fa&ccedil;o para rever as modifica&ccedil;&otilde;es feitas na &uacute;ltima semana. Eu adiciono <code>--author=alex</code> se eu quero ver apenas as modifica&ccedil;&otilde;es que eu fiz.</p>
 
 <pre class="instructions">git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'</pre>
 
 <h2><em>04</em> O melhor formato do log</h2>
 
-<p>Com o tempo, eu descobri que o seguinte formato é o mais adequado.</p>
+<p>Com o tempo, eu descobri que o seguinte formato &eacute; o mais adequado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -100,17 +100,17 @@ git log --pretty=oneline --all</pre>
 
 <p>Vamos olhar os detalhes:</p>
 
-<ul><li><code>--pretty="..."</code> define o formato da saída</li>
-	<li><code>%h</code> é o hash abreviado do commit</li>
-	<li><code>%d</code> mostra decorações do commit (ex.: head de branches ou tags)</li>
-	<li><code>%ad</code> é a data do commit</li>
-	<li><code>%s</code> é o comentário</li>
-	<li><code>%an</code> é o nome do autor =</li>
-	<li><code>--graph</code> fala para o git mostrar a árvore de commits no formato de um gráfico de <span class="caps">ASCII</span></li>
-	<li><code>--date=short</code> mantém o formato de data pequeno e simples</li></ul>
+<ul><li><code>--pretty="..."</code> define o formato da sa&iacute;da</li>
+	<li><code>%h</code> &eacute; o hash abreviado do commit</li>
+	<li><code>%d</code> mostra decora&ccedil;&otilde;es do commit (ex.: head de branches ou tags)</li>
+	<li><code>%ad</code> &eacute; a data do commit</li>
+	<li><code>%s</code> &eacute; o coment&aacute;rio</li>
+	<li><code>%an</code> &eacute; o nome do autor =</li>
+	<li><code>--graph</code> fala para o git mostrar a &aacute;rvore de commits no formato de um gr&aacute;fico de <span class="caps">ASCII</span></li>
+	<li><code>--date=short</code> mant&eacute;m o formato de data pequeno e simples</li></ul>
 
-<p>Então, toda vez que você quiser ver um log, você terá que digitar muito. Felizmente, nós aprenderemos sobre aliases na próxima lição.</p>
+<p>Ent&atilde;o, toda vez que voc&ecirc; quiser ver um log, voc&ecirc; ter&aacute; que digitar muito. Felizmente, n&oacute;s aprenderemos sobre aliases na pr&oacute;xima li&ccedil;&atilde;o.</p>
 
 <h2><em>05</em> Outras ferramentas</h2>
 
-<p>Ambos <code>gitx</code> (para Mac) e <code>gitk</code> (para qualquer plataforma) ajudam a explorar o histórico.</p>
+<p>Ambos <code>gitx</code> (para Mac) e <code>gitk</code> (para qualquer plataforma) ajudam a explorar o hist&oacute;rico.</p>

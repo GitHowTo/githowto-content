@@ -1,15 +1,15 @@
 ---
 view: page
-title: "38. Examine o repositório clonado"
+title: "38. Examine o reposit&oacute;rio clonado"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Descobrir sobre branches em repositórios remotos.</li></ul>
+<ul><li>Descobrir sobre branches em reposit&oacute;rios remotos.</li></ul>
 
-<h2><em>01</em> Visualizando o repositório clonado</h2>
+<h2><em>01</em> Visualizando o reposit&oacute;rio clonado</h2>
 
-<p>Vamos dar uma olhada no nosso repositório clonado.</p>
+<p>Vamos dar uma olhada no nosso reposit&oacute;rio clonado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -24,9 +24,9 @@ README
 index.html
 lib</pre>
 
-<p>Você verá uma lista de todos os arquivos no nível acima ao do repositório original (<code>README</code>, <code>index.html</code> e <code>lib</code>).</p>
+<p>Voc&ecirc; ver&aacute; uma lista de todos os arquivos no n&iacute;vel acima ao do reposit&oacute;rio original (<code>README</code>, <code>index.html</code> e <code>lib</code>).</p>
 
-<h2><em>02</em> Visualizando o histórico do repositório</h2>
+<h2><em>02</em> Visualizando o hist&oacute;rico do reposit&oacute;rio</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 <pre class="instructions">git hist --all</pre>
@@ -44,8 +44,8 @@ lib</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Você verá uma lista de todos os commits no novo repositório, que deveriam ser iguais aos do repositório original. A única diferença deveria ser o nome dos branches.</p>
+<p>Voc&ecirc; ver&aacute; uma lista de todos os commits no novo reposit&oacute;rio, que deveriam ser iguais aos do reposit&oacute;rio original. A &uacute;nica diferen&ccedil;a deveria ser o nome dos branches.</p>
 
 <h2><em>03</em> Branches remotos</h2>
 
-<p>Você verá um branch <strong>master</strong> (<strong><span class="caps">HEAD</span></strong>) no histórico. Você também verá branches com nomes estranhos (<strong>origin/master</strong>, <strong>origin/style</strong> e <strong>origin/<span class="caps">HEAD</span></strong>). Nós falaremos deles depois.</p>
+<p>Voc&ecirc; ver&aacute; um branch <strong>master</strong> (<strong><span class="caps">HEAD</span></strong>) no hist&oacute;rico. Voc&ecirc; tamb&eacute;m ver&aacute; branches com nomes estranhos (<strong>origin/master</strong>, <strong>origin/style</strong> e <strong>origin/<span class="caps">HEAD</span></strong>). N&oacute;s falaremos deles depois.</p>

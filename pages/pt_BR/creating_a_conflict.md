@@ -5,11 +5,11 @@ title: "29. Criando um conflito"
 
 <h3>Metas</h3>
 
-<ul><li>Criar um conflito de mudanças no branch master.</li></ul>
+<ul><li>Criar um conflito de mudan&ccedil;as no branch master.</li></ul>
 
 <h2><em>01</em> Voltar para o master e criar o conflito</h2>
 
-<p>Volte para o branch master e faça as seguintes alterações:</p>
+<p>Volte para o branch master e fa&ccedil;a as seguintes altera&ccedil;&otilde;es:</p>
 
 <pre class="instructions">git checkout master</pre>
 
@@ -30,7 +30,7 @@ title: "29. Criando um conflito"
 <pre class="instructions">git add lib/hello.html
 git commit -m 'Life is great!'</pre>
 
-(<b>Aviso:</b> tenha certeza que você usou aspas simples para evitar problemas com o bash e o caractere <code>!</code>)
+(<b>Aviso:</b> tenha certeza que voc&ecirc; usou aspas simples para evitar problemas com o bash e o caractere <code>!</code>)
 
 <h2><em>02</em> Visualize os branches</h2>
 
@@ -59,8 +59,8 @@ git commit -m 'Life is great!'</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Depois de um commit "Added README" o branch master foi fundido com o branch style, mas existe um commit aditional do master, que não foi fundido com o branch style.</p>
+<p>Depois de um commit "Added README" o branch master foi fundido com o branch style, mas existe um commit aditional do master, que n&atilde;o foi fundido com o branch style.</p>
 
-<h2><em>03</em> Próximo</h2>
+<h2><em>03</em> Pr&oacute;ximo</h2>
 
-<p>A última modificação feita no master entra em conflito com algumas mudanças do style. No próximo passo nós vamos resolver esse conflito.</p>
+<p>A &uacute;ltima modifica&ccedil;&atilde;o feita no master entra em conflito com algumas mudan&ccedil;as do style. No pr&oacute;ximo passo n&oacute;s vamos resolver esse conflito.</p>

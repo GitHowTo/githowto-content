@@ -5,9 +5,9 @@ title: "24. Criando um Branch"
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como criar um branch local no repositório</li></ul>
+<ul><li>Aprender como criar um branch local no reposit&oacute;rio</li></ul>
 
-<p>É hora de fazer o nosso hello world ser mais expressivo. Como isso pode demorar um pouco, é melhor mover essas modificações para um novo branch, isolando-as das modificações do branch master.</p>
+<p>&Eacute; hora de fazer o nosso hello world ser mais expressivo. Como isso pode demorar um pouco, &eacute; melhor mover essas modifica&ccedil;&otilde;es para um novo branch, isolando-as das modifica&ccedil;&otilde;es do branch master.</p>
 
 <h2><em>01</em> Crie um branch</h2>
 
@@ -18,9 +18,9 @@ title: "24. Criando um Branch"
 <pre class="instructions">git checkout -b style
 git status</pre>
 
-<p class="note"><strong>Nota: </strong><code>git checkout -b &lt;branch name&gt;</code> é o atalho de <code>git branch &lt;branch name&gt;</code> seguido por <code>git checkout &lt;branch name&gt;</code>.</p>
+<p class="note"><strong>Nota: </strong><code>git checkout -b &lt;branch name&gt;</code> &eacute; o atalho de <code>git branch &lt;branch name&gt;</code> seguido por <code>git checkout &lt;branch name&gt;</code>.</p>
 
-<p>Note que o comando <code>git status</code> avisa que você está no branch style.</p>
+<p>Note que o comando <code>git status</code> avisa que voc&ecirc; est&aacute; no branch style.</p>
 
 <h2><em>02</em> Adicione o arquivo style.css</h2>
 
@@ -39,7 +39,7 @@ git status</pre>
 <pre class="instructions">git add lib/style.css
 git commit -m "Added css stylesheet"</pre>
 
-<h2><em>03</em> Mude a página principal</h2>
+<h2><em>03</em> Mude a p&aacute;gina principal</h2>
 
 <p>Atualize o arquivo <code>hello.html</code> para usar o style.css.</p>
 
@@ -80,6 +80,6 @@ git commit -m "Hello uses style.css"</pre>
 <pre class="instructions">git add index.html
 git commit -m "Updated index.html"</pre>
 
-<h2><em>05</em> Próximo</h2>
+<h2><em>05</em> Pr&oacute;ximo</h2>
 
-<p>Agora nós temos um novo branch chamado style com três novos commits. A próxima lição vai te mostrar como navegar e alternar entre branches.</p>
+<p>Agora n&oacute;s temos um novo branch chamado style com tr&ecirc;s novos commits. A pr&oacute;xima li&ccedil;&atilde;o vai te mostrar como navegar e alternar entre branches.</p>

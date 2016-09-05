@@ -1,21 +1,21 @@
 ---
 view: page
-title: "4. Conferindo o status do repositório"
+title: "4. Conferindo o status do reposit&oacute;rio"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como conferir o status do repositório</li></ul>
+<ul><li>Aprender como conferir o status do reposit&oacute;rio</li></ul>
 
-<h2><em>01</em> Confira o status do repositório</h2>
+<h2><em>01</em> Confira o status do reposit&oacute;rio</h2>
 
-<p>Use o comando <code>git status</code> para checar o estado atual do repositório.</p>
+<p>Use o comando <code>git status</code> para checar o estado atual do reposit&oacute;rio.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git status</pre>
 
-<p>Você verá</p>
+<p>Voc&ecirc; ver&aacute;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -23,6 +23,6 @@ title: "4. Conferindo o status do repositório"
 # On branch master
 nothing to commit (working directory clean)</pre>
 
-<p>O comando confere o status e reporta que não existe nada para fazer um commit, o que quer dizer que o repositório está com o atual estado do diretório de trabalho e não existem modificações a serem gravadas.</p>
+<p>O comando confere o status e reporta que n&atilde;o existe nada para fazer um commit, o que quer dizer que o reposit&oacute;rio est&aacute; com o atual estado do diret&oacute;rio de trabalho e n&atilde;o existem modifica&ccedil;&otilde;es a serem gravadas.</p>
 
-<p>Nós usaremos o git status para contunuar monitorando os estados de ambos o diretório de trabalho e o repositório.</p>
+<p>N&oacute;s usaremos o git status para contunuar monitorando os estados de ambos o diret&oacute;rio de trabalho e o reposit&oacute;rio.</p>

@@ -25,7 +25,7 @@ Auto-merging lib/hello.html
 CONFLICT (content): Merge conflict in lib/hello.html
 Automatic merge failed; fix conflicts and then commit the result.</pre>
 
-<p>Se você abrir o <code>lib/hello.html</code> você verá:</p>
+<p>Se voc&ecirc; abrir o <code>lib/hello.html</code> voc&ecirc; ver&aacute;:</p>
 
 <h4 class="h4-pre">Arquivo: <em>lib/hello.html</em></h4>
 
@@ -44,11 +44,11 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
 &lt;/html&gt;
 </pre>
 
-<p>A primeira seção e a versão do branch atual (style) head. A segunda seção é a versão do branch master.</p>
+<p>A primeira se&ccedil;&atilde;o e a vers&atilde;o do branch atual (style) head. A segunda se&ccedil;&atilde;o &eacute; a vers&atilde;o do branch master.</p>
 
-<h2><em>02</em> Resolução do conflito</h2>
+<h2><em>02</em> Resolu&ccedil;&atilde;o do conflito</h2>
 
-<p>Você precisa resolver o conflito manualmente. Faça mudanças no <code>lib/hello.html</code> para alcançar o seguinte resultado.</p>
+<p>Voc&ecirc; precisa resolver o conflito manualmente. Fa&ccedil;a mudan&ccedil;as no <code>lib/hello.html</code> para alcan&ccedil;ar o seguinte resultado.</p>
 
 <h4 class="h4-pre">Arquivo: <em>lib/hello.html</em></h4>
 
@@ -62,7 +62,7 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h2><em>03</em> Faça o commit de uma resolução de conflito/h2>
+<h2><em>03</em> Fa&ccedil;a o commit de uma resolu&ccedil;&atilde;o de conflito/h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -76,6 +76,6 @@ $ git commit -m "Merged master fixed conflict."
 Recorded resolution for 'lib/hello.html'.
 [style 645c4e6] Merged master fixed conflict.</pre>
 
-<h2><em>04</em> Merging avançado</h2>
+<h2><em>04</em> Merging avan&ccedil;ado</h2>
 
-<p>Git não tem ferramentas gráficas de merging, mas aceita qualquer ferramenta de merge produzida por terceiros. (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">leia mais sobre essas ferramentas no StackOverflow</a>.)</p>
+<p>Git n&atilde;o tem ferramentas gr&aacute;ficas de merging, mas aceita qualquer ferramenta de merge produzida por terceiros. (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">leia mais sobre essas ferramentas no StackOverflow</a>.)</p>
