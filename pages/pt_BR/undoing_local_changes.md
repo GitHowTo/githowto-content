@@ -1,25 +1,25 @@
 ---
 view: page
-title: "14. Discarding local changes (before staging)"
+title: "14. Descartando mudanças locais (antes do stage)"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to discard the working directory changes </li></ul>
+<ul><li>Aprender como descartar mudanças no repositório de trabalho</li></ul>
 
-<h2><em>01</em> Checking out the Master branch </h2>
+<h2><em>01</em> Acessando o branch Master</h2>
 
-<p>Make sure you are on the lastest commit in the master brach before you continue.</p>
+<p>Verifique que você esta no último commit do branch master antes de continuar.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git checkout master</pre>
 
-<h2><em>02</em> Change hello.html </h2>
+<h2><em>02</em> Mude o hello.html </h2>
 
-<p>It happens that you modify a file in your local working directory and sometimes wish just to discard the committed changes.  Here is when the checkout command will help you.</p>
+<p>Acontece de você modificar o arquivo no seu diretório de trabalho local e às vezes querer descartar as mudanças que você fez commit. É aqui que o comando checkout vai te ajudar.</p>
 
-<p>Make changes to the hello.html file in the form of an unwanted comment.</p>
+<p>Faça mudanças ao arquivo hello.html na forma de um comentário indesejado.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -32,9 +32,9 @@ title: "14. Discarding local changes (before staging)"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h2><em>03</em> Check the status </h2>
+<h2><em>03</em> Confira o status</h2>
 
-<p>First of all, check the working directory’s status.</p>
+<p>Primeiro de tudo, confira o status do repositório de trabalho.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -52,11 +52,11 @@ title: "14. Discarding local changes (before staging)"
 #
 no changes added to commit (use "git add" and/or "git commit -a")</pre>
 
-<p>We see that the <code>hello.html</code> file has been modified, but not staged yet.</p>
+<p>Nós vemos que o arquivo <code>hello.html</code> foi modificado, mas ainda não está no stage.</p>
 
-<h2><em>04</em> Undoing the changes in the working directory</h2>
+<h2><em>04</em> Desfazendo as mudanças no diretório de trabalho</h2>
 
-<p>Use the <code>checkout</code> command in order to checkout the repository&#8217;s version of the <code>hello.html</code> file.</p>
+<p>Use o comando <code>checkout</code> para remover a versão do arquivo <code>hello.html</code> que está no repositório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -79,4 +79,4 @@ $ cat hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>The status command shows there were no unstaged changes in the working directory.  And the &#8220;bad comment&#8221; is no longer contained in the file.</p>
+<p>O comando status mostra que não existem mudanças que não estão no stage no repositório de trabalho. E o &#8220;comentário ruim&#8221; não está mais no arquivo.</p>

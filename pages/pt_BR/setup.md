@@ -1,6 +1,6 @@
 ---
 view: page
-title: "1. Preparation"
+title: "1. Preparação"
 ---
 
 <h3>Metas</h3>
@@ -16,9 +16,9 @@ title: "1. Preparation"
 <pre class="instructions">git config --global user.name "Seu Nome"
 git config --global user.email "seu_email@qualquercoisa.com"</pre>
 
-<h2><em>02</em> Installation Options line endings</h2>
+<h2><em>02</em> Opções de Instalação: términos de linhas</h2>
 
-<p>Also, for users of Unix/Mac:</p>
+<p>Além disso, para usuários de Unix/Mac:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

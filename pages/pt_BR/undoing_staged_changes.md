@@ -1,15 +1,15 @@
 ---
 view: page
-title: "15. Cancel Staged changes (before committing)"
+title: "15. Descartando mudanças no stage (antes do commit)"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to undo changes that have been staged</li></ul>
+<ul><li>Aprender como desfazer mudanças que já estão no stage</li></ul>
 
-<h2><em>01</em> Edit file and stage changes</h2>
+<h2><em>01</em> Edite o arquivo e adicione as mudanças ao stage</h2>
 
-<p>Make changes to the <code>hello.html</code> file in the form of an unwanted comment</p>
+<p>Faça mudanças ao arquivo <code>hello.html</code> na forma de um comentário indesejado.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -22,15 +22,15 @@ title: "15. Cancel Staged changes (before committing)"
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Stage the modified file.</p>
+<p>Adicione o arquivo modificado ao stage.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git add hello.html</pre>
 
-<h2><em>02</em> Check the status </h2>
+<h2><em>02</em> Verifique o status</h2>
 
-<p>Check the status of unwanted changes .</p>
+<p>Verifique o status da mudança indesejada.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -46,11 +46,11 @@ title: "15. Cancel Staged changes (before committing)"
 #	modified:   hello.html
 #</pre>
 
-<p>Status shows that the change has been staged and is ready to commit.</p>
+<p>O status mostra que a mudança está no stage e pronta para um commit;</p>
 
-<h2><em>03</em> Reset the buffer zone</h2>
+<h2><em>03</em> Revertendo a zona de buffer</h2>
 
-<p>Fortunately, the displayed status shows us exactly what we should do to cancel staged changes.</p>
+<p>Felizmente, o status informado nos mostra exatamente o que devemos fazer para cancelar mudanças no stage.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -62,11 +62,11 @@ title: "15. Cancel Staged changes (before committing)"
 Unstaged changes after reset:
 M	hello.html</pre>
 
-<p>The <code>reset</code> command resets the buffer zone to HEAD. This clears the buffer zone from the changes that we have just staged.</p>
+<p>O comando <code>reset</code> retorna a zona do buffer para HEAD. Isso limpa a zona do buffer das mudanças que nós acabamos de adicionar ao stage.</p>
 
-<p>The <code>reset</code> command (default) does not change the working directory. Therefore, the working directory still contains unwanted comments. We can use the checkout command from the previous tutorial to remove unwanted changes from working directory.</p>
+<p>O comando <code>reset</code> (padrão) não altera o diretório de trabalho. Logo, o diretório de trabalho ainda tem os comentários indesejados. Nós podemos usar o comando checkout do tutorial anterior para remover as mudanças do repositório de trabalho.</p>
 
-<h2><em>04</em> Switch to commit version</h2>
+<h2><em>04</em> Mudando para a versão do commit</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -79,4 +79,4 @@ git status</pre>
 # On branch master
 nothing to commit (working directory clean)</pre>
 
-<p>Our working directory is clean again.</p>
+<p>Nosso diretório de trabalho está limpo novamente.</p>

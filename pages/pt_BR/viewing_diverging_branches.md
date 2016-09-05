@@ -1,15 +1,15 @@
 ---
 view: page
-title: "27. View the different branches"
+title: "27. Visualizando os diferentes branches"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to view the different branches in the repository.</li></ul>
+<ul><li>Aprender como visualizar os diferentes branches no repositório.</li></ul>
 
-<h2><em>01</em> View current branches</h2>
+<h2><em>01</em> Vendo o branch atual</h2>
 
-<p>Now we have a repository with two different branches. To view branches and their differences use log command as following.</p>
+<p>Agora nós temos um repositório com dois branches diferentes. Para ver branches e suas diferenças, use o comando log como se segue.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -31,6 +31,6 @@ title: "27. View the different branches"
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>We have opportunity to see <code>--graph</code> of <code>git hist</code> in action. Adding the <code>--graph</code> option to <code>git log</code> causes building a commit tree with the help of simple ASCII characters. We see both branches (style and master) and that the current branch is master HEAD. The Added index.html branch goes prior to both branches.</p>
+<p>Nós temos a oportunidade de ver o <code>--graph</code> do <code>git hist</code> em ação. Adicionando a opção <code>--graph</code> ao <code>git log</code> faz com que ele crie uma árvore de commits com a ajuda de caracteres ASCII simples. Nós vemos ambos os branches (style e master) e que o branch atual é o master HEAD. O branch index.html adicionado vai antes de ambos os branches.</p>
 
-<p>The <code>--all</code> flag guarantees that we see all the branches. By default, only the current branch is displayed.</p>
+<p>A flag <code>--all</code> garante que nós vejamos todos os branches. Por padrão, apenas o branch atual é mostrado.</p>

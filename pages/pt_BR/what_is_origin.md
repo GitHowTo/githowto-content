@@ -1,11 +1,11 @@
 ---
 view: page
-title: "39. What is origin?"
+title: "39. O que é origin?"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn about the naming of the remote repositories.</li></ul>
+<ul><li>Aprender sobre os nomes dos repositórios remotos.</li></ul>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -16,7 +16,7 @@ title: "39. What is origin?"
 <pre class="sample">$ git remote
 origin</pre>
 
-<p>We see that the cloned repository knows the default name of the remote repository.  To get more information about origin:</p>
+<p>Nós vemos que o repositório clonado sabe o nome do repositório remoto padrão. Para acessar mais informações sobre esse tal de origin:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -39,4 +39,4 @@ origin</pre>
   Local ref configured for 'git push':
     master pushes to master (up to date)</pre>
 
-<p>We can see that the &#8220;origin&#8221; of the remote repository is the original <strong>hello</strong> repo.  Remote repos are typically stored on a separate machine or a centralized server.  However, as we see, they can also point to a repository on the same machine. There is nothing so special about the name &#8220;origin&#8221;, but there is a convention to use it for the primary centralized repository (if any).</p>
+<p>Nós podemos ver que o &#8220;origin&#8221; do repositório remoto é o repositório <strong>hello</strong> original. Repositórios remotos são tipocamente guardados em uma máquina separada ou em um servidor centralizado. Porém, como podemos ver, eles também podem apontar para um repositório na mesma máquina. Não tem nada especial sobre o nome &#8220;origin&#8221;, mas existe uma convenção de usá-lo para o repositório primário central (se houver algum).</p>

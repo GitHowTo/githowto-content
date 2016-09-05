@@ -1,19 +1,19 @@
 ---
 view: page
-title: "Thank you!"
+title: "Obrigada!"
 ---
 
-<p>That's it! Thank you for using GitHowTo.</p>
+<p>Isso é tudo! Obrigado por usar o GitHowTo.</p>
 
-## Feedback
+## Comentários
 
-<p>Feel free to email me your questions and feedback:</p>
+<p>Sinta-se à vontade para nos enviar um email com suas questões e comentários:</p>
 
 <p><b>Alexander Shvets</b><br/>
 <a href="mailto:alex@githowto.com">alex@githowto.com</a></p>
 
-## License
+## Licensa
 
 <p>This work is released under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons, Attribution-NonCommercial-ShareAlike License</a>.</p>
 
-This site's content is <a href="https://github.com/shvetsgroup/githowto-content">hosted on Github</a>. If you find a typo and want to fix it, just create a <a href="https://github.com/shvetsgroup/githowto-content/pulls">Pull Request</a> with a change. Same way you can contribute a translation.
+O conteúdo desse site está <a href="https://github.com/shvetsgroup/githowto-content">hospedado no Github</a>. Se você encontrou um erro de digitação e que consertá-lo, crie um <a href="https://github.com/shvetsgroup/githowto-content/pulls">Pull Request</a> com a modificação. Da mesma maneira, você pode contribuir com uma tradução.

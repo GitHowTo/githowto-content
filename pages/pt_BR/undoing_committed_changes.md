@@ -1,21 +1,21 @@
 ---
 view: page
-title: "16. Cancelling commits"
+title: "16. Desfazendo commits"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>To learn how to undo commits to the local repository.</li></ul>
+<ul><li>Aprender como desfazer commits no repositório local.</li></ul>
 
-<h2><em>01</em> Cancelling commits</h2>
+<h2><em>01</em> Desfazendo commits</h2>
 
-<p>Sometimes you realize that the new commits are wrong, and you want to cancel them. There are several ways to handle the issue, we use the safest here.</p>
+<p>Algumas vezes você percebe que os novos commits estão errados e você quer desfazê-los. Existem várias maneiras de resolver esse problema, mas nós usamos a mais segura aqui.</p>
 
-<p>To cancel the commit we will create a new commit, cancelling the unwanted changes.</p>
+<p>Para desfazer o commit, vamos criar um novo commit desfazendo as modificações não desejadas.</p>
 
-<h2><em>02</em> Edit the file and make a commit</h2>
+<h2><em>02</em> Edite o arquivo e faça um commit</h2>
 
-<p>Replace  <code>hello.html</code> with the following file.</p>
+<p>Substitua o arquivo <code>hello.html</code> com o seguinte.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -33,17 +33,17 @@ title: "16. Cancelling commits"
 <pre class="instructions">git add hello.html
 git commit -m "Oops, we didn't want this commit"</pre>
 
-<h2><em>03</em> Make a commit with new changes that discard previous changes </h2>
+<h2><em>03</em> Faça um commit com as novas modificações que desfazem as modificações anteriores</h2>
 
-<p>To cancel the commit, we need to create a commit that deletes the changes saved by unwanted commit.</p>
+<p>Para desfazer o commit, precisamos de criar um commit que deleta as modificações feitas pelo commit indesejado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git revert HEAD</pre>
 
-<p>Go to the editor, where you can edit the default commit message or leave it as is. Save and close the file.</p>
+<p>Vá para o editor, onde você consegue editar a mensagem padrão do commit ou deixá-la como está. Salve e feche o arquivo.</p>
 
-<p>You will see &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -51,13 +51,13 @@ git commit -m "Oops, we didn't want this commit"</pre>
 [master 45fa96b] Revert "Oops, we didn't want this commit"
  1 files changed, 1 insertions(+), 1 deletions(-)</pre>
 
-<p>Since we have cancelled the last commit, we can use <code>HEAD</code> as the argument for cancelling. We may cancel any random commit in history, pointing out its hash value.</p>
+<p>Já que desfizemos o último commit, nós podemos usar <code>HEAD</code> como o argumento para desfazê-lo. Nós podemos cancelar qualquer commit no histórico, apontando seu hash.</p>
 
-<p class="note"><strong>Note:</strong> The <code>--no-edit</code> command can be ignored. It was necessary to generate the output data without opening the editor.</p>
+<p class="note"><strong>Nota:</strong> O comando <code>--no-edit</code> pode ser ignorado. Ele era desnecessário para gerar as informações de saída sem abrir o editor.</p>
 
-<h2><em>04</em> Check the log</h2>
+<h2><em>04</em> Confira o log</h2>
 
-<p>Checking the log shows the unwanted cancellations and commits in our repository.</p>
+<p>Conferir o log mostra os cancelamentos e commits indesejados no nosso repositório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -73,8 +73,8 @@ git commit -m "Oops, we didn't want this commit"</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>This technique can be applied to any commit (however there may be conflicts). It is safe to use even in public branches of remote repositories.</p>
+<p>Essa técnica pode ser aplicada para qualquer commit (mas podem surgir conflitos). É seguro usá-la mesmo em branches públicos de repositórios remotos.</p>
 
-<h2><em>05</em> Next</h2>
+<h2><em>05</em> Próximo</h2>
 
-<p>Next let us look at athe technique that can be used to remove the last commit from the history of the repository.</p>
+<p>A seguir vamos olhar a técnica que pode ser usada para remover o último commit do histórico do repositório.</p>
