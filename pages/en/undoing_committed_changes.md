@@ -77,4 +77,4 @@ git commit -m "Oops, we didn't want this commit"</pre>
 
 <h2><em>05</em> Next</h2>
 
-<p>Next let us look at athe technique that can be used to remove the last commit from the history of the repository.</p>
+<p>Next let us look at the technique that can be used to remove the last commit from the history of the repository.</p>
