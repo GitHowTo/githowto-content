@@ -46,6 +46,6 @@ description: "Git How To &eacute; um tour guiado que passa pelos fundamentos de 
 
 <div class="row go-block">
   <div class="col-sm-12">
-    <a class="btn btn-hg btn-primary go" href="/setup"><i class="fa fa-flag"></i> Come&ccedil;ar!</a>
+    <a class="btn btn-hg btn-primary go" href="/pt-BR/setup"><i class="fa fa-flag"></i> Come&ccedil;ar!</a>
   </div>
 </div>
