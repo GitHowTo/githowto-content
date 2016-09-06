@@ -38,13 +38,13 @@ git config --global alias.dump 'cat-file -p'</pre>
   type = cat-file -t
   dump = cat-file -p</pre>
 
-<p>We&#8217;ve already talked about commit and status  commands.  In the previous lesson we covered the <code>log</code> command and will get to know the checkout command very soon. The most important thing to learn from this lesson is that you can type <code>git st</code> wherever you had to type <code>git status</code>.  Best of all, the <code>git hist</code> command will help you avoid the really long <code>log</code> command.</p>
+<p>We&#8217;ve already talked about commit and status commands. In the previous lesson we covered the <code>log</code> command and will get to know the checkout command very soon. The most important thing to learn from this lesson is that you can type <code>git st</code> wherever you had to type <code>git status</code>. Best of all, the <code>git hist</code> command will help you avoid the really long <code>log</code> command.</p>
 
 <p>Go ahead and try using the new commands.</p>
 
 <h2><em>02</em> Define the <code>hist</code> alias in the .gitconfig file</h2>
 
-<p>For the most part, I will continue to type out the full command in these instructions.  The only exception is that I will use the <code>hist</code> alias defined above, when I need to see the git log.  Make sure you have a <code>hist</code> alias setup in your <code>.gitconfig</code> file before continuing if you wish to repeat my actions.</p>
+<p>For the most part, I will continue to type out the full command in these instructions. The only exception is that I will use the <code>hist</code> alias defined above, when I need to see the git log. Make sure you have a <code>hist</code> alias setup in your <code>.gitconfig</code> file before continuing if you wish to repeat my actions.</p>
 
 <h2><em>03</em> <code>Type</code> and <code>Dump</code></h2>
 
