@@ -1,6 +1,6 @@
 ---
 view: page
-title: "22. Dentro do Git: diret&oacute;rio .Git "
+title: "22. Dentro do Git: diret&oacute;rio .git "
 ---
 
 <h3>Metas</h3>
