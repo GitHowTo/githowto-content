@@ -103,7 +103,7 @@ git log --pretty=oneline --all</pre>
 <ul>
 <li><code>--pretty="..."</code> — визначає формат виходу.</li>
 <li><code>%h</code> — скрочений хеш коміту</li>
-<li><code>%d</code> — доповнення коміту(«голови» гілок ии теги)</li>
+<li><code>%d</code> — доповнення коміту («голови» гілок та теги)</li>
 <li><code>%ad</code> — дата коміту</li>
 <li><code>%s</code> — коментар</li>
 <li><code>%an</code> — им'я автора</li>
