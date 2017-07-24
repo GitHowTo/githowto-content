@@ -44,7 +44,7 @@ title: "8. Fazendo commit das modifica&ccedil;&otilde;es"
 #	modified:   hello.html
 #</pre>
 
-<p>Na primeira linha, escreva o coment&aacute;rio: &#8220;Added <span class="caps">hi tag</span>&#8221;. Salve o arquivo e saia do editor (para fazer isso no editor padr&atilde;o, pressione ESC e ent&atilde;o escreva <code>:wq</code> e aperte Enter). Voc&ecirc; dever&aacute; ver &#8230</p>
+<p>Na primeira linha, escreva o coment&aacute;rio: &#8220;Added <span class="caps">h1 tag</span>&#8221;. Salve o arquivo e saia do editor (para fazer isso no editor padr&atilde;o, pressione ESC e ent&atilde;o escreva <code>:wq</code> e aperte Enter). Voc&ecirc; dever&aacute; ver &#8230</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
