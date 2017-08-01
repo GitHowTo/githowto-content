@@ -21,5 +21,5 @@ title: "49. Removendo modifica&ccedil;&otilde;es comuns"
 
 <pre class="instructions">git remote add shared ../hello.git
 git branch --track shared master
-git pull
+git pull shared master
 cat README</pre>
