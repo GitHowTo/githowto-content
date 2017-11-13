@@ -106,7 +106,7 @@ git log --pretty=oneline --all</pre>
 <li><code>%d</code> — доповнення коміту («голови» гілок та теги)</li>
 <li><code>%ad</code> — дата коміту</li>
 <li><code>%s</code> — коментар</li>
-<li><code>%an</code> — им'я автора</li>
+<li><code>%an</code> — ім'я автора</li>
 <li><code>--graph</code> — відображає дерево комітів у видгляді <span class="caps">ASCII</span>-графіку</li>
 <li><code>--date=short</code> — зберігає формат дати коротким і симпатичним</li>
 </ul>
