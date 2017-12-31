@@ -36,7 +36,7 @@ $ git hist --all
 
 <p>На даний момент в репозиторію є всі коміти з оригінального репозиторію, але вони не інтегровані в локальні гілки клонованого репозиторію.</p>
 
-<p>В історії вище знайдіть коміт «Changed <span class="caps">README</span> in original repo». Зверніть увагу, що коміт містить у собі коміти «origin/master» и «origin/<span class="caps">HEAD</span>».</p>
+<p>В історії вище знайдіть коміт «Changed <span class="caps">README</span> in original repo». Зверніть увагу, що коміт містить у собі коміти «origin/master» і «origin/<span class="caps">HEAD</span>».</p>
 
 <p>Тепер давайте подивимося на коміт «Updated index.html». Ви побачите, що локальна гілка master вказує на цей коміт, а не на новий коміт, котрий ми щойно витягли.</p>
 
