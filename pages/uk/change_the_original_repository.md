@@ -12,9 +12,9 @@ title: "41. Зміна оригінального репозиторію"
 <h4 class="h4-pre">Виконайте:</h4>
 
 <pre class="instructions">cd ../hello
-# (You should be in the original hello repository now)</pre>
+# (Зараз ви повинні бути в оригінальному hello репозиторію)</pre>
 
-<p style="color:red;"><strong><span class="caps">Примітка</span>: Зараз ми знаходимося в репозиторії <em>hello</em> </strong></p>
+<p style="color:red;"><strong><span class="caps">Примітка</span>: Зараз ми знаходимося в репозиторію <em>hello</em> </strong></p>
 
 <p>Внесіть наступні зміни у файл <span class="caps">README</span>:</p>
 

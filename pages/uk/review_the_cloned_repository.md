@@ -24,7 +24,7 @@ README
 index.html
 lib</pre>
 
-<p>Ви побачите список всіх файлів на верхньому рівні оригінального репозиторію <code>README</code>, <code>index.html</code> і <code>lib</code>).</p>
+<p>Ви побачите список всіх файлів на верхньому рівні оригінального репозиторію (<code>README</code>, <code>index.html</code> і <code>lib</code>).</p>
 
 <h2><em>02</em> Перегляньте історію репозиторію</h2>
 
@@ -51,4 +51,4 @@ lib</pre>
 
 <h2><em>03</em> Віддалені гілки</h2>
 
-<p>Ви побачите гілку <strong>master</strong> (<strong><span class="caps">HEAD</span></strong>) в списку історії. Ви також побачите гілки з дивними іменами (<strong>origin/master</strong>, <strong>origin/style</strong> и <strong>origin/<span class="caps">HEAD</span></strong>). Ми поговоримо про них трохи пізніше.</p>
+<p>Ви побачите гілку <strong>master</strong> (<strong><span class="caps">HEAD</span></strong>) в списку історії. Ви також побачите гілки з дивними іменами (<strong>origin/master</strong>, <strong>origin/style</strong> і <strong>origin/<span class="caps">HEAD</span></strong>). Ми поговоримо про них трохи пізніше.</p>

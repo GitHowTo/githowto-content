@@ -7,20 +7,20 @@ title: "50. Розміщення ваших git репозиторіїв"
 
 <ul><li>Навчитися налаштовувати git сервер для спільного використання репозиторіїв.</li></ul>
 
-Є багато способів расшарівать git репозиторії по мережі. Ось швидкий спосіб.</p>
+Є багато способів поділитися (розшарити) git репозиторієм по мережі. Ось швидкий спосіб.</p>
 
 <h2><em>01</em> Запуск git сервера</h2>
 
 <h4 class="h4-pre">Виконайте:</h4>
 
-<pre class="instructions"># (From the work directory)
+<pre class="instructions"># (Запуск із робочого (work) каталогу)
 git daemon --verbose --export-all --base-path=.</pre>
 
 <p>Тепер в окремому вікні терміналу перейдіть до вашог робочого каталогу</p>
 
 <h4 class="h4-pre">Виконайте:</h4>
 
-<pre class="instructions"># (From the work directory)
+<pre class="instructions"># (Запуск із робочого (work) каталогу)
 git clone git://localhost/hello.git network_hello
 cd network_hello
 ls</pre>
