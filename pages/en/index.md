@@ -46,7 +46,13 @@ description: "Git How To is a guided tour that walks through the fundamentals of
 </div>
 
 <div class="row go-block">
-  <div class="col-sm-12">
+  <div class="col-xs-12 col-sm-4">
     <a class="btn btn-hg btn-primary go" href="/setup"><i class="fa fa-flag"></i> Start!</a>
+  </div>
+  
+  <div class="col-xs-12 col-sm-8">
+    <div class="carbon-index">
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=githowtocom" id="_carbonads_js"></script>
+    </div>
   </div>
 </div>

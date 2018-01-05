@@ -44,7 +44,13 @@ description: "Git How To — это интерактивный тур, кото�
 </div>
 
 <div class="row go-block">
-  <div class="col-sm-12">
+  <div class="col-xs-12 col-sm-6 col-md-4">
     <a class="btn btn-hg btn-primary go" href="/ru/setup"><i class="fa fa-flag"></i> Поехали!</a>
+  </div>
+  
+  <div class="col-xs-12 col-sm-6 col-md-8">
+    <div class="carbon-index">
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=githowtocom" id="_carbonads_js"></script>
+    </div>
   </div>
 </div>
