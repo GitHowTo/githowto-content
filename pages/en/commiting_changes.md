@@ -44,7 +44,7 @@ title: "8. Commiting the changes"
 #	modified:   hello.html
 #</pre>
 
-<p>On the first line, enter the comment: &#8220;Added <span class="caps">hi tag</span>&#8221;.  Save the file and exit the editor (to do it in default editor, press ESC and then type <code>:wq</code> and hit Enter).  You should see &#8230</p>
+<p>On the first line, enter the comment: &#8220;Added <span class="caps">h1 tag</span>&#8221;.  Save the file and exit the editor (to do it in default editor, press ESC and then type <code>:wq</code> and hit Enter).  You should see &#8230</p>
 
 <h4 class="h4-pre">Result:</h4>
 
