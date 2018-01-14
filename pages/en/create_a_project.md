@@ -7,9 +7,9 @@ title: "3. Creating a Project"
 
 <ul><li>To learn how to create a git repository from scratch.</li></ul>
 
-<h2><em>01</em> Create a “Hello, World” page</h2>
+<h2><em>01</em> Create a “Hello, World!” page</h2>
 
-<p>Get started in an empty working directory (for example, Work, if you downloaded the file from the previous step) and create an empty directory named “hello”, then create a <code>hello.html</code> file in it with the following contents.</p>
+<p>Get started in an empty working directory (for example, work, if you downloaded the file from the previous step) and create an empty directory named “hello”, then create a <code>hello.html</code> file in it with the following contents.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
@@ -19,11 +19,11 @@ touch hello.html</pre>
 
 <h4 class="h4-pre">File: <em>hello.html</em></h4>
 
-<pre class="file">Hello, World</pre>
+<pre class="file">Hello, World!</pre>
 
 <h2><em>02</em> Create a repository</h2>
 
-<p>So you have a directory that contains one file. Run the git init in order to create a git repo from that directory.</p>
+<p>So you have a directory that contains one file. Run <code>git init</code> in order to create a git repo from that directory.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
