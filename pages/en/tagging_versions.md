@@ -9,7 +9,7 @@ title: "13. Tagging versions"
 
 <p>Let&#8217;s call the current version of the hello program version 1 (v1).</p>
 
-<h2><em>01</em> Creating a tag of the first </h2>
+<h2><em>01</em> Creating a tag for the first version</h2>
 
 <h4 class="h4-pre">Run:</h4>
 
@@ -21,14 +21,14 @@ title: "13. Tagging versions"
 
 <p>Let&#8217;s tag the version prior to the current version with the name v1-beta.  First of all we will checkout the previous version.  Instead of looking up the hash, we are going to use the <code>^</code> notation indicating &#8220;the parent of v1&#8221;.</p>
 
-<p class="note">If the <code>v1</code>^ notation causes troubles, try using <code>v1~1</code>, referencing the same version. This notation means &#8220;the first version prior to v1&#8221;.</p>
+<p class="note">If the <code>v1^</code> notation causes troubles, try using <code>v1~1</code>, referencing the same version. This notation means &#8220;the first version prior to v1&#8221;.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
 <pre class="instructions">git checkout v1^
 cat hello.html</pre>
 
-<h4 class="h4-pre">Run:</h4>
+<h4 class="h4-pre">Result:</h4>
 
 <pre class="sample">$ git checkout v1^
 Note: checking out 'v1^'.
