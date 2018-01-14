@@ -62,7 +62,7 @@ git commit -m "Hello uses style.css"</pre>
 
 <h2><em>04</em>Change index.html</h2>
 
-<p>Update the <code>index.html</code> file,so it could use <code>style.css</code></p>
+<p>Update the <code>index.html</code> file, so it could use <code>style.css</code></p>
 
 <h4 class="h4-pre">File: <em>index.html</em></h4>
 
