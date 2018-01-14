@@ -52,11 +52,11 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at 911e8c9... First Commit
 $ cat hello.html
-Hello, World</pre>
+Hello, World!</pre>
 
 <p>The <code>checkout</code> command output totally clarifies the situation.  Older git versions will complain about not being on a local branch.  But you don&#8217;t need to worry about that right now.</p>
 
-<p>Note that the content of the hello.html file is the default content.</p>
+<p>Note that the content of the <code>hello.html</code> file is the default content.</p>
 
 <h2><em>02</em> Returning to the latest version in the master branch </h2>
 
@@ -82,4 +82,4 @@ $ cat hello.html
 &lt;/html&gt;
 </pre>
 
-<p>&#8216;master&#8217; is the name of the default branch.  By checking out a branch by name, you go to its lastest version.</p>
+<p>&#8216;master&#8217; is the name of the default branch.  By checking out a branch by name, you go to its latest version.</p>
