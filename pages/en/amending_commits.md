@@ -29,7 +29,7 @@ git commit -m "Add an author comment"</pre>
 
 <h2><em>02</em> Oops... email required</h2>
 
-<p>After making the commit you understand that every good comment should include the author's email.Refresh the hello page, to provide an email.</p>
+<p>After making the commit you understand that every good comment should include the author's email. Refresh the hello page, to provide an email.</p>
 
 <h4 class="h4-pre">File: <em>hello.html</em></h4>
 

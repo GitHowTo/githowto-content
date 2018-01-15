@@ -21,13 +21,11 @@ git hist</pre>
 
 <pre class="sample">$ git checkout style
 Switched to branch 'style'
-$
 $ git rebase master
 First, rewinding head to replay your work on top of it...
 Applying: Added css stylesheet
 Applying: Hello uses style.css
 Applying: Updated index.html
-$
 $ git hist
 * 6e6c76a 2011-03-09 | Updated index.html (HEAD, style) [Alexander Shvets]
 * 1436f13 2011-03-09 | Hello uses style.css [Alexander Shvets]
@@ -43,9 +41,9 @@ $ git hist
 
 <h2><em>01</em> Merging VS rebasing</h2>
 
-<p>Result of the rebase command looks much like that of the merge.  The style branch currently contains all its changes, plus all the changes of the master branch.  The commit tree, however, is a bit different.  The style branch commit tree has been rewritten to make the master branch a part of the commit history.  This makes the chain of commits linear and more readable.</p>
+<p>The result of the rebase command looks much like that of the merge command.  The style branch currently contains all its changes, plus all the changes of the master branch.  The commit tree, however, is a bit different.  The style branch commit tree has been rewritten to make the master branch a part of the commit history.  This makes the chain of commits linear and more readable.</p>
 
-<h2><em>02</em> When to use the rebase, when the merge?</h2>
+<h2><em>02</em> When to use the rebase command, and when the merge command?</h2>
 
 <p>Don&#8217;t use the rebase command &#8230;</p>
 

@@ -7,7 +7,7 @@ title: "48. Submitting changes"
 
 <ul><li>To learn how to submit changes to the remote repository.</li></ul>
 
-<p>Since clean repository is usually shared on some network server, we need to send our changes to other repositories.
+<p>Since a clean repository is usually shared on some network server, we need to send our changes to other repositories.
 Start by creating a change to be sent. Edit the README file and do a commit</p>
 
 <h4 class="h4-pre"> File: <em> README </em></h4>

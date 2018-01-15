@@ -35,4 +35,4 @@ title: "40. Remote branches"
   remotes/origin/style
   remotes/origin/master</pre>
 
-<p>Git lists all the commits from the original repo, but the remote repository branches are not treated as local ones.  If we need our own <strong>style</strong> branch, we need to create on our own. In a minute you will see how it is done.</p>
+<p>Git lists all the branches from the original repo, but the remote repository branches are not treated as local ones.  If we need our own <strong>style</strong> branch, we need to create it on our own. In a minute you will see how it is done.</p>

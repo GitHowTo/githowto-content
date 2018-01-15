@@ -40,6 +40,7 @@ git hist --all</pre>
 <h4 class="h4-pre">Result:</h4>
 
 <pre class="sample">$ git reset --hard 6c0f848
+HEAD is now at 6c0f848 Added README
 $ git hist --all
 * 6c0f848 2011-03-09 | Added README (HEAD, master) [Alexander Shvets]
 | * 07a2a46 2011-03-09 | Updated index.html (style) [Alexander Shvets]

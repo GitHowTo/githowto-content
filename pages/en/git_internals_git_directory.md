@@ -37,7 +37,7 @@ HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 
 <p>You should see a lot of folders named with two characters. The first two letters sha1 hash of the object stored in git are the directory names.</p>
 
-<h2><em>03</em> inquire the database objects</h2>
+<h2><em>03</em> Inquire the database objects</h2>
 
 <h4 class="h4-pre">Run:</h4>
 

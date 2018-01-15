@@ -5,7 +5,7 @@ title: "35. Merging to the Master branch"
 
 <h3>Goals</h3>
 
-<ul><li>We have kept our style greet branch up to date with the master branch (using rebase), but now let&#8217;s merge the style branch changes back into the master.</li></ul>
+<ul><li>We have kept our style branch up to date with the master branch (using rebase), but now let's merge the style branch changes back into the master.</li></ul>
 
 <h2><em>01</em> Merging style into master</h2>
 
@@ -18,13 +18,12 @@ git merge style</pre>
 
 <pre class="sample">$ git checkout master
 Switched to branch 'master'
-$
 $ git merge style
 Updating 6c0f848..6e6c76a
 Fast-forward
- index.html       |    2 +-
- lib/style.css |    8 ++++++++
- lib/hello.html   |    6 ++++--
+ index.html     | 2 +-
+ lib/style.css  | 8 ++++++++
+ lib/hello.html | 6 ++++--
  3 files changed, 13 insertions(+), 3 deletions(-)
  create mode 100644 lib/style.css</pre>
 

@@ -64,7 +64,7 @@ fa3c1411aa09441695a9e645d4371e8d749da1dc Added HTML header
 
 <h2><em>02</em> Controlling the display of entries</h2>
 
-<p>There are many options to choose which entreis appear in the log. Play around with the following parameters:</p>
+<p>There are many options to choose which entries appear in the log. Play around with the following parameters:</p>
 
 <pre class="instructions">git log --pretty=oneline --max-count=2
 git log --pretty=oneline --since='5 minutes ago'

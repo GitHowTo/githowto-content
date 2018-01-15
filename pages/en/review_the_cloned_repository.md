@@ -9,7 +9,7 @@ title: "38. Examine the cloned repository"
 
 <h2><em>01</em> Viewing the cloned repository</h2>
 
-<p>Let&#8217;s have a look at our cloned repository.</p>
+<p>Let's have a look at our cloned repository.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
@@ -26,7 +26,7 @@ lib</pre>
 
 <p>You will see a list of all files in the top level of the original repository (<code>README</code>, <code>index.html</code> and <code>lib</code>).</p>
 
-<h2><em>02</em> View the history of the repository</h2>
+<h2><em>02</em> View the history of the cloned repository</h2>
 
 <h4 class="h4-pre">Run:</h4>
 <pre class="instructions">git hist --all</pre>
@@ -48,4 +48,4 @@ lib</pre>
 
 <h2><em>03</em> Remote branches</h2>
 
-<p>You will see a <strong>master</strong> branch (<strong><span class="caps">HEAD</span></strong>) in the history.  You will also find branches with strange names (<strong>origin/master</strong>, <strong>origin/style</strong> and <strong>origin/<span class="caps">HEAD</span></strong>).  We&#8217;ll discuss them a bit later.</p>
+<p>You will see a <strong>master</strong> branch (<strong><span class="caps">HEAD</span></strong>) in the history.  You will also find branches with strange names (<strong>origin/master</strong>, <strong>origin/style</strong> and <strong>origin/<span class="caps">HEAD</span></strong>).  We'll discuss them a bit later.</p>
