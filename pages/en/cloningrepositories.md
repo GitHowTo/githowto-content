@@ -5,7 +5,7 @@ title: "37. Cloning repositories"
 
 <h3>Goals</h3>
 
-<ul><li>To learn to make copies of the repositories.</li></ul>
+<ul><li>To learn how to make copies of the repositories.</li></ul>
 
 <p>If you are working in a team, the following 12 chapters are quite important to understand because you almost always have to work with cloned repositories.</p>
 
