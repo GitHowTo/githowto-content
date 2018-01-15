@@ -5,9 +5,9 @@ title: "50. Placing your git repository"
 
 <h3>Goals</h3>
 
-<ul><li>To learn how to configure git server for sharing repos.</li></ul>
+<ul><li>To learn how to configure a git server for sharing repos.</li></ul>
 
-<p>There are different ways to share git repository on the network. Here's the quickest way.</p>
+<p>There are different ways to share a git repository on the network. Here's the quickest way.</p>
 
 <h2><em>01</em> Run git server</h2>
 
