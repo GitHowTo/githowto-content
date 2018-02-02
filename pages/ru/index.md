@@ -53,17 +53,18 @@ description: "Git How To — это интерактивный тур, кото�
         <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=githowtocom" id="_carbonads_js"></script>-->
     <!--</div>-->
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- GitHowTo2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1703978454411210"
-     data-ad-slot="1342610188"
-     data-ad-format="auto"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+<div class="google-index">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- GitHowTo2 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1703978454411210"
+         data-ad-slot="1342610188"
+         data-ad-format="auto"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
   </div>
 </div>
