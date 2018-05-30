@@ -52,7 +52,7 @@ description: "Git How To is a guided tour that walks through the fundamentals of
   
   <div class="col-xs-12 col-sm-8">
     <!--<div class="carbon-index">-->
-        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=githowtocom" id="_carbonads_js"></script>-->
+        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>-->
     <!--</div>-->
 
 <div class="google-index">

@@ -49,7 +49,7 @@ description: "Git How To — це інтерактивний тур, який п
   
   <div class="col-xs-12 col-sm-6 col-md-8">
     <!--<div class="carbon-index">-->
-        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=githowtocom" id="_carbonads_js"></script>-->
+        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>-->
     <!--</div>-->
 
 <div class="google-index">
