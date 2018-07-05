@@ -23,11 +23,11 @@ git config --global user.email "your_email@whatever.com"</pre>
 <h4 class="h4-pre">Виконайте:</h4>
 
 <pre class="instructions">git config --global core.autocrlf input
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>
 
 <p>Для користувачів Windows:</p>
 
 <h4 class="h4-pre">Виконайте:</h4>
 
 <pre class="instructions">git config --global core.autocrlf true
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>

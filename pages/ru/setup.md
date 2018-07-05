@@ -23,14 +23,14 @@ git config --global user.email "your_email@whatever.com"</pre>
 <h4 class="h4-pre">Выполнить:</h4>
 
 <pre class="instructions">git config --global core.autocrlf input
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>
 
 <p>Для пользователей Windows:</p>
 
 <h4 class="h4-pre">Выполнить:</h4>
 
 <pre class="instructions">git config --global core.autocrlf true
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>
 
 
 <h2><em>03</em> Установка отображения unicode</h2>
