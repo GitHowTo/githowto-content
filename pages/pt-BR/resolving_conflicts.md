@@ -62,7 +62,7 @@ Automatic merge failed; fix conflicts and then commit the result.</pre>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<h2><em>03</em> Fa&ccedil;a o commit de uma resolu&ccedil;&atilde;o de conflito/h2>
+<h2><em>03</em> Fa&ccedil;a o commit de uma resolu&ccedil;&atilde;o de conflito</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
