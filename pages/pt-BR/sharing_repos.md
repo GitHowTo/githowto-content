@@ -1,6 +1,6 @@
 ---
 view: page
-title: "51. Compartilhando repoist&oacute;rios"
+title: "51. Compartilhando reposit&oacute;rios"
 ---
 
 <h3>Metas</h3>
