@@ -1,6 +1,6 @@
 ---
 view: page
-title: "Obrigada!"
+title: "Obrigado!"
 ---
 
 <p>Isso &eacute; tudo! Obrigado por usar o GitHowTo.</p>
@@ -12,7 +12,7 @@ title: "Obrigada!"
 <p><b>Alexander Shvets</b><br/>
 <a href="mailto:alex@githowto.com">alex@githowto.com</a></p>
 
-## Licensa
+## Licença
 
 <p>This work is released under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons, Attribution-NonCommercial-ShareAlike License</a>.</p>
 
