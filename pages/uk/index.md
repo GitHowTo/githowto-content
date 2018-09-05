@@ -2,7 +2,7 @@
 view: page
 title: "Git How To: курс навчання Git українською"
 description: "Git How To — це інтерактивний тур, який познайомить вас з основами Git. Тур створено з розумінням того, що кращий спосіб навчитися використовувати Git — спробувати його власноруч."
-
+blade: true
 ---
 
 <div class="row">
@@ -48,9 +48,8 @@ description: "Git How To — це інтерактивний тур, який п
   </div>
   
   <div class="col-xs-12 col-sm-6 col-md-8">
-    <!--<div class="carbon-index">-->
-        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>-->
-    <!--</div>-->
+
+@if (config('app.ads_ru') == 'Google')
 
 <div class="google-index">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -64,6 +63,14 @@ description: "Git How To — це інтерактивний тур, який п
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+
+@elseif (config('app.ads_ru') == 'CarbonAds')
+
+<div class="carbon-index">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>
+</div>
+
+@endif
 
   </div>
 </div>

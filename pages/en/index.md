@@ -2,7 +2,7 @@
 view: page
 title: "Git How To: Guided Git Tutorial"
 description: "Git How To is a guided tour that walks through the fundamentals of Git, inspired by the premise that to know a thing is to do it. The surest path to mastering Git is to immerse oneself in its utilities and operations, to experience it first-hand."
-
+blade: true
 ---
 
 <div class="row">
@@ -51,9 +51,8 @@ description: "Git How To is a guided tour that walks through the fundamentals of
   </div>
   
   <div class="col-xs-12 col-sm-8">
-    <!--<div class="carbon-index">-->
-        <!--<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>-->
-    <!--</div>-->
+
+@if (config('app.ads') == 'Google')
 
 <div class="google-index">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -67,6 +66,14 @@ description: "Git How To is a guided tour that walks through the fundamentals of
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+
+@elseif (config('app.ads') == 'CarbonAds')
+
+<div class="carbon-index">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTK3W&placement=githowtocom" id="_carbonads_js"></script>
+</div>
+
+@endif
 
   </div>
 </div>
