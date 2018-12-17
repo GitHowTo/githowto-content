@@ -25,4 +25,4 @@ nothing to commit (working directory clean)</pre>
 
 <p>The command checks the status and reports that there’s nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.</p>
 
-<p>We will use the git status, to keep monitoring the states of both the working directory and the repository.</p>
+<p>We will use the <code>git status</code> command to keep monitoring the states of both the working directory and the repository.</p>

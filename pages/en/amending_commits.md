@@ -9,7 +9,7 @@ title: "19. Changing commits"
 
 <h2><em>01</em> Change the page and commit</h2>
 
-<p>Post an author comment on the page.</p>
+<p>Put an author comment on the page.</p>
 
 <h4 class="h4-pre">File: <em>hello.html</em></h4>
 
@@ -29,7 +29,7 @@ git commit -m "Add an author comment"</pre>
 
 <h2><em>02</em> Oops... email required</h2>
 
-<p>After making the commit you understand that every good comment should include the author's email. Refresh the hello page, to provide an email.</p>
+<p>After making the commit you understand that every good comment should include the author's email. Edit the hello page to provide an email.</p>
 
 <h4 class="h4-pre">File: <em>hello.html</em></h4>
 
@@ -44,7 +44,7 @@ git commit -m "Add an author comment"</pre>
 
 <h2><em>03</em> Change the previous commit</h2>
 
-<p>We do not want to create another commit for e-mail. Let us change the previous commit and add an e-mail address.</p>
+<p>We do not want to create another commit for adding the e-mail address. Let us change the previous commit and add an e-mail address.</p>
 
 <h4 class="h4-pre">Run:</h4>
 

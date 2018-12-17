@@ -9,7 +9,7 @@ title: "16. Cancelling commits"
 
 <h2><em>01</em> Cancelling commits</h2>
 
-<p>Sometimes you realize that the new commits are wrong, and you want to cancel them. There are several ways to handle the issue, we use the safest here.</p>
+<p>Sometimes you realize that the new commits are wrong, and you want to cancel them. There are several ways to handle the issue, and we use the safest here.</p>
 
 <p>To cancel the commit we will create a new commit, cancelling the unwanted changes.</p>
 
