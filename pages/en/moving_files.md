@@ -8,7 +8,7 @@ title: "20. Moving files"
 <ul><li>To learn how to move a file within the repository.</li></ul>
 
 <h2><em>01</em> Move the hello.html file to the <i>lib</i> directory</h2>
-<p>Now we will create the structure of our repository. Let us move the page in the lib directory</p>
+<p>Now we will create the structure in our repository. Let us move the page in the lib directory</p>
 <h4 class="h4-pre">Run:</h4>
 <pre class="instructions">mkdir lib
 git mv hello.html lib
@@ -26,7 +26,7 @@ $ git status
 #	renamed:    hello.html -&gt; lib/hello.html
 #</pre>
 
-<p>Moving files with git, we notify git about two things</p>
+<p>By moving files with git, we notify git about two things</p>
 
 <ol><li>The <code>hello.html</code> file was deleted.</li>
 <li>The <code>lib/hello.html</code> file was created.</li>
@@ -34,9 +34,9 @@ $ git status
 
 <h2><em>02</em> One more way to move files</h2>
 
-<p>A positive fact about git is that you don’t need to remember about version control to the moment when you need to commit code. What could happen if we were using the operating system command line instead of the git command to move files?</p>
+<p>A positive fact about git is that you don’t need to think about version control the moment when you need to commit code. What would happen if we were using the operating system command line instead of the git command to move files?</p>
 
-<p>The following set of commands turned out to be identical to our last actions. It requires more work with same result.</p>
+<p>The following set of commands have the same result as the ones we used above, but the ones below require a little more work.</p>
 
 <p class="command"> We can do:</p>
 
