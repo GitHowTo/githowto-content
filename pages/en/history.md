@@ -46,7 +46,7 @@ Date:   Wed Mar 9 10:27:54 2011 -0500
 
 <h2><em>01</em> One line history</h2>
 
-<p>You fully control over what the <code>log</code> shows. I like the single line format:</p>
+<p>You fully control what the <code>log</code> shows. I like the single line format:</p>
 
 <h4 class="h4-pre">Run:</h4>
 
