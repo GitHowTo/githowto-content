@@ -8,7 +8,7 @@ title: "20. Moving files"
 <ul><li>To learn how to move a file within the repository.</li></ul>
 
 <h2><em>01</em> Move the hello.html file to the <i>lib</i> directory</h2>
-<p>Now we will create the structure in our repository. Let us move the page in the lib directory</p>
+<p>Now we will create the structure in our repository. Let us move the page in the lib directory.</p>
 <h4 class="h4-pre">Run:</h4>
 <pre class="instructions">mkdir lib
 git mv hello.html lib

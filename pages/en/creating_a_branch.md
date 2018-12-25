@@ -18,7 +18,7 @@ title: "24. Creating a Branch"
 <pre class="instructions">git checkout -b style
 git status</pre>
 
-<p class="note"><strong>Note: </strong><code>git checkout -b &lt;branch name&gt;</code> is the shortcuts for <code>git branch &lt;branch name&gt;</code> followed by a <code>git checkout &lt;branch name&gt;</code>.</p>
+<p class="note"><strong>Note: </strong><code>git checkout -b &lt;branch name&gt;</code> is a shortcut for <code>git branch &lt;branch name&gt;</code> followed by a <code>git checkout &lt;branch name&gt;</code>.</p>
 
 <p>Note that the <code>git status</code> command reports that you are in the style branch.</p>
 
@@ -62,7 +62,7 @@ git commit -m "Hello uses style.css"</pre>
 
 <h2><em>04</em>Change index.html</h2>
 
-<p>Update the <code>index.html</code> file, so it could use <code>style.css</code></p>
+<p>Update the <code>index.html</code> file, so it uses <code>style.css</code></p>
 
 <h4 class="h4-pre">File: <em>index.html</em></h4>
 
@@ -82,4 +82,4 @@ git commit -m "Updated index.html"</pre>
 
 <h2><em>05</em> Next</h2>
 
-<p>We now have a new branch named style with three new commits. Next lesson will show how to navigate and switch between branches.</p>
+<p>We now have a new branch named style with three new commits. The next lesson will show how to navigate and switch between branches.</p>

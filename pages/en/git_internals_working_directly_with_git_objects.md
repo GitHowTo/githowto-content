@@ -18,7 +18,7 @@ title: "23. Git inside: Direct work with git objects"
 
 <pre class="instructions">git hist --max-count=1</pre>
 
-<p>This command should find the last commit in the repository. SHA1 hash is probably different on our systems; however you should see something like this.</p>
+<p>This command should find the last commit in the repository. SHA1 hash is probably different on our systems; however, you should see something like this.</p>
 
 <h4 class="h4-pre">Result:</h4>
 
@@ -27,7 +27,7 @@ title: "23. Git inside: Direct work with git objects"
 
 <h2><em>02</em> Display of the last commit</h2>
 
-<p>With SHA1 hash of a commit, as above...</p>
+<p>With the SHA1 hash of a commit, as above...</p>
 
 <h4 class="h4-pre">Run:</h4>
 
