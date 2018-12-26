@@ -7,7 +7,7 @@ title: "49. Removing common changes"
 
 <ul><li>To learn how to extract changes from the common repository.</li></ul>
 
-<p>Quickly switch to the cloned repository and extract the changes, just sent in a common repository.</p>
+<p>Quickly switch to the cloned repository and pull the changes just sent to the common repository.</p>
 
 <h4 class="h4-pre">Run:</h4>
 

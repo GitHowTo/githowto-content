@@ -50,7 +50,7 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Now we are on the Master branch. It can be proven by the <code>hello.html</code> file that does not use styles from <code>style.css</code>.</p>
+<p>Now we are on the Master branch. It can be proven by the fact the <code>hello.html</code> file does not use styles from <code>style.css</code>.</p>
 
 <h2><em>02</em> Let us return to the style branch.</h2>
 
@@ -74,4 +74,4 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>We are back to a <strong>style</strong> branch that can be proven by the contents of <code>lib/hello.html</code>.</p>
+<p>We are back to the <strong>style</strong> branch which can be proven by the fact the <code>hello.html</code> file uses styles from <code>style.css</code>.</p>

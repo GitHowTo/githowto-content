@@ -42,7 +42,7 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Through periodic master branch merging with the style branch you can pick up to the master any changes or modifications to maintain compatibility with the style changes in the mainline.</p>
+<p>Through periodic master branch merging with the style branch you can pick up any changes or modifications to the master to maintain compatibility with the style changes in the mainline.</p>
 
 <p>However, this makes the commit graphics look ugly. Later we will consider relocation as an alternative to fusion.</p>
 

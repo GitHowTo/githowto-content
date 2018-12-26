@@ -78,4 +78,4 @@ Recorded resolution for 'lib/hello.html'.
 
 <h2><em>04</em> Advanced Merging</h2>
 
-<p>Git has no graphical merging tools, but will accept any third-party merge tool (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">read more about such tools on StackOverflow</a>.)</p>
+<p>Git has no graphical merging tools, but it will accept any third-party merge tool (<a href="http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">read more about such tools on StackOverflow</a>.)</p>
