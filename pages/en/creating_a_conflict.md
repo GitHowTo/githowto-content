@@ -30,7 +30,7 @@ title: "29. Creating a conflict"
 <pre class="instructions">git add lib/hello.html
 git commit -m 'Life is great!'</pre>
 
-(<b>Warning:</b> make sure you've used single-quotes to avoid problems with bash and <code>!</code> character)
+(<b>Warning:</b> make sure you've used single-quotes to avoid problems with bash and the <code>!</code> character)
 
 <h2><em>02</em> View branches</h2>
 
@@ -59,7 +59,7 @@ git commit -m 'Life is great!'</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>After the Added README commit the master branch has been merged with the style branch, but there is an additional master commit, which was not merged back to the style branch.</p>
+<p>After the Added README commit, the master branch has been merged with the style branch, but there is an additional master commit, which was not merged back to the style branch.</p>
 
 <h2><em>03</em> Next</h2>
 

@@ -13,7 +13,7 @@ title: "42. Fetching changes"
 git fetch
 git hist --all</pre>
 
-<p style="color:red;"><strong><span class="caps">NOTE</span>: We are now in the repository <em>cloned_hello</em></strong></p>
+<p style="color:red;"><strong><span class="caps">NOTE</span>: We are now in the repository <em>cloned_hello</em></strong>.</p>
 
 <h4 class="h4-pre">Result:</h4>
 
@@ -34,7 +34,7 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>At the moment the repository contains all the commits from the original repo, however they aren&#8217;t integrated into the local branches of the cloned repository.</p>
+<p>At the moment, the repository contains all the commits from the original repo; however, they aren&#8217;t integrated into the local branches of the cloned repository.</p>
 
 <p>You&#8217;ll find the commit named &#8220;Changed <span class="caps">README</span> in original repo&#8221; in the history.  Notice that the commit includes &#8220;origin/master&#8221; and &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
 

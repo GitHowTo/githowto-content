@@ -17,7 +17,7 @@ title: "46. Bare repos"
 git clone --bare hello hello.git
 ls hello.git</pre>
 
-<p style="color:red;"><strong><span class="caps">NOTE</span>: We are now in the working directory</strong></p>
+<p style="color:red;"><strong><span class="caps">NOTE</span>: We are now in the working directory</strong>.</p>
 
 <h4 class="h4-pre">Result:</h4>
 

@@ -9,9 +9,9 @@ title: "32. Resetting the style branch"
 
 <h2><em>01</em> Resetting the style branch</h2>
 
-<p>Let us go on the style branch to the point <em>before</em> we merged it with the master branch. We can <strong>reset</strong> the branch to any commit. In fact, this changes the branch pointer to point at any commit in the tree.</p>
+<p>Let us go to the style branch to the point <em>before</em> we merged it with the master branch. We can <strong>reset</strong> the branch to any commit. In fact, <strong>reset</strong> can change the branch pointer to point to any commit in the tree.</p>
 
-<p>Here, we want to come back in the style branch to a point before merging with the master. We have to find the last commit prior to the merge.</p>
+<p>Here, we want to go back in the style branch to a point before merging with the master. We have to find the last commit prior to the merge.</p>
 
 <h4 class="h4-pre">Run:</h4>
 
