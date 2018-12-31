@@ -28,4 +28,4 @@ ls</pre>
 
 <h2><em>02</em> Sending to Git Daemon</h2>
 
-<p>If you want to move to the repository Git Daemon, add <code>--enable=receive-pack</code> tag to git daemon command. Be attentive, this server does not perform authentication, so anyone can submit changes to your repository.</p>
+<p>If you want to allow push to the repository Git Daemon, add <code>--enable=receive-pack</code> tag to git daemon command. Be attentive, this server does not perform authentication, so anyone can push changes to your repository.</p>
