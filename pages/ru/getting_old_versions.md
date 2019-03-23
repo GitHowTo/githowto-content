@@ -15,7 +15,7 @@ title: "12. Получение старых версий"
 
 <pre class="instructions">git hist</pre>
 
-<p class="note"><strong>Примечание:</strong> Вы не забыли задать <code>hist</code> в вашем файле <code>.gitconfig</code>? Если забыли, посмотрите еще раз урок по <a href="/aliases">алиасам</a>.</p>
+<p class="note"><strong>Примечание:</strong> Вы не забыли задать <code>hist</code> в вашем файле <code>.gitconfig</code>? Если забыли, посмотрите еще раз урок по <a href="/ru/aliases">алиасам</a>.</p>
 
 <h4 class="h4-pre">Результат:</h4>
 
