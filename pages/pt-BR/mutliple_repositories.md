@@ -9,6 +9,6 @@ title: "36. Reposit&oacute;rios m&uacute;ltiplos"
 
 <img src="/git_clone_en.png" alt="" />
 
-<p>Enquanto isso, n&oacute;s trabalharemos com reposit&oacute;rios locais (os que est&atilde;o armazenados no nosso pr&oacute;prio HD). A maioria da informa&ccedil;&atilde;o nessa se&ccedil;&atilde;o tamb&eacute;m pode ser aplicada no trabalho com m&uacute;ltiplos rep&oacute;sitorios independente se eles s&atilde;o armazenados localmente ou compartilhados por uma rede.</p>
+<p>Enquanto isso, n&oacute;s trabalharemos com reposit&oacute;rios locais (os que est&atilde;o armazenados no nosso pr&oacute;prio HD). A maioria da informa&ccedil;&atilde;o nessa se&ccedil;&atilde;o tamb&eacute;m pode ser aplicada no trabalho com m&uacute;ltiplos reposit&oacute;rios independente se eles s&atilde;o armazenados localmente ou compartilhados por uma rede.</p>
 
 <p style="color:red;"><strong><span class="caps">NOTA</span>:</strong> N&oacute;s faremos mudan&ccedil;as em ambas as c&oacute;pias do nosso reposit&oacute;rio. Preste aten&ccedil;&atilde;o no reposit&oacute;rio em que voc&ecirc; est&aacute; em cada est&aacute;gio das pr&oacute;ximas li&ccedil;&otilde;es.</p>

@@ -54,7 +54,7 @@ HEAD is now at 911e8c9... First Commit
 $ cat hello.html
 Hello, World</pre>
 
-<p>O resultado do comando <code>checkout</code> esclarece completamente a situa&ccedil;&atilde;o. Vers&otilde;es mais antigas do git v&atilde;o reclamar sobre n&atilde;o estarem em um branch local. Mas voc&ecirc; n&atilde;o precisa de preocupar com isso agora.</p>
+<p>O resultado do comando <code>checkout</code> esclarece completamente a situa&ccedil;&atilde;o. Vers&otilde;es mais antigas do git v&atilde;o reclamar sobre n&atilde;o estarem em um branch local. Mas voc&ecirc; n&atilde;o precisa se preocupar com isso agora.</p>
 
 <p>Perceba que o conte&uacute;do do arquivo hello.html &eacute; o conte&uacute;do padr&atilde;o.</p>
 

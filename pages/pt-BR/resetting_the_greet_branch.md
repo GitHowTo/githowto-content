@@ -9,7 +9,7 @@ title: "32. Resetando o branch style"
 
 <h2><em>01</em> Resetando o branch style</h2>
 
-<p>Vamos para o branch style no ponto <em>antes</em> de darmos merge com o branch ,aster. Podemos <strong>resetar</strong> o branch para qualquer commit. Na verdade, isso faz com que o ponteiro do branch aponte para qualquer commit contido na &aacute;rvore.</p>
+<p>Vamos para o branch style no ponto <em>antes</em> de darmos merge com o branch master. Podemos <strong>resetar</strong> o branch para qualquer commit. Na verdade, isso faz com que o ponteiro do branch aponte para qualquer commit contido na &aacute;rvore.</p>
 
 <p>Aqui, queremos voltar no style branch para um ponto anterior ao merge com o master. Temos que encontrar o &uacute;ltimo commit antes do merge</p>
 

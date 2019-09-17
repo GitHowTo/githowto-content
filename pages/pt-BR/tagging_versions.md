@@ -19,9 +19,9 @@ title: "13. Adicionando tags a vers&otilde;es"
 
 <h2><em>02</em> Tags em vers&otilde;es antigas</h2>
 
-<p>Vamos adicionar uma tag &agrave; vers&atilde;o anterior &agrave; nossa atual vers&atilde;o com o nome v1-beta. Antes de tudo, n&oacute;s vamos precisar de verificar as nossas vers&otilde;es anteriores. Ao inv&eacute;s de olhar pelo hash, n&oacute;s vamos usar a nota&ccedil;&atilde;o <code>^</code> indicando &#8220;o pai de v1&#8221;.</p>
+<p>Vamos adicionar uma tag &agrave; vers&atilde;o anterior &agrave; nossa atual vers&atilde;o com o nome v1-beta. Antes de tudo, n&oacute;s vamos precisar verificar as nossas vers&otilde;es anteriores. Ao inv&eacute;s de olhar pelo hash, n&oacute;s vamos usar a nota&ccedil;&atilde;o <code>^</code> indicando &#8220;o pai de v1&#8221;.</p>
 
-<p class="note">Se a nota&ccedil;&atilde;o <code>v1^</code> gera problemas, tente usar <code>v1~1</code> para referenciar a mesma vers&atilde;o. Essa nota&ccedil;&atilde;o significa &#8220;a primeira vers&atilde;o antes de v1&#8221;.</p>
+<p class="note">Se a nota&ccedil;&atilde;o <code>v1^</code> gerar problemas, tente usar <code>v1~1</code> para referenciar a mesma vers&atilde;o. Essa nota&ccedil;&atilde;o significa &#8220;a primeira vers&atilde;o antes de v1&#8221;.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -76,7 +76,7 @@ HEAD is now at 8c32287... Added standard HTML page tags</pre>
 
 <h2><em>04</em> Vendo tags com o comando <code>tag</code></h2>
 
-<p>Voc&ecirc; pode ver todas as tags usadas usando o comando <code>git tag</code>.</p>
+<p>Voc&ecirc; pode ver todas as tags usadas digitando o comando <code>git tag</code>.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

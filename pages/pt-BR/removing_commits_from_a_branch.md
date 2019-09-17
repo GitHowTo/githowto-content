@@ -19,8 +19,8 @@ title: "17. Removendo um commit de um branch"
 
 <ol>
 <li>Sobrescrever o branch atual para que ele aponte para o commit correto</li>
-<li>Opcionalmente resetar o buffer zone para que ele satisfazer o commit especificado</li>
-<li>Opcionalmente resetar o dir&eacute;torio de trabalho para que ele equipare-se ao commit especificado</li>
+<li>Opcionalmente resetar o buffer zone para que ele satisfa&ccedil;a o commit especificado</li>
+<li>Opcionalmente resetar o dirt&eacute;orio de trabalho para que ele equipare-se ao commit especificado</li>
 </ol>
 
 <h2><em>02</em> Cheque nosso hist&oacute;rico</h2>
@@ -69,10 +69,10 @@ $ git hist
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Nosso branch master est&aacute; apontando para o commit v1 e "Revert Oops", e commits "Oops" n&atilde;o mais existem no branch. O par&acirc;metro  <code>--hard</code> aponta que o diret&oacute;rio de trabalho deve ser atualizado para refletir o novo head do branch.</p>
+<p>Nosso branch master est&aacute; apontando para o commit v1 e "Revert Oops", e commits "Oops" n&atilde;o mais existem no branch. O par&acirc;metro  <code>--hard</code> aponta que o diret&oacute;rio de trabalho que deve ser atualizado para refletir o novo head do branch.</p>
 <h2><em>05</em> Nada &eacute; perdido para sempre</h2>
 
-<p>O que acontece com os commits errados? Eles ainda est&atilde;o no reposit&oacute;rio. Na verdade, ainda podemos nos referir a eles. No in&iacute;cio da li&ccedil;&atilde;o, criamos a tag «oops» para o commit cancelado. Vamos dar uma olhada em <em>all</em>(todos) commits.</p>
+<p>O que acontece com os commits errados? Eles ainda est&atilde;o no reposit&oacute;rio. Na verdade, ainda podemos nos referir a eles. No in&iacute;cio da li&ccedil;&atilde;o, criamos a tag «oops» para o commit cancelado. Vamos dar uma olhada em <em>all</em> (todos) commits.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
