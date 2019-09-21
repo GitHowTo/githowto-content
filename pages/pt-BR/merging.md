@@ -5,7 +5,7 @@ title: "28. Fundindo"
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como fundir dois branches diferens para restaurar as modifica&ccedil;&otilde;es para um &uacute;nico branch.</li></ul>
+<ul><li>Aprender como fundir dois branches diferentes para restaurar as modifica&ccedil;&otilde;es para um &uacute;nico branch.</li></ul>
 
 <h2><em>01</em> Fundindo em um &uacute;nico branch</h2>
 

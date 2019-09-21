@@ -16,4 +16,4 @@ git commit -m "Changes for a and b"</pre>
 <pre class="instructions">git add c.html
 git commit -m "Unrelated change to c"</pre>
 
-<p>Separando a adi&ccedil;&atilde;o ao stage e o commit, voc&ecirc; pode customiza o que vai em cada commit.</p>
+<p>Separando a adi&ccedil;&atilde;o ao stage e o commit, voc&ecirc; pode customizar o que vai em cada commit.</p>

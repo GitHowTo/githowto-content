@@ -9,9 +9,9 @@ title: "9. Modifica&ccedil;&otilde;es, n&atilde;o arquivos"
 
 <p>A maioria dos sistemas de controle de vers&atilde;o trabalham com arquivos. Voc&ecirc; adiciona o arquivo no controle de c&oacute;digo e o sistema acompanha as mudan&ccedil;as a partir daquele momento..</p>
 
-<p>O Git concentra nas mudan&ccedil;as de um arquivo, n&atilde;o no arquivo em si. Um comando <code>git add file</code> n&atilde;o fala para o git adicionar o arquivo no reposit&oacute;rio, mas para perceber o atual estado do arquivo para que ele seja parte de um commit depois.</p>
+<p>O Git se concentra nas mudan&ccedil;as de um arquivo, n&atilde;o no arquivo em si. Um comando <code>git add file</code> n&atilde;o fala para o git adicionar o arquivo no reposit&oacute;rio, mas para perceber o atual estado do arquivo para que ele seja parte de um commit depois.</p>
 
-<p>N&oacute;s vamos tentar investigar essa diferen&ccedil;a nessa li&ccedil;&atilde;o.</p>
+<p>N&oacute;s vamos tentar investigar essa diferen&ccedil;a nesta li&ccedil;&atilde;o.</p>
 
 <h2><em>01</em> Primeira mudan&ccedil;a: Adicionando tags padr&atilde;o de p&aacute;ginas</h2>
 
@@ -112,7 +112,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</pre>
 <pre class="instructions">git add .
 git status</pre>
 
-<p class="note"><strong>Nota:</strong> O diret&oacute;rio atual (&#8216;.&#8217;) vai ser nosso arquivo a adicionar. Esse &eacute; a maneira mais conveniente de adicionar todas as mudan&ccedil;as dos arquivos do diret&oacute;rio atual e suas pastas. Mas como ele adiciona tudo, &eacute; uma boa ideia conferir o status antes de fazer um <tt>add .</tt>, para ter certeza que voc&ecirc; n&atilde;o adicione nenhum arquivo que n&atilde;o deveria ser adicionado.</p>
+<p class="note"><strong>Nota:</strong> O diret&oacute;rio atual (&#8216;.&#8217;) vai ser nosso arquivo a adicionar. Essa &eacute; a maneira mais conveniente de adicionar todas as mudan&ccedil;as dos arquivos do diret&oacute;rio atual e suas pastas. Mas como ele adiciona tudo, &eacute; uma boa ideia conferir o status antes de fazer um <tt>add .</tt>, para ter certeza que voc&ecirc; n&atilde;o adicione nenhum arquivo que n&atilde;o deveria ser adicionado.</p>
 
 <p class="note">Eu queria que voc&ecirc; visse o truque do &#8220;add .&#8221;, mas n&oacute;s vamos continuar adicionando os arquivos explicitamente no futuro, por via das d&uacute;vidas.</p>
 

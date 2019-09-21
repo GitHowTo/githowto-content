@@ -25,4 +25,4 @@ nothing to commit (working directory clean)</pre>
 
 <p>O comando confere o status e reporta que n&atilde;o existe nada para fazer um commit, o que quer dizer que o reposit&oacute;rio est&aacute; com o atual estado do diret&oacute;rio de trabalho e n&atilde;o existem modifica&ccedil;&otilde;es a serem gravadas.</p>
 
-<p>N&oacute;s usaremos o git status para contunuar monitorando os estados de ambos o diret&oacute;rio de trabalho e o reposit&oacute;rio.</p>
+<p>N&oacute;s usaremos o git status para continuar monitorando os estados de ambos o diret&oacute;rio de trabalho e o reposit&oacute;rio.</p>
