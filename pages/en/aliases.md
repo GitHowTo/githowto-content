@@ -61,16 +61,16 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias gh='git checkout '
 alias gk='gitk --all&amp;'
 alias gx='gitx --all'
 
 alias got='git '
 alias get='git '</pre>
 
-<p>The <code>go</code> abbreviation for <code>git checkout</code> is very useful, allowing me to type:</p>
+<p>The <code>gh</code> abbreviation for <code>git checkout</code> is very useful, allowing me to type:</p>
 
-<pre class="instructions">go &lt;branch&gt;</pre>
+<pre class="instructions">gh &lt;branch&gt;</pre>
 
 <p>to checkout a particular branch.</p>
 
