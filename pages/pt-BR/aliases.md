@@ -54,23 +54,23 @@ git config --global alias.dump 'cat-file -p'</pre>
 
 <p>Se sua shell suporta aliases ou atalhos, voc&ecirc; pode adicion&aacute;-los por l&aacute; tamb&eacute;m. Eu uso:</p>
 
-<h4 class="h4-pre">Arquivo: <em>.profile</em></h4>
+<h4 class="h4-pre">Arquivo: <em style="text-transform: none">.profile</em></h4>
 
 <pre class="file">alias gs='git status'
-alias ga='git add'
-alias gb='git branch'
-alias gc='git commit'
-alias gd='git diff'
-alias go='git checkout'
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit '
+alias gd='git diff '
+alias gco='git checkout '
 alias gk='gitk --all&amp;'
-alias gx='gitx --all'
+alias gx='gitx --all '
 
-alias got='git'
-alias get='git'</pre>
+alias got='git '
+alias get='git '</pre>
 
-<p>A abrevia&ccedil;&atilde;o <code>go</code> para <code>git checkout</code> &eacute; muito &uacute;til, pois me permite digitar:</p>
+<p>A abrevia&ccedil;&atilde;o <code>gco</code> para <code>git checkout</code> &eacute; muito &uacute;til, pois me permite digitar:</p>
 
-<pre class="instructions">go &lt;branch&gt;</pre>
+<pre class="instructions">gco &lt;branch&gt;</pre>
 
 <p>para mudar para um branch em espec&iacute;fico.</p>
 

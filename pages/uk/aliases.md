@@ -51,23 +51,23 @@ git config --global alias.dump 'cat-file -p'</pre>
 
 <p>Якщо ваша оболонка підтримує псевдоніми чи скорочені шляхи, ви можете додавати псевдоніми і на цьому рівні. Я користуюся:</p>
 
-<h4 class="h4-pre">Файл: <em>.profile</em></h4>
+<h4 class="h4-pre">Файл: <em style="text-transform: none">.profile</em></h4>
 
 <pre class="file">alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias gco='git checkout '
 alias gk='gitk --all&amp;'
 alias gx='gitx --all'
 
 alias got='git '
 alias get='git '</pre>
 
-<p>Скорочення <code>go</code> для команди <code>git checkout</code> особливо корисне. Воно дозволяє мені вводити:</p>
+<p>Скорочення <code>gco</code> для команди <code>git checkout</code> особливо корисне. Воно дозволяє мені вводити:</p>
 
-<pre class="instructions">go &lt;branch&gt;</pre>
+<pre class="instructions">gco &lt;branch&gt;</pre>
 
 <p>для переходу в окрему гілку.</p>
 

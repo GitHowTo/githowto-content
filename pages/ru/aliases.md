@@ -58,16 +58,16 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias gco='git checkout '
 alias gk='gitk --all&amp;'
 alias gx='gitx --all'
 
 alias got='git '
 alias get='git '</pre>
 
-<p>Сокращение <code>go</code> для команды <code>git checkout</code> особенно полезно. Оно позволяет мне вводить:</p>
+<p>Сокращение <code>gco</code> для команды <code>git checkout</code> особенно полезно. Оно позволяет мне вводить:</p>
 
-<pre class="instructions">go &lt;branch&gt;</pre>
+<pre class="instructions">gco &lt;branch&gt;</pre>
 
 <p>для переключения в отдельную ветку.</p>
 

@@ -54,23 +54,23 @@ git config --global alias.dump 'cat-file -p'</pre>
 
 <p>If your shell supports aliases, or shortcuts, you can add aliases on this level, too. I use:</p>
 
-<h4 class="h4-pre">File: <em>.profile</em></h4>
+<h4 class="h4-pre">File: <em style="text-transform: none">.profile</em></h4>
 
 <pre class="file">alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias gh='git checkout '
+alias gco='git checkout '
 alias gk='gitk --all&amp;'
 alias gx='gitx --all'
 
 alias got='git '
 alias get='git '</pre>
 
-<p>The <code>gh</code> abbreviation for <code>git checkout</code> is very useful, allowing me to type:</p>
+<p>The <code>gco</code> abbreviation for <code>git checkout</code> is very useful, allowing me to type:</p>
 
-<pre class="instructions">gh &lt;branch&gt;</pre>
+<pre class="instructions">gco &lt;branch&gt;</pre>
 
 <p>to checkout a particular branch.</p>
 
