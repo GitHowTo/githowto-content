@@ -23,11 +23,11 @@ git config --global user.email "seu_email@qualquercoisa.com"</pre>
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git config --global core.autocrlf input
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>
 
 <p>Para usu&aacute;rios do Windows:</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git config --global core.autocrlf true
-git config --global core.safecrlf true</pre>
+git config --global core.safecrlf warn</pre>
