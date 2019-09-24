@@ -34,7 +34,7 @@ $ git hist --all
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Neste momento, o reposit&oacute;rio cont&eacute;m todos os commits do reposit&oacute;rio original. Por&eacute;m, eles n&atilde;o est&atilde;o integrafos com os branchs locais do reposit&oacute;rio clonado.</p>
+<p>Neste momento, o reposit&oacute;rio cont&eacute;m todos os commits do reposit&oacute;rio original. Por&eacute;m, eles n&atilde;o est&atilde;o integrados com os branchs locais do reposit&oacute;rio clonado.</p>
 
 <p>Voc&ecirc; vai ver o commit de nome &#8220;Changed <span class="caps">README</span> in original repo&#8221; no hist&oacute;rico. Perceba que o commit inclui &#8220;origin/master&#8221; e &#8220;origin/<span class="caps">HEAD</span>&#8221;.</p>
 

@@ -35,7 +35,7 @@ git commit -m "Oops, we didn't want this commit"</pre>
 
 <h2><em>03</em> Fa&ccedil;a um commit com as novas modifica&ccedil;&otilde;es que desfazem as modifica&ccedil;&otilde;es anteriores</h2>
 
-<p>Para desfazer o commit, precisamos de criar um commit que deleta as modifica&ccedil;&otilde;es feitas pelo commit indesejado.</p>
+<p>Para desfazer o commit, precisamos criar um commit que deleta as modifica&ccedil;&otilde;es feitas pelo commit indesejado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

@@ -72,7 +72,7 @@ $ git hist
 <p>Nosso branch master est&aacute; apontando para o commit v1 e "Revert Oops", e commits "Oops" n&atilde;o mais existem no branch. O par&acirc;metro  <code>--hard</code> aponta que o diret&oacute;rio de trabalho deve ser atualizado para refletir o novo head do branch.</p>
 <h2><em>05</em> Nada &eacute; perdido para sempre</h2>
 
-<p>O que acontece com os commits errados? Eles ainda est&atilde;o no reposit&oacute;rio. Na verdade, ainda podemos nos referir a eles. No in&iacute;cio da li&ccedil;&atilde;o, criamos a tag «oops» para o commit cancelado. Vamos dar uma olhada em <em>all</em>(todos) commits.</p>
+<p>O que acontece com os commits errados? Eles ainda est&atilde;o no reposit&oacute;rio. Na verdade, ainda podemos nos referir a eles. No in&iacute;cio da li&ccedil;&atilde;o, criamos a tag «oops» para o commit cancelado. Vamos dar uma olhada em <em>all</em> (todos) commits.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 

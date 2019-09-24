@@ -26,7 +26,7 @@ git commit -m "Added shared comment to readme"</pre>
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git push shared master</pre>
-<p><em>O reposit&oacute;rio comum</em> est&aacute; recebendo nossas modifica&ccedil;&otilde;es enviadas. (Lembre-se, nos adicionamos ele como um reposit&oacute;rio remoto na li&ccedil;&atilde;o anterior).</p>
+<p><em>O reposit&oacute;rio comum</em> est&aacute; recebendo nossas modifica&ccedil;&otilde;es enviadas. (Lembre-se, n&oacute;s adicionamos ele como um reposit&oacute;rio remoto na li&ccedil;&atilde;o anterior).</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 

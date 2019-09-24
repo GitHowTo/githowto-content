@@ -19,7 +19,7 @@ title: "13. Adicionando tags a vers&otilde;es"
 
 <h2><em>02</em> Tags em vers&otilde;es antigas</h2>
 
-<p>Vamos adicionar uma tag &agrave; vers&atilde;o anterior &agrave; nossa atual vers&atilde;o com o nome v1-beta. Antes de tudo, n&oacute;s vamos precisar de verificar as nossas vers&otilde;es anteriores. Ao inv&eacute;s de olhar pelo hash, n&oacute;s vamos usar a nota&ccedil;&atilde;o <code>^</code> indicando &#8220;o pai de v1&#8221;.</p>
+<p>Vamos adicionar uma tag &agrave; vers&atilde;o anterior &agrave; nossa atual vers&atilde;o com o nome v1-beta. Antes de tudo, n&oacute;s vamos precisar verificar as nossas vers&otilde;es anteriores. Ao inv&eacute;s de olhar pelo hash, n&oacute;s vamos usar a nota&ccedil;&atilde;o <code>^</code> indicando &#8220;o pai de v1&#8221;.</p>
 
 <p class="note">Se a nota&ccedil;&atilde;o <code>v1^</code> gera problemas, tente usar <code>v1~1</code> para referenciar a mesma vers&atilde;o. Essa nota&ccedil;&atilde;o significa &#8220;a primeira vers&atilde;o antes de v1&#8221;.</p>
 
@@ -104,4 +104,4 @@ v1-beta</pre>
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Voc&ecirc; pode ver as tags (<code>v1</code> e <code>v1-beta</code>) listadas no log juntamente com o nome do branch (<code>master</code>). O <code>HEAD</code> mostra o commit em que voc&ecirc; est&aacute; (atualmente <code>v1-beta</code>).</p>
+<p>Voc&ecirc; pode ver as tags (<code>v1</code> e <code>v1-beta</code>) listadas no log juntamente com o nome do branch (<code>master</code>). O <code>HEAD</code> mostra o commit em que voc&ecirc; est&aacute; atualmente (<code>v1-beta</code>).</p>

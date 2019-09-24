@@ -48,7 +48,7 @@ HEAD		ORIG_HEAD	description	index		logs		refs</pre>
 <pre class="sample">$ ls -C .git/objects/09
 6b74c56bfc6b40e754fc0725b8c70b2038b91e	9fb6f9d3a104feb32fcac22354c4d0e8a182c1</pre>
 
-<p>Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos contem os objetos armazenados no git. Eles s&atilde;o comprimidos e encriptados, ent&atilde;o &eacute; imposs&iacute;vel ver seu conte&uacute;do diretamente. Vamos dar uma olhada melhor no diret&oacute;rio Git.</p>
+<p>Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos cont&ecute;m os objetos armazenados no git. Eles s&atilde;o comprimidos e encriptados, ent&atilde;o &eacute; imposs&iacute;vel ver seu conte&uacute;do diretamente. Vamos dar uma olhada melhor no diret&oacute;rio Git.</p>
 
 <h2><em>04</em> Arquivo Config</h2>
 
@@ -93,7 +93,7 @@ v1-beta
 $ cat .git/refs/tags/v1
 fa3c1411aa09441695a9e645d4371e8d749da1dc</pre>
 
-<p>Arquivos no subdiret&oacute;rio de tags devem ser familiares pra voc&ecirc;. Cada arquivo corresponde a tag anteriormente criada usando o comando <code>git tag</code>. Seu conte&uacute;do n&atilde;o &eacute; nada mais que um ahsh de um commit associado &agrave; tag.</p>
+<p>Arquivos no subdiret&oacute;rio de tags devem ser familiares pra voc&ecirc;. Cada arquivo corresponde a tag anteriormente criada usando o comando <code>git tag</code>. Seu conte&uacute;do n&atilde;o &eacute; nada mais que um hash de um commit associado &agrave; tag.</p>
 
 <p>A pasta <em>heads</em> &eacute; quase id&ecirc;ntica e &eacute; usada n&atilde;o para tags, mas para branches. No momento, n&oacute;s s&oacute; temos um branch e tudo que voc&ecirc; v&ecirc; nessa pasta &eacute; um branch <em>master</em>.</p>
 
