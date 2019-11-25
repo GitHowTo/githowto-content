@@ -35,6 +35,6 @@ git config --global core.safecrlf warn</pre>
 
 <h2><em>03</em> Установка отображения unicode</h2>
 
-<p>По умолчанию, git будет печатать не-<a href="https://unicode-table.com/ru/#basic-latin">ASCII символов</a> в именах файлов в виде восьмеричных последовательностей <code>\nnn</code>. Что бы избежать нечитаемых строк, установите соответствующий флаг.</p>
+<p>По умолчанию, git будет печатать не-<a href="https://unicode-table.com/ru/#basic-latin">ASCII символы</a> в именах файлов в виде восьмеричных последовательностей <code>\nnn</code>. Чтобы избежать нечитаемых строк, установите соответствующий флаг:</p>
 
 <pre class="instructions">git config --global core.quotepath off</pre>
