@@ -45,7 +45,7 @@ title: "17. Removing a commit from a branch"
 
 <h2><em>03</em> Mark this branch first</h2>
 
-<p>Let us mark the last commit with <code>tag</tag>, so you can find it after removing a commit(s).</p>
+<p>Let us mark the last commit with <code>tag</code>, so you can find it after removing a commit(s).</p>
 
 <h4 class="h4-pre">Run:</h4>
 
