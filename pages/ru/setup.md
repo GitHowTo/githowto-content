@@ -18,7 +18,7 @@ git config --global user.email "your_email@whatever.com"</pre>
 
 <h2><em>02</em> Параметры установки окончаний строк</h2>
 
-<p>Также, для пользователей Unix/Mac:</p>
+<p>Для пользователей Unix/Mac:</p>
 
 <h4 class="h4-pre">Выполнить:</h4>
 
