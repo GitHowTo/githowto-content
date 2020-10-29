@@ -28,4 +28,4 @@ ls</pre>
 
 <h2><em>02</em> Mandando para o Git Daemon</h2>
 
-<p>Se voc&ecirc; quer mover o reposit&oacute;rio para o Git Daemon, adicione a tag <code>--enable=receive-pack</code> tag ao comando git daemon. Tenha aten&ccedil;&atilde;o, esse servidor n&atilde;o tem autentica&ccedil;&atilde;o, ent&atilde;o qualquer um pode enviar mudan&ccedil;as para o seu reposit&oacute;rio.</p>
+<p>Se voc&ecirc; quer mover o reposit&oacute;rio para o Git Daemon, adicione a tag <code>--enable=receive-pack</code> ao comando git daemon. Tenha aten&ccedil;&atilde;o, esse servidor n&atilde;o tem autentica&ccedil;&atilde;o, ent&atilde;o qualquer um pode enviar mudan&ccedil;as para o seu reposit&oacute;rio.</p>
