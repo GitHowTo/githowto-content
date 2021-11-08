@@ -48,7 +48,7 @@ committer Alexander Shvets &lt;alex@githowto.com&gt; 1299684476 -0500
 
 Added index.html.</pre>
 
-<p class="note"><strong>Nota:</strong> Se voc&ecirc; especificar o alias como «type» e «dump», como descrito na li&ccedil;&atilde;o correspondente, voc&ecirc; pode entrar os comandos <code>git type</code> e <code>git dump</code> ao inv&eacute;s de um comando longo (que eu nunca memorizo).</p>
+<p class="note"><strong>Nota:</strong> Se voc&ecirc; especificar o alias como "type" e "dump", como descrito na li&ccedil;&atilde;o correspondente, voc&ecirc; pode entrar os comandos <code>git type</code> e <code>git dump</code> ao inv&eacute;s de um comando longo (que eu nunca memorizo).</p>
 
 <p>Isso exibe o objeto de commit, que est&aacute; no in&iacute;cio do branch master.</p>
 

@@ -11,7 +11,7 @@ title: "24. Creating a Branch"
 
 <h2><em>01</em> Create a branch</h2>
 
-<p>Let us name our new branch «style».</p>
+<p>Let us name our new branch "style".</p>
 
 <h4 class="h4-pre">Run:</h4>
 

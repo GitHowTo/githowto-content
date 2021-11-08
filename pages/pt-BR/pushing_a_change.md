@@ -34,4 +34,4 @@ git commit -m "Added shared comment to readme"</pre>
 To ../hello.git
    2faa4ea..79f507c  master -&gt; master</pre>
 
-<p class="note"><strong>Nota:</strong> Tivemos que explicitamente especificar o branch master para submeter as mudan&ccedil;as. Isso pode ser configurado automaticamente, mas eu sempre esque&ccedil;o o comando. Para f&aacute;cil administra&ccedil;&atilde;o de seus branches remotos mude para «Git Remote Branch».</p>
+<p class="note"><strong>Nota:</strong> Tivemos que explicitamente especificar o branch master para submeter as mudan&ccedil;as. Isso pode ser configurado automaticamente, mas eu sempre esque&ccedil;o o comando. Para f&aacute;cil administra&ccedil;&atilde;o de seus branches remotos mude para "Git Remote Branch".</p>

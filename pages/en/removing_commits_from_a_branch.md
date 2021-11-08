@@ -53,7 +53,7 @@ title: "17. Removing a commit from a branch"
 
 <h2><em>04</em> Reset commit to previous Oops</h2>
 
-<p>In the history log above, the commit tagged «v1» is before the "Oops" and "Revert Oops" commits. Let us reset the branch to that point. As the branch has a tag, we can use the tag name in the reset command (if it does not have a tag, we can use the hash value).</p>
+<p>In the history log above, the commit tagged "v1" is before the "Oops" and "Revert Oops" commits. Let us reset the branch to that point. As the branch has a tag, we can use the tag name in the reset command (if it does not have a tag, we can use the hash value).</p>
 
 <h4 class="h4-pre">Run:</h4>
 
@@ -73,7 +73,7 @@ $ git hist
 <p>Our master branch is pointing at commit v1 and the "Revert Oops" and "Oops" commits no longer exist in the branch. The <code>--hard</code> parameter makes the working directory reflect the new branch head.</p>
 <h2><em>05</em> Nothing is ever lost</h2>
 
-<p>What happened to the wrong commits? They are still in the repository. Actually, we can still refer to them. At the beginning of the lesson, we created the «oops» tag for the canceled commit. Let us take a look at <em>all</em> commits.</p>
+<p>What happened to the wrong commits? They are still in the repository. Actually, we can still refer to them. At the beginning of the lesson, we created the "oops" tag for the canceled commit. Let us take a look at <em>all</em> commits.</p>
 
 <h4 class="h4-pre">Run:</h4>
 

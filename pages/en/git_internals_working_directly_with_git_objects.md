@@ -48,7 +48,7 @@ committer Alexander Shvets &lt;alex@githowto.com&gt; 1299684476 -0500
 
 Added index.html.</pre>
 
-<p class="note"><strong>Note:</strong> If you specify the alias as «type» and «dump», as described in the corresponding lesson, you can enter commands <code>git type</code> and  <code>git dump</code> instead of a long command (which I never memorize).</p>
+<p class="note"><strong>Note:</strong> If you specify the alias as "type" and "dump", as described in the corresponding lesson, you can enter commands <code>git type</code> and  <code>git dump</code> instead of a long command (which I never memorize).</p>
 
 <p>This displays the commit object, which is in the head of master branch.</p>
 
