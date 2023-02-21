@@ -9,9 +9,9 @@ description: "Git How To is a guided tour that walks through the fundamentals of
 
 <p><b>Git How To</b> is a guided tour that walks through the fundamentals of Git,
 inspired by the premise that to know a thing is to do it.</p>
-<p>By the way, if you know Ruby, you might better like the original <a
-href="http://gitimmersion.com/">Git Immersion</a>.</p>
+<p>By the way, if you know Ruby, you might better like the original <a href="http://gitimmersion.com/">Git Immersion</a>.</p>
 </div>
+
 <div class="w-full">
 <h1 class="font-3xl">Git?</h1>
 
