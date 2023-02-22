@@ -1,15 +1,15 @@
 ---
 view: page
-title: "14. Descartando mudan&ccedil;as locais (antes do stage)"
+title: "14. Descartando mudanças locais (antes do stage)"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como descartar mudan&ccedil;as no reposit&oacute;rio de trabalho</li></ul>
+<ul><li>Aprender como descartar mudanças no repositório de trabalho</li></ul>
 
 <h2><em>01</em> Acessando o branch Master</h2>
 
-<p>Verifique que voc&ecirc; esta no &uacute;ltimo commit do branch master antes de continuar.</p>
+<p>Verifique que você esta no último commit do branch master antes de continuar.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -17,9 +17,9 @@ title: "14. Descartando mudan&ccedil;as locais (antes do stage)"
 
 <h2><em>02</em> Mude o hello.html </h2>
 
-<p>Acontece de voc&ecirc; modificar o arquivo no seu diret&oacute;rio de trabalho local e &agrave;s vezes querer descartar as mudan&ccedil;as que voc&ecirc; fez commit. &Eacute; aqui que o comando checkout vai te ajudar.</p>
+<p>Acontece de você modificar o arquivo no seu diretório de trabalho local e às vezes querer descartar as mudanças que você fez commit. É aqui que o comando checkout vai te ajudar.</p>
 
-<p>Fa&ccedil;a mudan&ccedil;as ao arquivo hello.html na forma de um coment&aacute;rio indesejado.</p>
+<p>Faça mudanças ao arquivo hello.html na forma de um comentário indesejado.</p>
 
 <h4 class="h4-pre">Arquivo: <em>hello.html</em></h4>
 
@@ -34,7 +34,7 @@ title: "14. Descartando mudan&ccedil;as locais (antes do stage)"
 
 <h2><em>03</em> Confira o status</h2>
 
-<p>Primeiro de tudo, confira o status do reposit&oacute;rio de trabalho.</p>
+<p>Primeiro de tudo, confira o status do repositório de trabalho.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -52,11 +52,11 @@ title: "14. Descartando mudan&ccedil;as locais (antes do stage)"
 #
 no changes added to commit (use "git add" and/or "git commit -a")</pre>
 
-<p>N&oacute;s vemos que o arquivo <code>hello.html</code> foi modificado, mas ainda n&atilde;o est&aacute; no stage.</p>
+<p>Nós vemos que o arquivo <code>hello.html</code> foi modificado, mas ainda não está no stage.</p>
 
-<h2><em>04</em> Desfazendo as mudan&ccedil;as no diret&oacute;rio de trabalho</h2>
+<h2><em>04</em> Desfazendo as mudanças no diretório de trabalho</h2>
 
-<p>Use o comando <code>checkout</code> para remover a vers&atilde;o do arquivo <code>hello.html</code> que est&aacute; no reposit&oacute;rio.</p>
+<p>Use o comando <code>checkout</code> para remover a versão do arquivo <code>hello.html</code> que está no repositório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -79,4 +79,4 @@ $ cat hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>O comando status mostra que n&atilde;o existem mudan&ccedil;as que n&atilde;o est&atilde;o no stage no reposit&oacute;rio de trabalho. E o &#8220;coment&aacute;rio ruim&#8221; n&atilde;o est&aacute; mais no arquivo.</p>
+<p>O comando status mostra que não existem mudanças que não estão no stage no repositório de trabalho. E o &#8220;comentário ruim&#8221; não está mais no arquivo.</p>

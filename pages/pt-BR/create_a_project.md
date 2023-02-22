@@ -5,11 +5,11 @@ title: "3. Criando um projeto"
 
 <h3>Metas</h3>
 
-<ul><li>Aprender a criar um reposit&oacute;rio git do in&iacute;cio.</li></ul>
+<ul><li>Aprender a criar um repositório git do início.</li></ul>
 
-<h2><em>01</em> Crie uma p&aacute;gina de "Hello, World"</h2>
+<h2><em>01</em> Crie uma página de "Hello, World"</h2>
 
-<p>Comece com um diret&oacute;rio de trabalho vazio (por exemplo, Work, se voc&ecirc; fez download do arquivo do &uacute;ltimo passo) e crie um diret&oacute;rio vazio chamado “hello”. Ent&atilde;o, crie um arquivo <code>hello.html</code> dentro dele com o conte&uacute;do indicado abaixo.</p>
+<p>Comece com um diretório de trabalho vazio (por exemplo, Work, se você fez download do arquivo do último passo) e crie um diretório vazio chamado “hello”. Então, crie um arquivo <code>hello.html</code> dentro dele com o conteúdo indicado abaixo.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -21,9 +21,9 @@ touch hello.html</pre>
 
 <pre class="file">Hello, World</pre>
 
-<h2><em>02</em> Crie um reposit&oacute;rio</h2>
+<h2><em>02</em> Crie um repositório</h2>
 
-<p>Ent&atilde;o voc&ecirc; tem um diret&oacute;rio que tem um arquivo. Execute o comando git init para criar um reposit&oacute;rio do git a partir desse diret&oacute;rio.</p>
+<p>Então você tem um diretório que tem um arquivo. Execute o comando git init para criar um repositório do git a partir desse diretório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -35,16 +35,16 @@ touch hello.html</pre>
 Initialized empty Git repository in /Users/alex/Documents/Presentations/githowto/auto/hello/.git/
 </pre>
 
-<h2><em>03</em> Adicione a p&aacute;gina ao reposit&oacute;rio</h2>
+<h2><em>03</em> Adicione a página ao repositório</h2>
 
-<p>Agora vamos adicionar a p&aacute;gina “Hello, World” ao reposit&oacute;rio.</p>
+<p>Agora vamos adicionar a página “Hello, World” ao repositório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git add hello.html
 git commit -m "First Commit"</pre>
 
-<p>Voc&ecirc; ver&aacute; &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 

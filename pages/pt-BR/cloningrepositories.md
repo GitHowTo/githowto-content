@@ -1,17 +1,17 @@
 ---
 view: page
-title: "37. Clonando reposit&oacute;rios"
+title: "37. Clonando repositórios"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender a fazer c&oacute;pias dos reposit&oacute;rios.</li></ul>
+<ul><li>Aprender a fazer cópias dos repositórios.</li></ul>
 
-<p>Se voc&ecirc; est&aacute; trabalhando em grupo, &eacute; importante que voc&ecirc; entenda os pr&oacute;ximos 12 cap&iacute;tulos, porque voc&ecirc; geralmente ter&aacute; que trabalhar com reposit&oacute;rios clonados.</p>
+<p>Se você está trabalhando em grupo, é importante que você entenda os próximos 12 capítulos, porque você geralmente terá que trabalhar com repositórios clonados.</p>
 
-<h2><em>01</em> V&aacute; para o seu diret&oacute;rio de trabalho</h2>
+<h2><em>01</em> Vá para o seu diretório de trabalho</h2>
 
-<p>V&aacute; para o diret&oacute;rio de trabalho e clone o seu reposit&oacute;rio hello.</p>
+<p>Vá para o diretório de trabalho e clone o seu repositório hello.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -19,7 +19,7 @@ title: "37. Clonando reposit&oacute;rios"
 pwd
 ls</pre>
 
-<p style="color:red;"><strong><span class="caps">NOTA</span>: Agora n&oacute;s estamos no diret&oacute;rio de trabalho.</strong></p>
+<p style="color:red;"><strong><span class="caps">NOTA</span>: Agora nós estamos no diretório de trabalho.</strong></p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -29,10 +29,10 @@ $ pwd
 $ ls
 hello</pre>
 
-<p>Neste ponto voc&ecirc; deve estar no seu diret&oacute;rio &#8220;de trabalho&#8221;. Ele deve conter um &uacute;nico reposit&oacute;rio chamado &#8220;hello&#8221;.</p>
-<h2><em>02</em> Crie um clone do reposit&oacute;rio hello</h2>
+<p>Neste ponto você deve estar no seu diretório &#8220;de trabalho&#8221;. Ele deve conter um único repositório chamado &#8220;hello&#8221;.</p>
+<h2><em>02</em> Crie um clone do repositório hello</h2>
 
-<p>Vamos criar um clone do reposit&oacute;rio.</p>
+<p>Vamos criar um clone do repositório.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 <pre class="instructions">git clone hello cloned_hello
@@ -46,4 +46,4 @@ $ ls
 cloned_hello
 hello</pre>
 
-<p>Agora devem ter dois reposit&oacute;rios no seu diret&oacute;rio de trabalho: o &#8220;hello&#8221; original e o reposit&oacute;rio clonado, chamado &#8220;cloned_hello&#8221;.</p>
+<p>Agora devem ter dois repositórios no seu diretório de trabalho: o &#8220;hello&#8221; original e o repositório clonado, chamado &#8220;cloned_hello&#8221;.</p>

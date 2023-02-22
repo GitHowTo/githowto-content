@@ -1,28 +1,28 @@
 ---
 view: page
-title: "8. Fazendo commit das modifica&ccedil;&otilde;es"
+title: "8. Fazendo commit das modificações"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender a fazer commits para o reposit&oacute;rio</li></ul>
+<ul><li>Aprender a fazer commits para o repositório</li></ul>
 
-<h2><em>01</em> Fazendo commit das modifica&ccedil;&otilde;es</h2>
+<h2><em>01</em> Fazendo commit das modificações</h2>
 
-<p>Bem, chega de falar sobre stage. Vamos fazer commit das mudan&ccedil;as que est&atilde;o no stage para o reposit&oacute;rio.</p>
+<p>Bem, chega de falar sobre stage. Vamos fazer commit das mudanças que estão no stage para o repositório.</p>
 
-<p>Quando voc&ecirc; usou o comando <code>git commit</code> anteriormente para fazer commit da primeira vers&atilde;o do <code>hello.html</code> para o reposit&oacute;rio, voc&ecirc; incluiu a flag <code>-m</code> que permite um coment&aacute;rio na linha de comando. O comando de commit permite edi&ccedil;&atilde;o interativa de coment&aacute;rios para o commit. Agora, vamos ver como isso funciona.</p>
+<p>Quando você usou o comando <code>git commit</code> anteriormente para fazer commit da primeira versão do <code>hello.html</code> para o repositório, você incluiu a flag <code>-m</code> que permite um comentário na linha de comando. O comando de commit permite edição interativa de comentários para o commit. Agora, vamos ver como isso funciona.</p>
 
-<p>Se voc&ecirc; omitir a flag <code>-m</code> da linha de comando, o git vai abrir o editor da sua escolha, a partir dessa lista (em ordem de prioridade):</p>
+<p>Se você omitir a flag <code>-m</code> da linha de comando, o git vai abrir o editor da sua escolha, a partir dessa lista (em ordem de prioridade):</p>
 
 <ul>
-<li>Vari&aacute;vel de ambiente GIT_EDITOR </li>
-<li>Defini&ccedil;&atilde;o de configura&ccedil;&atilde;o core.editor</li>
-<li>Vari&aacute;vel de ambiente <span class="caps">VISUAL</span></li>
-<li>Vari&aacute;vel de ambiente <span class="caps">EDITOR</span></li>
+<li>Variável de ambiente GIT_EDITOR </li>
+<li>Definição de configuração core.editor</li>
+<li>Variável de ambiente <span class="caps">VISUAL</span></li>
+<li>Variável de ambiente <span class="caps">EDITOR</span></li>
 </ul>
 
-<p>Eu tenho a vari&aacute;vel <span class="caps">EDITOR</span> configurada para o <code>emacsclient</code> (dispon&iacute;vel para Linux and Mac).</p>
+<p>Eu tenho a variável <span class="caps">EDITOR</span> configurada para o <code>emacsclient</code> (disponível para Linux and Mac).</p>
 
 <p>Vamos fazer um commit e conferir o status.</p>
 
@@ -30,7 +30,7 @@ title: "8. Fazendo commit das modifica&ccedil;&otilde;es"
 
 <pre class="instructions">git commit</pre>
 
-<p>Voc&ecirc; ver&aacute; o seguinte no seu editor:</p>
+<p>Você verá o seguinte no seu editor:</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -44,7 +44,7 @@ title: "8. Fazendo commit das modifica&ccedil;&otilde;es"
 #	modified:   hello.html
 #</pre>
 
-<p>Na primeira linha, escreva o coment&aacute;rio: &#8220;Added <span class="caps">h1 tag</span>&#8221;. Salve o arquivo e saia do editor (para fazer isso no editor padr&atilde;o, pressione ESC e ent&atilde;o escreva <code>:wq</code> e aperte Enter). Voc&ecirc; dever&aacute; ver &#8230</p>
+<p>Na primeira linha, escreva o comentário: &#8220;Added <span class="caps">h1 tag</span>&#8221;. Salve o arquivo e saia do editor (para fazer isso no editor padrão, pressione ESC e então escreva <code>:wq</code> e aperte Enter). Você deverá ver &#8230</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -53,7 +53,7 @@ Waiting for Emacs...
 [master 569aa96] Added h1 tag
  1 files changed, 1 insertions(+), 1 deletions(-)</pre>
 
-<p>"Waiting for Emacs&#8230;" &eacute; obtido pelo programa <code>emacsclient</code> estar enviando o arquivo para um programa emacs em execu&ccedil;&atilde;o e esperando para ele ser fechado. O resto das informa&ccedil;&otilde;es &eacute; a mensagem padr&atilde;o de commits.</p>
+<p>"Waiting for Emacs&#8230;" é obtido pelo programa <code>emacsclient</code> estar enviando o arquivo para um programa emacs em execução e esperando para ele ser fechado. O resto das informações é a mensagem padrão de commits.</p>
 
 <h2><em>02</em> Conferindo o status</h2>
 
@@ -63,7 +63,7 @@ Waiting for Emacs...
 
 <pre class="instructions">git status</pre>
 
-<p>Voc&ecirc; ver&aacute; &#8230;</p>
+<p>Você verá &#8230;</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -71,4 +71,4 @@ Waiting for Emacs...
 # On branch master
 nothing to commit (working directory clean)</pre>
 
-<p>O diret&oacute;rio de trabalho est&aacute; limpo, voc&ecirc; pode continuar trabalhando.</p>
+<p>O diretório de trabalho está limpo, você pode continuar trabalhando.</p>

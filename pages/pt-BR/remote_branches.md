@@ -7,7 +7,7 @@ title: "40. Branches remotos"
 
 <ul><li>Aprender sobre branches locais e remotos</li></ul>
 
-<p>Vamos dar uma olhada nos branches do nosso reposit&oacute;rio clonado.</p>
+<p>Vamos dar uma olhada nos branches do nosso repositório clonado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -18,7 +18,7 @@ title: "40. Branches remotos"
 <pre class="sample">$ git branch
 * master</pre>
 
-<p>Como podemos ver, apenas o branch master est&aacute; listado. Onde est&aacute; o branch style? <code>git branch</code> lista apenas os branches locais, por padr&atilde;o.</p>
+<p>Como podemos ver, apenas o branch master está listado. Onde está o branch style? <code>git branch</code> lista apenas os branches locais, por padrão.</p>
 <h2><em>01</em> Lista dos branches remotos</h2>
 
 <p>Para ver todos os branches, use o seguinte comando:</p>
@@ -35,4 +35,4 @@ title: "40. Branches remotos"
   remotes/origin/style
   remotes/origin/master</pre>
 
-<p>O Git lista todos os commits do reposit&oacute;rio original, mas os branches do reposit&oacute;rio remoto n&atilde;o s&atilde;o tratados como os locais. Se n&oacute;s precisamos do nosso pr&oacute;prio branch <strong>style</strong>, teremos que cri&aacute;-lo. Em um minuto voc&ecirc; ver&aacute; como isso &eacute; feito.</p>
+<p>O Git lista todos os commits do repositório original, mas os branches do repositório remoto não são tratados como os locais. Se nós precisamos do nosso próprio branch <strong>style</strong>, teremos que criá-lo. Em um minuto você verá como isso é feito.</p>

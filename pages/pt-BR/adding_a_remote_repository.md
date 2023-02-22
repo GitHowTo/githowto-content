@@ -1,17 +1,17 @@
 ---
 view: page
-title: "47. Adicionando um reposit&oacute;rio remoto"
+title: "47. Adicionando um repositório remoto"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Adicionar um reposit&oacute;rio bare como um remoto para o nosso reposit&oacute;rio original.</li></ul>
+<ul><li>Adicionar um repositório bare como um remoto para o nosso repositório original.</li></ul>
 
-<p>Vamos adicionar o reposit&oacute;rio <code>hello.git</code> ao nosso reposit&oacute;rio original.</p>
+<p>Vamos adicionar o repositório <code>hello.git</code> ao nosso repositório original.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">cd hello
 git remote add shared ../hello.git</pre>
 
-<p style="color:red;"><strong><span class="caps">NOTA</span>: N&oacute;s estamos agora no reposit&oacute;rio <ins>hello</ins>.</strong></p>
+<p style="color:red;"><strong><span class="caps">NOTA</span>: Nós estamos agora no repositório <ins>hello</ins>.</strong></p>

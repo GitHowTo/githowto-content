@@ -5,7 +5,7 @@ title: "25. Navegando em Branches"
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como navegar entre branches de reposit&oacute;rios.</li></ul>
+<ul><li>Aprender como navegar entre branches de repositórios.</li></ul>
 
 <p>Agora o seu projeto possui dois branches:</p>
 
@@ -50,7 +50,7 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Agora estamos no branch master. Isso pode ser provado pelo arquivo <code>hello.html</code> que n&atilde;o usa os styles do <code>style.css</code>.</p>
+<p>Agora estamos no branch master. Isso pode ser provado pelo arquivo <code>hello.html</code> que não usa os styles do <code>style.css</code>.</p>
 
 <h2><em>02</em> Vamos retornar para o branch do style.</h2>
 
@@ -74,4 +74,4 @@ $ cat lib/hello.html
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>Agora estamos de volta a um branch <strong>style</strong> que pode ser provado pelos conte&uacute;dos de <code>lib/hello.html</code>.</p>
+<p>Agora estamos de volta a um branch <strong>style</strong> que pode ser provado pelos conteúdos de <code>lib/hello.html</code>.</p>

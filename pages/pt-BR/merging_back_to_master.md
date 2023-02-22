@@ -5,7 +5,7 @@ title: "35. Fundindo com o branch master"
 
 <h3>Metas</h3>
 
-<ul><li>N&oacute;s mantivemos nosso branch style atualizado em rela&ccedil;&atilde;o ao branch master (usando rebase), mas agora vamos fundir as modifica&ccedil;&otilde;es de volta no master.</li></ul>
+<ul><li>Nós mantivemos nosso branch style atualizado em relação ao branch master (usando rebase), mas agora vamos fundir as modificações de volta no master.</li></ul>
 
 <h2><em>01</em> Fundindo style no master</h2>
 
@@ -28,9 +28,9 @@ Fast-forward
  3 files changed, 13 insertions(+), 3 deletions(-)
  create mode 100644 lib/style.css</pre>
 
-<p>J&aacute; que o &uacute;ltimo commit do master &eacute; anterior ao o &uacute;ltimo commit do branch style, o git consegue fundir em modo de avan&ccedil;o r&aacute;pido - simplesmente movendo o ponteiro do branch para frente, apontando para o mesmo commit que o branch style.</p>
+<p>Já que o último commit do master é anterior ao o último commit do branch style, o git consegue fundir em modo de avanço rápido - simplesmente movendo o ponteiro do branch para frente, apontando para o mesmo commit que o branch style.</p>
 
-<p>Conflitos n&atilde;o surgem no fast-forward merge.</p>
+<p>Conflitos não surgem no fast-forward merge.</p>
 
 <h2><em>02</em> Confira os logs</h2>
 
@@ -50,4 +50,4 @@ Fast-forward
 * 43628f7 2011-03-09 | Added h1 tag [Alexander Shvets]
 * 911e8c9 2011-03-09 | First Commit [Alexander Shvets]</pre>
 
-<p>Agora o style e o master s&atilde;o id&ecirc;nticos.</p>
+<p>Agora o style e o master são idênticos.</p>

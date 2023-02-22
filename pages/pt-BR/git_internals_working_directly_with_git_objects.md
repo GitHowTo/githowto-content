@@ -7,25 +7,25 @@ title: "23. Dentro do Git: Trabalhando diretamente com objetos do git"
 
 <ul>
 <li>Explorar a estrutura dos objetos do banco de dados</li>
-<li>Usar hashes SHA1 para pesquisar por conte&uacute;do no reposit&oacute;rio</li>
+<li>Usar hashes SHA1 para pesquisar por conteúdo no repositório</li>
 </ul>
 
 <p>Vamos examinar os objetos do git com algumas ferramentas.</p>
 
-<h2><em>01</em> Procurando pelo &uacute;ltimo commit</h2>
+<h2><em>01</em> Procurando pelo último commit</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git hist --max-count=1</pre>
 
-<p>Esse comando deve encontrar o &uacute;ltimo commit nesse reposit&oacute;rio. A hash SHA1 provavelmente &eacute; diferente em nossos sistemas, mas voc&ecirc; deve ver algo como isto.</p>
+<p>Esse comando deve encontrar o último commit nesse repositório. A hash SHA1 provavelmente é diferente em nossos sistemas, mas você deve ver algo como isto.</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
 <pre class="sample">$ git hist --max-count=1
 * 8029c07 2011-03-09 | Added index.html. (HEAD, master) [Alexander Shvets]</pre>
 
-<h2><em>02</em> Exibi&ccedil;&atilde;o do &uacute;ltimo commit</h2>
+<h2><em>02</em> Exibição do último commit</h2>
 
 <p>Com a hash SHA1, tal como acima...</p>
 
@@ -48,19 +48,19 @@ committer Alexander Shvets &lt;alex@githowto.com&gt; 1299684476 -0500
 
 Added index.html.</pre>
 
-<p class="note"><strong>Nota:</strong> Se voc&ecirc; especificar o alias como "type" e "dump", como descrito na li&ccedil;&atilde;o correspondente, voc&ecirc; pode entrar os comandos <code>git type</code> e <code>git dump</code> ao inv&eacute;s de um comando longo (que eu nunca memorizo).</p>
+<p class="note"><strong>Nota:</strong> Se você especificar o alias como "type" e "dump", como descrito na lição correspondente, você pode entrar os comandos <code>git type</code> e <code>git dump</code> ao invés de um comando longo (que eu nunca memorizo).</p>
 
-<p>Isso exibe o objeto de commit, que est&aacute; no in&iacute;cio do branch master.</p>
+<p>Isso exibe o objeto de commit, que está no início do branch master.</p>
 
-<h2><em>03</em> Busca em &aacute;rvore</h2>
+<h2><em>03</em> Busca em árvore</h2>
 
-<p>N&oacute;s podemos exibir a &aacute;rvore referenciada no commit. Isso deveria ser uma descri&ccedil;&atilde;o do arquivo no nosso projeto (para um commit espec&iacute;fico). Use a hash SHA1 da string da &aacute;rvore listada acima.</p>
+<p>Nós podemos exibir a árvore referenciada no commit. Isso deveria ser uma descrição do arquivo no nosso projeto (para um commit específico). Use a hash SHA1 da string da árvore listada acima.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git cat-file -p &lt;treehash&gt;</pre>
 
-<p>Aqui est&aacute; a minha &aacute;rvore ...</p>
+<p>Aqui está a minha árvore ...</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -70,7 +70,7 @@ Added index.html.</pre>
 
 <p>Eu posso ver o arquivo e a pasta da lib do <code>index.html</code>.</p>
 
-<h2><em>04</em> Exibir diret&oacute;rio da lib</h2>
+<h2><em>04</em> Exibir diretório da lib</h2>
 
 <h4 class="h4-pre">Execute:</h4>
 
@@ -101,8 +101,8 @@ Added index.html.</pre>
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-<p>E a&iacute; est&aacute;. Objetos &aacute;rvores, objetos de commits e objetos blob s&atilde;o exibidos diretamente do reposit&oacute;rio do git. E isso &eacute; tudo que tem - &aacute;rvores, blobs e commits.</p>
+<p>E aí está. Objetos árvores, objetos de commits e objetos blob são exibidos diretamente do repositório do git. E isso é tudo que tem - árvores, blobs e commits.</p>
 
-<h2><em>06</em> Explore voc&ecirc; mesmo</h2>
+<h2><em>06</em> Explore você mesmo</h2>
 
-<p>O reposit&oacute;rio git pode ser explorado manualmente. Tente achar manualmente o arquivo <code>hello.html</code> original do primeiro commit com ajuda da hash SHA1 referenciada no &uacute;ltimo commit.</p>
+<p>O repositório git pode ser explorado manualmente. Tente achar manualmente o arquivo <code>hello.html</code> original do primeiro commit com ajuda da hash SHA1 referenciada no último commit.</p>

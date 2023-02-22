@@ -1,14 +1,14 @@
 ---
 view: page
-title: "48. Submetendo modifica&ccedil;&otilde;es"
+title: "48. Submetendo modificações"
 ---
 
 <h3>Metas</h3>
 
-<ul><li>Aprender como submeter modifica&ccedil;&otilde;es para o reposit&oacute;rio remoto</li></ul>
+<ul><li>Aprender como submeter modificações para o repositório remoto</li></ul>
 
-<p>A partir de um reposit&oacute;rio limpo, geralmente compartilhado em qualquer servidor de rede, precisamos enviar nossas modifica&ccedil;&otilde;es a outros reposit&oacute;rios.
-Comece criando uma modifica&ccedil;&atilde;o para ser enviada. Edite o arquivo README e fa&ccedil;a um commit</p>
+<p>A partir de um repositório limpo, geralmente compartilhado em qualquer servidor de rede, precisamos enviar nossas modificações a outros repositórios.
+Comece criando uma modificação para ser enviada. Edite o arquivo README e faça um commit</p>
 
 <h4 class="h4-pre"> Arquivo: <em> README </em></h4>
 
@@ -21,12 +21,12 @@ Comece criando uma modifica&ccedil;&atilde;o para ser enviada. Edite o arquivo R
 git add README
 git commit -m "Added shared comment to readme"</pre>
 
-<p>Agora envie as modifica&ccedil;&otilde;es para o reposit&oacute;rio compartilhado.</p>
+<p>Agora envie as modificações para o repositório compartilhado.</p>
 
 <h4 class="h4-pre">Execute:</h4>
 
 <pre class="instructions">git push shared master</pre>
-<p><em>O reposit&oacute;rio comum</em> est&aacute; recebendo nossas modifica&ccedil;&otilde;es enviadas. (Lembre-se, n&oacute;s adicionamos ele como um reposit&oacute;rio remoto na li&ccedil;&atilde;o anterior).</p>
+<p><em>O repositório comum</em> está recebendo nossas modificações enviadas. (Lembre-se, nós adicionamos ele como um repositório remoto na lição anterior).</p>
 
 <h4 class="h4-pre">Resultado:</h4>
 
@@ -34,4 +34,4 @@ git commit -m "Added shared comment to readme"</pre>
 To ../hello.git
    2faa4ea..79f507c  master -&gt; master</pre>
 
-<p class="note"><strong>Nota:</strong> Tivemos que explicitamente especificar o branch master para submeter as mudan&ccedil;as. Isso pode ser configurado automaticamente, mas eu sempre esque&ccedil;o o comando. Para f&aacute;cil administra&ccedil;&atilde;o de seus branches remotos mude para "Git Remote Branch".</p>
+<p class="note"><strong>Nota:</strong> Tivemos que explicitamente especificar o branch master para submeter as mudanças. Isso pode ser configurado automaticamente, mas eu sempre esqueço o comando. Para fácil administração de seus branches remotos mude para "Git Remote Branch".</p>
