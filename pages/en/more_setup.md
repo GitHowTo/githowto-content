@@ -12,7 +12,7 @@ title: "2. The final preparation"
 <p>Download the tutorial materials here:</p>
 
 <ul>
-<li><a href="http://githowto.com/git_tutorial.zip">http://githowto.com/git_tutorial.zip</a></li>
+<li><a href="https://githowto.com/git_tutorial.zip">https://githowto.com/git_tutorial.zip</a></li>
 </ul>
 
 <h2><em>02</em> Extract the tutorial materials</h2>
