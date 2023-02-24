@@ -12,7 +12,7 @@ title: "2. Финальные приготовления"
 <p>Скачайте учебные материалы здесь:</p>
 
 <ul>
-<li><a href="https://githowto.com/git_tutorial.zip" target="_blank">https://githowto.com/git_tutorial.zip</a></li>
+<li><a href="/git_tutorial.zip" target="_blank" prefetch="0">https://githowto.com/git_tutorial.zip</a></li>
 </ul>
 
 <h2><em>02</em> Распакуйте учебные материалы</h2>
