@@ -7,13 +7,13 @@ title: "14. Отмена локальных изменений (до индек�
 
 <ul><li>Научиться отменять изменения в рабочем каталоге</li></ul>
 
-<h2><em>01</em> Переключитесь на ветку Master </h2>
+<h2><em>01</em> Переключитесь на ветку main </h2>
 
-<p>Убедитесь, что вы находитесь на последнем коммите ветки master, прежде чем продолжить работу.</p>
+<p>Убедитесь, что вы находитесь на последнем коммите ветки main, прежде чем продолжить работу.</p>
 
 <h4 class="h4-pre">Выполните:</h4>
 
-<pre class="instructions">git checkout master</pre>
+<pre class="instructions">git checkout main</pre>
 
 <h2><em>02</em> Измените hello.html </h2>
 
@@ -43,7 +43,7 @@ title: "14. Отмена локальных изменений (до индек�
 <h4 class="h4-pre">Результат:</h4>
 
 <pre class="sample">$ git status
-# On branch master
+# On branch main
 # Changes not staged for commit:
 #   (use "git add &lt;file&gt;..." to update what will be committed)
 #   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
@@ -68,7 +68,7 @@ cat hello.html</pre>
 
 <pre class="sample">$ git checkout hello.html
 $ git status
-# On branch master
+# On branch main
 nothing to commit (working directory clean)
 $ cat hello.html
 &lt;html&gt;
