@@ -1,0 +1,14 @@
+$ git show v1
+b7614c1 2023-11-28 | Added HTML header (tag: v1) [Alexander Shvets]
+
+diff --git a/hello.html b/hello.html
+index 6da0629..0d576c4 100644
+--- a/hello.html
++++ b/hello.html
+@@ -1,4 +1,6 @@
+ <html>
++  <head>
++  </head>
+   <body>
+     <h1>Hello, World!</h1>
+   </body>

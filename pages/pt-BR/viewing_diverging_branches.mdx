@@ -1,0 +1,27 @@
+---
+title: "22. Visualizando os diferentes branches"
+---
+
+### Metas
+
+- Aprender como visualizar os diferentes branches no repositório.
+
+## _01_ Vendo o branch atual
+
+Agora temos duas ramificações divergentes no repositório. Use o seguinte comando `log` para visualizar as ramificações e como elas divergem.
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/22-01.txt]
+```
+</Output>
+
+A flag `--all` garante que nós vejamos todos os branches. Por padrão, apenas o branch atual é mostrado.
+
+A flag `--graph` adiciona uma árvore de commit simples representada por linhas de texto básicas. Vemos as duas ramificações (`style` e `main`) e que a ramificação `main` está marcada como `HEAD`, o que significa que é a atual. O ancestral comum a ambas as ramificações é a ramificação em que o commit "Added copyright statement with email" foi introduzido.

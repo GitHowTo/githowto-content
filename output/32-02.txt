@@ -1,0 +1,12 @@
+$ git remote show origin
+* remote origin
+  Fetch URL: /home/alex/githowto/repositories/work
+  Push  URL: /home/alex/githowto/repositories/work
+  HEAD branch: main
+  Remote branches:
+    main  tracked
+    style tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)

@@ -1,0 +1,5 @@
+$ git checkout hello.html
+Updated 1 path from the index
+$ git status
+On branch main
+nothing to commit, working tree clean

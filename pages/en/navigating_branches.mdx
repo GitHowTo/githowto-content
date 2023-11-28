@@ -1,0 +1,57 @@
+---
+title: "19. Switching branches"
+---
+
+### Goals
+
+- Learn how to switch between the repository branches.
+
+Now our project has two branches:
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-01.txt]
+```
+</Output>
+
+## _01_ Switching to the `main` branch
+
+To switch between branches, use the `git switch` command.
+
+<Run>
+```
+git switch main
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-02.txt]
+```
+</Output>
+
+Now we are on the `main` branch. As you see, the `hello.html` has no traces of `style.css`. Don't worry; it is still in the repository, but we can't see it from the `main` branch.
+
+## _02_ Let us return to the `style` branch
+
+<Run>
+```
+git switch style
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-03.txt]
+```
+</Output>
+
+We are back to the `style` branch. As you can see, our CSS-related changes are present.

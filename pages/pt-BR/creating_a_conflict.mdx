@@ -1,0 +1,63 @@
+---
+title: "24. Criando um conflito"
+---
+
+### Metas
+
+- Criar um conflito de mudanças no branch `main`.
+
+Quando você mescla dois ramos, o Git tenta mover as alterações de um ramo para o outro. Se a mesma parte do arquivo tiver sido alterada em ambos os ramos, o Git poderá não ser capaz de combinar as alterações automaticamente. Nesse caso, o Git informará um conflito e pedirá que você o resolva manualmente. Nesta lição, simularemos um conflito e depois aprenderemos a resolvê-lo.
+
+Na vida real, os conflitos de mesclagem acontecem regularmente quando se trabalha em equipe. Por exemplo, você e seu colega começaram a trabalhar em dois recursos diferentes, afetando os mesmos arquivos. Seu colega terminou o trabalho primeiro e mesclou as alterações dele com a ramificação `main`. Agora você também deseja mesclar suas próprias alterações na ramificação `main`. Mas o ramo `main` agora é diferente daquele em que você começou a trabalhar — há um novo código, enviado pelo seu colega. Muito provavelmente, o Git não conseguirá mesclar suas alterações automaticamente e pedirá ajuda humana.
+
+## _01_ Voltar para o main e criar o conflito
+
+Lembra-se de que, em nossa ramificação `main`, a página ainda se chama `hello.html`? Volte para a ramificação `main` e faça as seguintes alterações:
+
+<Run no_title={true}>
+```
+git switch main
+```
+</Run>
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    →<title>Hello World Page</title>←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    →<p>Let's learn Git together.</p>←
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Added meta title"
+```
+</Run>
+
+## _02_ Visualize os branches
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/24-01.txt]
+```
+</Output>
+
+Depois de um commit "Added README" o branch `main` foi fundido com o branch `style`, mas existe um commit aditional do `main`, que não foi fundido com o branch `style`.
+
+## _03_ Próximo
+
+A última modificação feita no `main` entra em conflito com algumas mudanças do `style`. No próximo passo nós vamos resolver esse conflito.

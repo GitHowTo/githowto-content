@@ -1,0 +1,67 @@
+---
+title: "10. Getting older versions"
+---
+
+### Goals
+
+- Learn how to check out any previous version into the working directory.
+
+Git make time traveling possible, at least for your project. The `checkout` command will update your working directory to any previous commit.
+
+## _01_ Getting hashes of the previous commit
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/10-01.txt]
+```
+</Output>
+
+Check the log data and find the hash of the initial commit. You will find it in the last line of the output. Use the hash (its first 7 characters are enough) in the command below. After that check the contents of the `hello.html` file.
+
+<Run>
+```
+git checkout <hash>
+cat hello.html
+```
+</Run>
+
+> Many Git commands accept commit hashes as arguments. Commit hashes will vary from repository to repository, so when you see a command with the `<hash>` mark, it means that you need to substitute it with the actual hash from your repository.
+
+You will see:
+
+<Output>
+```git
+==include[output/10-02.txt]
+```
+</Output>
+
+Note that the current content of the `hello.html` file is the content that we started with in the very beginning.
+
+## _02_ Returning to the latest version in the `main` branch
+
+To return to the latest version of our code, we need to switch to the default `main` branch. We can use the `switch` command to switch between branches.
+
+> The `checkout` command has been a swiss army knife in the world of Git for a long time. It has tons of various options that let you run entirely different things: switch branches, reset code, etc. At some point, the Git team decided to split the command into several commands. The `switch` command is one of them—its sole purpose is to switch between branches. The `checkout` command is still available, but it is no longer recommended to use it for switching branches.
+
+<Run>
+```
+git switch main
+cat hello.html
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/10-03.txt]
+```
+</Output>
+
+`main` is the name of the default branch. By switching to a branch, you go to its latest version.

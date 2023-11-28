@@ -1,0 +1,102 @@
+---
+title: "28. Rebase"
+---
+
+### Metas
+
+- Usar o comando `rebase` ao invés do merge.
+
+Revertemos o branch `style` para o ponto no histórico antes da primeira mesclagem. Há dois commits que estão no ramo `main`, mas não no ramo `style`: o novo arquivo `README` e a alteração conflitante no arquivo `index.html`. Desta vez, moveremos essas alterações para o ramo `style` usando o comando `rebase` em vez do `merge`.
+
+## _01_ Rebase do ramo `style` para o `main`
+
+<Run>
+```
+git switch style
+git rebase main
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/28-01.txt]
+```
+</Output>
+
+Há um conflito novamente! Observe que o conflito está em `hello.html` e não em `index.html` como da última vez. Isso ocorre porque o `rebase` estava no processo de aplicar as alterações de `style` sobre a ramificação `main`. O arquivo `hello.html` ainda não foi renomeado no `main`, portanto, ainda tem o nome antigo.
+
+Ao fazer a mesclagem, teríamos um conflito "reverso". Durante a mesclagem, as alterações da ramificação `main` seriam aplicadas sobre a ramificação `style`. A ramificação `style` tem o arquivo renomeado, portanto, o conflito estaria em `index.html`.
+
+<File file="hello.html">
+```html
+==include[output/28-01-1.txt]
+```
+</File>
+
+
+## _02_ Resolver o conflito
+
+O conflito em si pode ser resolvido da mesma forma que fizemos anteriormente. Primeiro, editamos o arquivo `hello.html` para atender às nossas expectativas.
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    <title>Hello World Page</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Let's learn Git together.</p>
+  </body>
+</html>
+```
+</File>
+
+Mas depois disso, não precisamos confirmar as alterações. Podemos simplesmente adicionar o arquivo ao índice e continuar o processo de rebase. É por isso que adoro o rebase! Ele me permite corrigir conflitos sem criar um monte de conflitos de mesclagem feios.
+
+> Por uma questão de simplicidade, podemos adicionar todos os arquivos usando `.`, que representa o caminho do diretório atual. O Git interpreta isso como "adicionar todos os arquivos no diretório atual e seus subdiretórios".
+
+<Run>
+```
+git add .
+git rebase --continue
+```
+</Run>
+
+Aqui, muito provavelmente, o Git abrirá o editor novamente, para que possamos alterar a mensagem do commit. Podemos deixar a mensagem como está. Ao salvar as alterações, o Git concluirá o processo de rebase e poderemos prosseguir com os comandos a seguir:
+
+<Run>
+```
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/28-02.txt]
+```
+</Output>
+
+
+## _03_ Merge VS Rebase
+
+O resultado do comando `rebase` parece muito com o do `merge`. O branch `style` atualmente contém todas as suas mudanças, além das mudanças do branch `main`. A árvore de commits, porém, está um pouco diferente. A árvore de commit do branch `style` foi reescrita para fazer o branch `main` parte do histórico de commits. Isso faz com que a cadeia de commits seja mais linear e legível.
+
+
+## _04_ Quando usar o comando `rebase` e quando usar o comando `merge`?
+
+Use o comando `rebase`:
+
+- Quando você obtém alterações de um repositório remoto e deseja aplicá-las ao seu branch local.
+- Se você quiser manter o histórico de commits linear e fácil de ler.
+
+Não use o comando `rebase`:
+
+- Se o branch atual for público e compartilhado. A reescrita dessas ramificações atrapalhará o trabalho de outros membros da equipe.
+- Quando o histórico _exato_ do branch de commit for importante (porque o comando `rebase` reescreve o histórico de commits).
+
+Considerando as recomendações acima, prefiro usar o `rebase` para branches locais de curto prazo e o comando `merge` para branches no repositório público.

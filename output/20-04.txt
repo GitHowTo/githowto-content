@@ -1,0 +1,7 @@
+$ git add .
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    hello.html -> index.html
+

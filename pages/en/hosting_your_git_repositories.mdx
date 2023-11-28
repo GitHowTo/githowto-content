@@ -1,0 +1,43 @@
+---
+title: "42. Hosting your Git repository"
+---
+
+> Hey, congrats for making it this far! Please consider this a bonus topic.
+
+### Goals
+
+- Learn how to set up Git server for sharing repositories.
+
+Want to make your own GitHub? There are many ways to share Git repositories over the network. Here is a quick and dirty way.
+
+## _01_ Launch the Git server
+
+<Run>
+```
+# (From the "repositories" directory)
+git daemon --verbose --export-all --base-path=.
+```
+</Run>
+
+Now, go to your `repositories` directory in a separate terminal window.
+
+<Run>
+```
+# (From the "repositories" directory)
+git clone git://localhost/work.git network_work
+cd network_work
+ls
+```
+</Run>
+
+You will find a copy of the `work` project.
+
+## _02_ Pushing to the Git Daemon
+
+If you want to allow push to the repository Git Daemon, add `--enable=receive-pack` tag to the `git daemon` command. Be attentive, this server does not perform authentication, so anyone can push changes to your repository.
+
+## _03_ Sharing repositories
+
+At this point, sky is the limit. Go wild! Rent a server, buy a domain name, host your repositories on this server, and you'll enjoy your private GitHub!
+
+Seriously, though, you can host your own private [GitLab](https://gitlab.com/). It's free and open source.

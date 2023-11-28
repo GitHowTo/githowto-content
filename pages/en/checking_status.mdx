@@ -1,0 +1,34 @@
+---
+title: "3. Checking the status of the repository"
+---
+
+### Goals
+
+- Learn how to check the repository’s status.
+
+## _01_ Check the status of the repository
+
+Use the `git status` command, to check the current state of the repository.
+
+<Run>
+```
+git status
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/03-01.txt]
+```
+</Output>
+
+> If you see `On branch master` instead of `On branch main` after running the previous command, it means that you have a slightly older version of Git, which didn't understand us when we asked to set the default branch name to `main`. In this case, you can rename the branch name to `main` with the following command:
+> ```
+> git branch -m master main
+> ```
+
+The command checks the status and reports that there’s nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.
+
+We will use the `git status` command to keep monitoring the states of both the working directory and the repository.

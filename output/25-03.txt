@@ -1,0 +1,4 @@
+$ git merge --abort
+$ git status
+On branch style
+nothing to commit, working tree clean

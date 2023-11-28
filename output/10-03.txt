@@ -1,0 +1,11 @@
+$ git switch main
+Previous HEAD position was 5836970 Initial commit
+Switched to branch 'main'
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>

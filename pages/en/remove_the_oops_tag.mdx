@@ -1,0 +1,26 @@
+---
+title: "16. Removing the <code>oops</code> tag"
+---
+
+### Goals
+
+- Removing the `oops` tag.
+
+## _01_ Removal of the `oops` tag
+
+The `oops` tag has performed its function. Let us remove that tag and permit the garbage collector to delete referenced commit.
+
+<Run>
+```
+git tag -d oops
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/16-01.txt]
+```
+</Output>
+
+The `oops` tag will no longer appear in the repository.

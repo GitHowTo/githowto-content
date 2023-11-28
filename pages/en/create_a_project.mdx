@@ -1,0 +1,60 @@
+---
+title: "2. Creating a project"
+---
+
+### Goals
+
+- Learn how to create a Git repository from scratch.
+
+## _01_ Create a “Hello, World!” page
+
+Get started in an empty directory (for example, `repositories`, if you downloaded the file from the previous step) and add an empty subdirectory named `work`, then create a `hello.html` file in it with the following contents.
+
+<Run>
+```
+mkdir work
+cd work
+touch hello.html
+```
+</Run>
+
+<File file="hello.html">
+```html
+Hello, World!
+```
+</File>
+
+## _02_ Create a repository
+
+So you have a directory that contains one file. Run `git init` in order to create a Git repo from that directory.
+
+<Run>
+```
+git init
+```
+</Run>
+
+<Output>
+```git
+==include[output/02-01.txt]
+```
+</Output>
+
+## _03_ Add the page to the repository
+
+Now let's add the “Hello, World” page to the repository.
+
+<Run>
+```
+git add hello.html
+git commit -m "Initial Commit"
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/02-02.txt]
+```
+</Output>

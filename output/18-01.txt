@@ -1,0 +1,5 @@
+$ git switch -c style
+Switched to a new branch 'style'
+$ git status
+On branch style
+nothing to commit, working tree clean

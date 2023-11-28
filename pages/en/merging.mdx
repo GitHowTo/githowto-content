@@ -1,0 +1,33 @@
+---
+title: "23. Merging"
+---
+
+### Goals
+
+- Learn how to merge two distinct branches to restore changes to a single branch.
+
+## _01_ Merge the branches
+
+Merging brings changes from two branches into one. Let us go back to the `style` branch and merge it with `main`.
+
+<Run>
+```
+git switch style
+git merge main
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/23-01.txt]
+```
+</Output>
+
+Through periodic `main` branch merging with the `style` branch you can pick up any changes or modifications to the `main` to maintain compatibility with the `style` changes in the mainline.
+
+However, it does produce ugly commit graphs. Later we will look at the option of rebasing rather than merging.
+
+## _02_ Next
+
+But what if changes to the `main` branch conflict with changes in `style`?

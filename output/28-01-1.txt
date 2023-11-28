@@ -1,0 +1,14 @@
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+<<<<<<< HEAD
+    <title>Hello World Page</title>
+=======
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+>>>>>>> 903eb1d (Included stylesheet into hello.html)
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Let's learn Git together.</p>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+---
+title: "25. Resolving conflicts"
+---
+
+### Goals
+
+- Learn to resolve merging conflicts.
+
+## _01_ Merge the `main` branch into the `style` branch
+
+Let us return to the `style` branch and merge in all the recent changes from the `main`.
+
+<Run>
+```
+git switch style
+git merge main
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-01.txt]
+```
+</Output>
+
+It seems that we have a conflict. No surprise here! Let us see what Git has to say about it:
+
+<Run>
+```
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-02.txt]
+```
+</Output>
+
+If you open the `index.html` you will see:
+
+<File file="index.html">
+```html
+==include[output/25-02-1.txt]
+```
+</File>
+
+The section between `<<<<<<<` and `>>>>>>>` represents the conflict. The upper section corresponds to the `style` branch, which is the current branch (or `HEAD`) of the repository. The lower section represents changes from the `main` branch. Git is unable to determine which changes to apply, hence it requires manual conflict resolution. You are free to retain changes from either the `style` or `main` branch, combine them, or make any other modifications to the file.
+
+Interestingly, our second change, the `<p>` tag, is not part of the conflict. Git has managed to merge it automatically.
+
+## _02_ Aborting merge
+
+Jumping straight to the conflict resolution may not be a best strategy. The conflict may be caused by the changes you are unaware of. Or the changes are too significant to address right away. For this reason, Git allows you to abort the merge and return to the state before the merge. To do that, you can use the `git merge --abort` command, as suggested by `status` command we ran earlier.
+
+<Run>
+```
+git merge --abort
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-03.txt]
+```
+</Output>
+
+## _03_ Resolving the conflict
+
+After some meditation, we are ready to handle the conflict. Let us rerun the merge.
+
+<Run>
+```
+git merge main
+```
+</Run>
+
+To resolve the conflict, we need to edit the file to the state we're happy with and then commit it as usual. In our case, we will combine the changes from both branches. So, we edit the file to the following state:
+
+<File file="index.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    <title>Hello World Page</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Let's learn Git together.</p>
+  </body>
+</html>
+```
+</File>
+
+## _04_ Commit the resolved conflict
+
+<Run>
+```
+git add index.html
+git commit -m "Resolved merge conflict"
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-04.txt]
+```
+</Output>
+
+Let us look at the current state of our repository and make sure that everything is okay:
+
+<Run>
+```
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-05.txt]
+```
+</Output>
+
+## _04_ Advanced Merging
+
+Git has no graphical merging tools, but it will accept any third-party merge tool ([read more about such tools on StackOverflow](http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git)).
+
+When working with programming code in a modern integrated development environment (IDE), such as Visual Studio or IntelliJ IDEA, you will most likely use a built-in merge tool. For example, here is how the conflict looks like in IntelliJ IDEA:
+
+<img src="/images/screenshots/ide-merge.png" srcSet="/images/screenshots/ide-merge-2x.png 2x" alt="IntelliJ IDEA merge tool" width="1000" height="409"/>

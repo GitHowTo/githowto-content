@@ -1,0 +1,98 @@
+---
+title: "15. Removing a commit from a branch"
+---
+
+### Goals
+
+- Learn to delete the branch's latest commits.
+
+`Revert` is a powerful command of the previous section that allows you to cancel any commits to the repository. However, both original and cancelled commits are seen in the history of the branch (when using `git log` command).
+
+Often after a commit is already made, we realize it was a mistake. It would be nice to have an undo command which allows the incorrect commit(s) to be immediately deleted. This command would prevent the appearance of one or more unwanted commits in the `git log` history.
+
+## _01_ The `reset` command
+
+We have already seen the `reset` command and have used it to set the staging area to be consistent with a given commit (we used the `HEAD` commit in our previous lesson).
+
+When you run the `reset` command along with a commit reference (`HEAD`, branch or tag name, commit hash, etc.), the command will...
+
+1. Point the current branch to the specified commit.
+2. Optionally reset the staging area so it will comply with the specified commit.
+3. Optionally reset the working directory so it will match the specified commit.
+
+## _02_ Check our history
+
+Let us do a quick scan of our commit history.
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-01.txt]
+```
+</Output>
+
+We see the last two commits in this branch are "Oops" and "Revert Oops". Let us remove them with the `reset` command.
+
+## _03_ Mark this branch first
+
+Let us mark the last commit with `tag`, so you can find it after removing a commit(s).
+
+<Run>
+```
+git tag oops
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-02.txt]
+```
+</Output>
+
+## _04_ Reset commit to before `oops`
+
+In the history log above, the commit tagged `v1` is before the "Oops" and "Revert Oops" commits. Let us reset the branch to that point. As the branch has a tag, we can use the tag name in the `reset` command (if it does not have a tag, we can use the hash of the commit).
+
+<Run>
+```
+git reset --hard v1
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-03.txt]
+```
+</Output>
+
+Our main branch is pointing at commit `v1` and the "Revert Oops" and "Oops" commits no longer exist in the branch. The `--hard` parameter makes the working directory reflect the new branch head.
+
+## _05_ Nothing is ever lost
+
+What happened to the wrong commits? They are still in the repository. Actually, we can still refer to them. At the beginning of the lesson, we created the `oops` tag for the canceled commit. Let us take a look at _all_ commits.
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-04.txt]
+```
+</Output>
+
+We can see that the wrong commits are not gone. They are not listed in the `main` branch anymore but still remain in the repository. They would still be in the repository if we did not tag them, but then we could reference them only by their hashes. Unreferenced commits remain in the repository until the garbage collection software is run by system.
+
+## _06_ Reset dangers
+
+Resets on local branches are usually harmless. The consequences of any "accident" can be reverted by using the proper commit.
+
+However, other users sharing the branch can be confused if the branch is shared on remote repositories.

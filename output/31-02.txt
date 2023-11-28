@@ -1,0 +1,11 @@
+$ git log --all --graph
+* 39a1e0f 2023-11-28 | Renamed hello.html; moved style.css (HEAD -> main, origin/style, origin/main, origin/HEAD) [Alexander Shvets]
+* 23149b5 2023-11-28 | Included stylesheet into hello.html [Alexander Shvets]
+* b9e6de1 2023-11-28 | Added css stylesheet [Alexander Shvets]
+* 85c14e9 2023-11-28 | Added meta title [Alexander Shvets]
+* ee16740 2023-11-28 | Added README [Alexander Shvets]
+* 9288a33 2023-11-28 | Added copyright statement with email [Alexander Shvets]
+* b7614c1 2023-11-28 | Added HTML header (tag: v1) [Alexander Shvets]
+* 46afaff 2023-11-28 | Added standard HTML page tags (tag: v1-beta) [Alexander Shvets]
+* 78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+* 5836970 2023-11-28 | Initial commit [Alexander Shvets]

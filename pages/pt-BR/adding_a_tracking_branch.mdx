@@ -1,0 +1,27 @@
+---
+title: "37. Adicionando um branch de rastreamento"
+---
+
+### Metas
+
+- Aprender como adicionar um branch local que rastreia um repositório remoto.
+
+Branches que começam com `remotes/origin` pertencem ao repositório original. Perceba que, mesmo que você não tenha mais o branch `style`, ele sabe que o branch está no repositório original.
+
+## _01_ Adicione um branch local que rastreia um branch remoto
+
+<Run>
+```
+git branch --track style origin/style
+git branch -a
+git log --max-count=2
+```
+</Run>
+
+<Output>
+```git
+==include[output/37-01.txt]
+```
+</Output>
+
+Agora nós conseguimos ver o branch `style` na lista de branches e no log.

@@ -1,0 +1,52 @@
+index:
+  setup: 1
+  git_basics: 1
+  more_setup: 1
+  create_a_project: 1
+  checking_status: 1
+  making_changes: 1
+  staging_changes: 1
+  staging_and_committing: 1
+  committing_changes: 1
+  changes_not_files: 1
+  history: 1
+  getting_old_versions: 1
+  tagging_versions: 1
+  undoing_local_changes: 1
+  undoing_staged_changes: 1
+  undoing_committed_changes: 1
+  removing_commits_from_a_branch: 1
+  remove_the_oops_tag: 1
+  amending_commits: 1
+  creating_a_branch: 1
+  navigating_branches: 1
+  moving_files: 1
+  changes_in_master: 1
+  viewing_diverging_branches: 1
+  merging: 1
+  creating_a_conflict: 1
+  resolving_conflicts: 1
+  rebasing_vs_merging: 1
+  resetting_the_style_branch: 1
+  rebasing: 1
+  merging_back_to_master: 1
+  multiple_repositories: 1
+  cloning_repositories: 1
+  review_the_cloned_repository: 1
+  what_is_origin: 1
+  remote_branches: 1
+  change_the_original_repository: 1
+  fetching_changes: 1
+  merging_pulled_changes: 1
+  adding_a_tracking_branch: 1
+
+  bare_repositories: 1
+  adding_a_remote_repository: 1
+  pushing_a_change: 1
+  pulling_shared_changes: 1
+  hosting_your_git_repositories: 1
+
+  thank_you: 1
+aliases: 1
+git_internals_git_directory: 1
+git_internals_working_directly_with_git_objects: 1

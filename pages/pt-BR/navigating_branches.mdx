@@ -1,0 +1,57 @@
+---
+title: "19. Mudança de Branches"
+---
+
+### Metas
+
+- Aprender como navegar entre branches de repositórios.
+
+Agora o seu projeto possui dois branches:
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-01.txt]
+```
+</Output>
+
+## _01_ Trocando para o branch `main`
+
+Para trocar o branch atual simplesmente use o comando `git checkout`.
+
+<Run>
+```
+git switch main
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-02.txt]
+```
+</Output>
+
+Agora estamos no ramo `main`. Como você pode ver, o `hello.html` não tem vestígios do `style.css`. Não se preocupe; ele ainda está no repositório, mas não podemos vê-lo na ramificação `main`.
+
+## _02_ Vamos retornar para o branch do `style`
+
+<Run>
+```
+git switch style
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/19-03.txt]
+```
+</Output>
+
+Estamos de volta ao ramo `style`. Como você pode ver, nossas alterações relacionadas ao CSS estão presentes.

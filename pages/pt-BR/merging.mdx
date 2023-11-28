@@ -1,0 +1,33 @@
+---
+title: "23. Fusão"
+---
+
+### Metas
+
+- Aprender como fundir dois branches diferentes para restaurar as modificações para um único branch.
+
+## _01_ Fundindo em um único branch
+
+Fundir junta as modificações de dois branches em um. Vamos voltar para o branch `style` e fundi-lo com o `main`.
+
+<Run>
+```
+git switch style
+git merge main
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/23-01.txt]
+```
+</Output>
+
+Pelo merge periodico entre os branches `main` e `style`, você pode acompanhar quaisquer mudanças ou modificações ocorridas para manter a compatibilidade das mudanças de estilo na linha principal.
+
+Porém, isso faz com que os gráficos de commits fiquem feios. Mais tarde vamos considerar a rebase como uma alternativa à fusão.
+
+## _02_ Próximo
+
+Mas e se as modificações no branch `main` conflitarem com as modificações do `style`?

@@ -1,0 +1,74 @@
+---
+title: "12. Descartando mudanças locais (antes do stage)"
+---
+
+### Metas
+
+- Aprender como descartar mudanças no repositório de trabalho.
+
+## _01_ Acessando o branch `main`
+
+Verifique que você esta no último commit do branch `main` antes de continuar.
+
+<Run>
+```
+git switch main
+```
+</Run>
+
+## _02_ Mude o `hello.html`
+
+Acontece de você modificar o arquivo no seu diretório de trabalho local e às vezes querer descartar as mudanças que você fez commit. É aqui que o comando `checkout` vai te ajudar.
+
+Faça mudanças ao arquivo `hello.html` na forma de um comentário indesejado.
+
+<File file="hello.html">
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    →<!-- This is a bad comment. We want to revert it. -->←
+  </body>
+</html>
+```
+</File>
+
+## _03_ Confira o status
+
+Primeiro de tudo, confira o status do repositório de trabalho.
+
+<Run>
+```
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/12-01.txt]
+```
+</Output>
+
+Nós vemos que o arquivo `hello.html` foi modificado, mas ainda não está no stage.
+
+## _04_ Desfazendo as mudanças no diretório de trabalho
+
+Use o comando `checkout` para remover a versão do arquivo `hello.html` que está no repositório.
+
+<Run>
+```
+git checkout hello.html
+git status
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/12-02.txt]
+```
+</Output>
+
+O comando `status` mostra que não existem mudanças que não estão no stage no repositório de trabalho. E o "comentário ruim" não está mais no arquivo.

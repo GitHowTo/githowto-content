@@ -1,0 +1,13 @@
+$ git clone --bare work work.git
+Cloning into bare repository 'work.git'...
+done.
+$ ls work.git
+branches
+config
+description
+HEAD
+hooks
+info
+objects
+packed-refs
+refs

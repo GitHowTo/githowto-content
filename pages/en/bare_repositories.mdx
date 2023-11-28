@@ -1,0 +1,29 @@
+---
+title: "38. Bare repos"
+---
+
+### Goals
+
+- Learn to create bare repos.
+
+A bare repository is a repository that doesn't have a working directory. It only contains the `.git` directory, the directory in which Git stores all its internal data. The main purpose of these repositories is to be a central repository that developers can push to and pull from, so there's no need in having a working directory. Bare repositories are also used in Git hosting services like GitHub and GitLab. In the next several lessons we will learn how to create a bare repository and how to push to it.
+
+## _01_ Creating a bare repository.
+
+<Run>
+```
+cd ..
+git clone --bare work work.git
+ls work.git
+```
+</Run>
+
+<p className="highlight">Now we are in the `repositories` directory.</p>
+
+<Output>
+```git
+==include[output/38-01.txt]
+```
+</Output>
+
+The convention is that repositories ending in `.git` are bare repositories. We can see that there is no working directory in the `work.git` repo. Essentially it is nothing but the `.git` directory of a regular repo.

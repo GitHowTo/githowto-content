@@ -1,0 +1,45 @@
+---
+title: "Parte I: Noções básicas do Git"
+---
+
+### Objetivos
+
+- Entender o que é o Git e por que ele é útil.
+
+Nas próximas 30 lições, aproximadamente, aprenderemos os conceitos básicos do Git. O Git é um **sistema de controle de versão** que permite rastrear as alterações no seu código ao longo do tempo. É uma ferramenta muito poderosa que é usada pela maioria dos desenvolvedores de software atualmente. Também é uma ótima maneira de colaborar com outras pessoas em um projeto.
+
+## O que é o Git?
+
+Você pode pensar no Git como uma espécie de "máquina do tempo" para o seu código. Ele permite que você volte no tempo e veja como era o seu código em um determinado momento. Ele também permite que você veja quem fez quais alterações no código e quando. Isso é muito útil quando se está trabalhando em um projeto com outras pessoas, pois é possível ver as alterações que elas fizeram no código e também as alterações que você fez no código.
+
+O Git em si é uma ferramenta de linha de comando. Se você não estiver acostumado a usar a linha de comando, ela pode parecer um pouco intimidadora no início. Mas não se preocupe, pois também aprenderemos a usar a linha de comando neste curso. Além disso, a maioria dos editores de código modernos tem um cliente Git integrado que facilita a interação com o Git usando a interface gráfica do usuário. No entanto, ainda é uma boa ideia aprender a usar o Git na linha de comando:
+
+- Isso lhe dá uma melhor compreensão de como o Git funciona.
+- Permite que você use o Git em qualquer computador, mesmo que ele não tenha suas ferramentas de desenvolvimento favoritas instaladas.
+- Permite que você use o Git em um servidor remoto, que não tenha nenhuma interface gráfica de usuário.
+
+Antes de começarmos, vamos revisar algumas terminologias que usaremos ao longo deste curso.
+
+## Terminologia
+
+#### Repositório
+
+Um repositório Git, geralmente chamado de "repo", é um espaço de armazenamento onde seu projeto reside. Ele pode ser local, em uma pasta no seu computador, ou pode ser um armazenamento remoto em um serviço como o GitHub ou outro host on-line. O repositório é usado para rastrear alterações no projeto, coordenar o trabalho entre várias pessoas e rastrear o histórico do projeto.
+
+Digamos que você tenha uma pasta em seu computador que contém todos os arquivos do seu projeto. Quando você inicia um repositório Git nessa pasta, o Git cria um subdiretório oculto chamado `.git` onde todas as informações sobre o repositório são armazenadas. Isso inclui o histórico de todas as alterações que foram feitas no repositório, bem como o estado atual do repositório.
+
+> Se você tiver 100% de certeza de que seu repositório é um repositório Git, mas não vir o diretório `.git`, provavelmente ele está oculto. Certifique-se de ter ativado a opção de mostrar arquivos ocultos em seu gerenciador de arquivos.
+
+#### Commit
+
+Pense em um commit como um instantâneo do seu repositório em um determinado momento. Um commit contém apenas informações sobre as alterações feitas no repositório desde o último commit. Ele não contém o repositório inteiro (a menos que seja o primeiro commit). Portanto, cada commit é uma pequena parte do histórico do repositório, com base em um commit anterior. Todos eles são vinculados em uma cadeia, formando uma linha do tempo do histórico do repositório.
+
+#### Branch
+
+Uma ramificação é uma versão paralela de um repositório. Ela permite que você trabalhe em um novo recurso do seu projeto sem afetar a versão principal do projeto. Quando terminar de trabalhar no novo recurso, você poderá mesclar a ramificação de volta à versão principal do projeto.
+
+**Fato nerd nº 2:** sempre há pelo menos uma ramificação em um repositório, mesmo que você não crie nenhuma ramificação. Normalmente, ele é chamado de branch "principal" (ou "main").
+
+---
+
+Agora você tem uma compreensão básica do que é o Git e como ele funciona. Na próxima lição, finalmente colocaremos a mão na massa e executaremos alguns comandos Git.

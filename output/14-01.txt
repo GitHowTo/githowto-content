@@ -1,0 +1,4 @@
+$ git revert HEAD
+[main 86364a1] Revert "Oops, we didn't want this commit"
+ Date: Tue Nov 28 05:51:38 2023 -0600
+ 1 file changed, 1 deletion(-)

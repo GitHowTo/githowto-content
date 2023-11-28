@@ -1,0 +1,2 @@
+$ git reset --hard HEAD~2
+HEAD is now at 0ee0113 Renamed hello.html; moved style.css

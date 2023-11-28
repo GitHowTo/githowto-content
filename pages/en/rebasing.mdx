@@ -1,0 +1,99 @@
+---
+title: "28. Rebase"
+---
+
+### Goals
+
+- To use `rebase` instead of the `merge` command.
+
+We have reverted the `style` branch to the point in history before the first merge. There are two commits that are in the `main` branch, but not in the `style` branch: the new `README` file and that conflicting change in the `index.html` file. This time, we will move these changes to the `style` branch using the `rebase` command rather than `merge`.
+
+## _01_ Rebase the `style` branch onto `main`
+
+<Run>
+```
+git switch style
+git rebase main
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/28-01.txt]
+```
+</Output>
+
+There's a conflict again! Note that the conflict is in `hello.html`, not in `index.html` as the last time. It is because `rebase` was in the process of applying the `style` changes on top of the `main` branch. The file `hello.html` hasn't been renamed in `main` yet, so it still has its old name.
+
+When merging, we would have a "reverse" conflict. During the merge, the changes of the `main` branch are applied on top of the `style` branch. The `style` branch has the file renamed, so the conflict would be in `index.html`.
+
+<File file="hello.html">
+```html
+==include[output/28-01-1.txt]
+```
+</File>
+
+## _02_ Resolve the conflict
+
+The conflict itself can be resolved in the same way we did before. First, we edit the `hello.html` file to meet our expectations.
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    <title>Hello World Page</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Let's learn Git together.</p>
+  </body>
+</html>
+```
+</File>
+
+But after that, we don't need to commit the changes. We can just add the file to the index and continue the rebase process. This is why I love rebase! It allows me to fix conflicts without creating a bunch of ugly merge conflicts.
+
+> For simplicity's sake, we can add all files using `.`, which stands for the path of the current directory. Git interprets this as "add all files in the current directory and its subdirectories".
+
+<Run>
+```
+git add .
+git rebase --continue
+```
+</Run>
+
+Here, most likely, Git will open the editor again, to let us change the commit message. We can leave the message as it is. Upon saving changes, Git will finish the rebase process, and we can proceed with the following commands:
+
+<Run>
+```
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/28-02.txt]
+```
+</Output>
+
+## _03_ Merging VS rebasing
+
+The result of the `rebase` command looks much like that of the `merge` command. The `style` branch currently contains all its changes, plus all the changes of the `main` branch. The commit tree, however, is a bit different. The `style` branch commit tree has been rewritten to make the `main` branch a part of the commit history. This makes the chain of commits linear and more readable.
+
+## _04_ When to use the `rebase` command, and when the `merge` command?
+
+Use the `rebase` command:
+
+- When you fetch changes from a remote repository and want to apply them to your local branch.
+- If you want to keep the commit history linear and easy to read.
+
+Don't use the `rebase` command:
+
+- If the current branch is public and shared. Rewriting such branches will hinder the work of other team members.
+- When the _exact_ commit branch history is important (because the `rebase` command rewrites the history of commits).
+
+Given the above recommendations, I prefer to use `rebase` for short-term, local branches and the `merge` command for branches in the public repository.

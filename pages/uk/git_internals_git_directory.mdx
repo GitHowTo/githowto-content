@@ -1,0 +1,134 @@
+---
+title: "Git всередині: Каталог .git (бонус)"
+---
+
+### Ціл
+
+- Дізнатися про структуру каталогу `.git`.
+
+## _01_ Каталог `.git`
+
+Настав час провести невелике дослідження. Для початку, з кореневого каталогу вашого проєкту...
+
+<Run>
+```
+ls -C .git
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git
+COMMIT_EDITMSG	MERGE_RR	config		hooks		info		objects		rr-cache
+HEAD		ORIG_HEAD	description	index		logs		refs
+```
+</Output>
+
+Це магічна директорія, в якій зберігаються всі «матеріали» Git. Загляньмо в директорію об'єктів.
+
+## _02_ База даних об'єктів
+
+<Run>
+```
+ls -C .git/objects
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects
+09	24	28	45	59	6a	77	80	8c	97	af	c4	e7	info
+11	27	43	56	69	6b	78	84	91	9c	b5	e4	fa	pack
+```
+</Output>
+
+Ви повинні побачити купу каталогів, імена яких складаються з 2 символів. Імена каталогів є першими двома буквами хеша sha1 об'єкта, що зберігається в Git.
+
+## _03_ Заглиблюємося в базу даних об'єктів
+
+<Run>
+```
+ls -C .git/objects/<dir>
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects/09
+6b74c56bfc6b40e754fc0725b8c70b2038b91e	9fb6f9d3a104feb32fcac22354c4d0e8a182c1
+```
+</Output>
+
+Дивимося в один з каталогів з ім'ям з 2 букв. Ви побачите файли з іменами з 38 символів. Це файли, що містять об'єкти, що зберігаються в Git. Вони стиснуті і закодовані, тому перегляд їх вмісту нам мало чим допоможе. Розглянемо далі каталог `.git` уважно
+
+## _04_ Config File
+
+<Run>
+```
+cat .git/config
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[user]
+	name = Alexander Shvets
+	email = alex@githowto.com
+```
+</Output>
+
+Це файл конфігурації, що створюється для кожного конкретного проєкту. Записи в цьому файлі будуть перезаписувати записи у файлі `.gitconfig` вашого головного каталогу, принаймні в рамках цього проєкту.
+
+## _05_ Гілки і теги
+
+<Run>
+```
+ls .git/refs
+ls .git/refs/heads
+ls .git/refs/tags
+cat .git/refs/tags/v1
+```
+</Run>
+
+<Output>
+```git
+$ ls .git/refs
+heads
+tags
+$ ls .git/refs/heads
+main
+$ ls .git/refs/tags
+v1
+v1-beta
+$ cat .git/refs/tags/v1
+fa3c1411aa09441695a9e645d4371e8d749da1dc
+```
+</Output>
+
+Ви повинні впізнавати файли в підкаталозі тегів. Кожен файл відповідає тегу, раніше створеному за допомогою команди `git tag`. Його зміст — це всього лише хеш комітів, прив'язаний до тегу.
+
+Каталог _heads_ практично аналогічний, але використовується для гілок, а не тегів. На даний момент у нас є тільки одна гілка, тому все, що ви побачите в цьому каталозі - це гілка `main`.
+
+## _06_ Файл HEAD
+
+<Run>
+```
+cat .git/HEAD
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/HEAD
+ref: refs/heads/main
+```
+</Output>
+
+Файл HEAD містить посилання на поточну гілку, в даний момент це повинна бути гілка main.

@@ -1,0 +1,37 @@
+---
+title: "21. Changes in the <code>main</code> branch"
+---
+
+### Goals
+
+- Learn how to work with several branches with different (sometimes conflicting) changes.
+
+As I mentioned previously, Git lets you work with several branches at the same time. It is very useful when working in a team because people can work on different features in parallel. It is also useful when working solo: while developing features in separate branches, you can still fix bugs and release minor updates using stable code in the `main` branch.
+
+## _01_ Create the `README` file
+
+Let's create a `README` file. It will explain what our project is about.
+
+<File file="README">
+```
+This is the Hello World example from the GitHowTo tutorial.
+```
+</File>
+
+## _02_ Commit the `README` file to the `main` branch
+
+We are currently in the `style` branch. The `README` file is not part of this branch, so we must switch to the `main` branch before committing the changes.
+
+<Run>
+```
+git switch main
+git add README
+git commit -m "Added README"
+```
+</Run>
+
+<Output>
+```git
+==include[output/21-01.txt]
+```
+</Output>

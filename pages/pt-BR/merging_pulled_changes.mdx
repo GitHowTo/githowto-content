@@ -1,0 +1,54 @@
+---
+title: "36. Fundindo modificações baixadas"
+---
+
+### Metas
+
+- Aprender como colocar as modificações baixadas no branch atual e no diretório de trabalho.
+
+## _01_ Funda as modificações baixadas no branch `main` local
+
+<Run>
+```
+git merge origin/main
+```
+</Run>
+
+<Output>
+```git
+==include[output/36-01.txt]
+```
+</Output>
+
+## _02_ Confira o `README` novamente
+
+Agora você deve ver as modificações.
+
+<Run>
+```
+cat README
+```
+</Run>
+
+<Output>
+```git
+==include[output/36-02.txt]
+```
+</Output>
+
+Essas são as modificações. Apesar do comando `git fetch` não fundir as mudanças, nós podemos fundi-las manualmente pelo repositório remoto.
+
+## _03_ O comando `pull
+
+O comando `fetch` oferece controle preciso sobre o que é extraído e mesclado, mas, por conveniência, há também um comando `pull` que extrai e mescla as alterações do ramo remoto no ramo atual com uma única chamada.
+
+```
+git pull
+```
+
+...é equivalente às duas etapas a seguir:
+
+```
+git fetch
+git merge origin/main
+```

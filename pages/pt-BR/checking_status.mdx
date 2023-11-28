@@ -1,0 +1,34 @@
+---
+title: "3. Conferindo o status do repositório"
+---
+
+### Metas
+
+- Aprender como conferir o status do repositório.
+
+## _01_ Confira o status do repositório
+
+Use o comando `git status` para checar o estado atual do repositório.
+
+<Run>
+```
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/03-01.txt]
+```
+</Output>
+
+> Se, depois de executar o comando anterior, você vir `On branch master` em vez de `On branch main`, isso significa que você tem uma versão ligeiramente desatualizada do Git que não nos entendeu quando pedimos para definir o nome padrão do branch como `main`. Nesse caso, você pode renomear a ramificação para `main` usando o seguinte comando:
+> ```
+> git branch -m master main
+> ```
+
+O comando confere o status e reporta que não existe nada para fazer um commit, o que quer dizer que o repositório está com o atual estado do diretório de trabalho e não existem modificações a serem gravadas.
+
+Nós usaremos o Git status para continuar monitorando os estados de ambos o diretório de trabalho e o repositório.

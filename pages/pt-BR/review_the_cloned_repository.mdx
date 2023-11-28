@@ -1,0 +1,46 @@
+---
+title: "31. Examine o repositório clonado"
+---
+
+### Metas
+
+- Descobrir sobre branches em repositórios remotos.
+
+## _01_ Visualizando o repositório clonado
+
+Vamos dar uma olhada no nosso repositório clonado.
+
+<Run>
+```
+cd home
+ls
+```
+</Run>
+
+<Output>
+```git
+==include[output/31-01.txt]
+```
+</Output>
+
+Você verá uma lista de todos os arquivos no nível acima ao do repositório original (`README`, `index.html` e `css`).
+
+## _02_ Visualizando o histórico do repositório
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/31-02.txt]
+```
+</Output>
+
+Você verá uma lista de todos os commits no novo repositório, que deveriam ser iguais aos do repositório original. A única diferença deveria ser o nome dos branches.
+
+## _03_ Branches remotos
+
+Você verá um branch `main` (`HEAD`) no histórico. Você também verá branches com nomes estranhos (`origin/main`, `origin/style` e `origin/HEAD`). Nós falaremos deles depois.

@@ -1,0 +1,26 @@
+---
+title: "16. Removendo a tag <code>oops</code>"
+---
+
+### Metas
+
+- Remover a tag `oops`.
+
+## _01_ Remoção da tag `oops`
+
+A tag `oops` cumpriu sua função, vamos removê-la. Isso permitirá que o mecanismo interno do Git remova os commits residuais, que agora não são referenciados por nenhum branch ou tag.
+
+<Run>
+```
+git tag -d oops
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/16-01.txt]
+```
+</Output>
+
+A tag `oops` não aparecerá mais no repositório.

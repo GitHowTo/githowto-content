@@ -1,0 +1,39 @@
+---
+title: "34. Mudando o repositório original"
+---
+
+### Metas
+
+- Fazer mudanças no repositório original para que possamos tentar receber essas mudanças.
+
+## _01_ Faça uma mudança no repositório original `work`
+
+<Run>
+```
+cd ../work
+```
+</Run>
+
+<p className="highlight">Agora nós estamos no repositório `work`</p>
+
+Faça as seguintes mudanças no arquivo `README`:
+
+<File file="README">
+```
+This is the Hello World example from the Git tutorial.
+(changed in origin)
+```
+</File>
+
+Agora adicione e faça commit dessas mudanças
+
+<Run>
+```
+git add README
+git commit -m "Changed README in original repo"
+```
+</Run>
+
+## _02_ Próximo
+
+Agora o repositório original tem mudanças mais recentes que não estão incluídas na versão clonada. Em seguida, vamos receber essas mudanças no repositório clonado.

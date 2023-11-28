@@ -1,0 +1,111 @@
+---
+title: "9. History"
+---
+
+### Goals
+
+- Learn to view the project’s history.
+
+Getting a list of changes made is a function of the `git log` command.
+
+<Run>
+```
+git log
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/09-01.txt]
+```
+</Output>
+
+Here is a list of all the four commits to the repository, which we were able to make so far.
+
+## _01_ One line history
+
+You fully control what the `log` shows. I like the single line format:
+
+<Run>
+```
+git log --oneline
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/09-02.txt]
+```
+</Output>
+
+## _02_ Controlling the display of entries
+
+Here are some other interesting options for viewing history:
+
+<Run no_title={true}>
+```
+git log --oneline --max-count=2
+git log --oneline --since="5 minutes ago"
+git log --oneline --until="5 minutes ago"
+git log --oneline --author="Your Name"
+git log --oneline --all
+```
+</Run>
+
+There is a huge variety of log viewing options, you can poke around the [git-log](https://git-scm.com/docs/git-log) manual page to see them all.
+
+## _03_ Getting fancy
+
+This is what I use to review the changes made within the last week. I will add `--author=Alexander` if I want to see only the changes made by me.
+
+<Run no_title={true}>
+```
+git log --all --pretty=format:"%h %cd %s (%an)" --since="7 days ago"
+```
+</Run>
+
+## _04_ The ultimate format of the log
+
+Over time, I found the following log format to be the most suitable.
+
+<Run>
+```
+git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+```
+</Run>
+
+It looks like this:
+
+<Output>
+```git
+==include[output/09-03.txt]
+```
+</Output>
+
+Let's look at it in detail:
+
+- `--pretty="..."` defines the output format.
+- `%h` is the abbreviated hash of the commit.
+- `%ad` is the commit date.
+- `|` is just a visual separator.
+- `%s` is the comment.
+- `%d` commit decorations (e.g. branch heads or tags).
+- `%an` is the name of the author.
+- `--date=short` keeps the date format short and nice.
+
+So, every time you want to see a log, you'll have to do a lot of typing. Fortunately, there are several Git config options to adjust the default log output format:
+
+<Run>
+```
+git config --global format.pretty '%h %ad | %s%d [%an]'
+git config --global log.date short
+```
+</Run>
+
+## _05_ Other tools
+
+Both `gitx` (for Mac) and `gitk` (for any platform) can help to explore log history.

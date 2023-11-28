@@ -1,0 +1,46 @@
+---
+title: "31. Examine the cloned repository"
+---
+
+### Goals
+
+- To find out about branches in the remote repositories.
+
+## _01_ Viewing the cloned repository
+
+Let's have a look at our cloned repository.
+
+<Run>
+```
+cd home
+ls
+```
+</Run>
+
+<Output>
+```git
+==include[output/31-01.txt]
+```
+</Output>
+
+You will see a list of all files in the top level of the original repository (`README`, `index.html` and `css`).
+
+## _02_ View the history of the cloned repository
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/31-02.txt]
+```
+</Output>
+
+You will see a list of all the commits in the new repository, and it should match the commit history of the original repository. The only difference should be in the names of the branches.
+
+## _03_ Remote branches
+
+You will see a `main` branch (`HEAD`) in the history. You will also find branches with strange names (`origin/main`, `origin/style` and `origin/HEAD`). We'll discuss them a bit later.

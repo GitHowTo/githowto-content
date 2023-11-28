@@ -1,0 +1,37 @@
+---
+title: "21. Mudanças no branch <code>main</code>"
+---
+
+### Metas
+
+- Aprender como trabalhar com vários branches com diferentes (e às vezes conflitantes) modificações.
+
+Como mencionei anteriormente, o Git permite que você trabalhe com várias ramificações ao mesmo tempo. Isso é muito útil quando se trabalha em uma equipe, pois as pessoas podem trabalhar em diferentes recursos em paralelo. Também é útil quando se trabalha sozinho: enquanto desenvolve recursos em ramificações separadas, você ainda pode corrigir bugs e lançar pequenas atualizações usando o código estável na ramificação `main`.
+
+## _01_ Criar o arquivo `README`
+
+Vamos criar um arquivo `README`. Ele explicará do que se trata o nosso projeto.
+
+<File file="README">
+```
+This is the Hello World example from the GitHowTo tutorial.
+```
+</File>
+
+## _02_ Enviar o arquivo `README` para a ramificação `main`
+
+No momento, estamos na ramificação `style`. O arquivo `README` não faz parte desse ramo, portanto, devemos mudar para o ramo `main` antes de fazer o commit das alterações.
+
+<Run>
+```
+git switch main
+git add README
+git commit -m "Added README"
+```
+</Run>
+
+<Output>
+```git
+==include[output/21-01.txt]
+```
+</Output>

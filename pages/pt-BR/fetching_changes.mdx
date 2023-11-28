@@ -1,0 +1,49 @@
+---
+title: "35. Trazendo modificações"
+---
+
+### Metas
+
+- Aprender como trazer modificações de um repositório remoto.
+
+<Run>
+```
+cd ../home
+git fetch
+git log --all
+```
+</Run>
+
+<p className="highlight">Agora nós estamos no repositório `home`.</p>
+
+<Output>
+```git
+==include[output/35-01.txt]
+```
+</Output>
+
+Neste momento, o repositório contém todos os commits do repositório original. Porém, eles não estão integrados com os branchs locais do repositório clonado.
+
+Você vai ver o commit de nome "Changed README in original repo" no histórico. Perceba que o commit inclui `origin/main` e `origin/HEAD`.
+
+Agora vamos dar uma olhada no commit "Renamed hello.html; moved style.css". Você vai ver que o branch `main` local aponta para esse commit, não para o commit que acabamos de trazer.
+
+Isso nos mostra que o comando `git fetch` vai trazer os novos commits do repositório remoto, mas não vai fundir eles com os branches locais.
+
+## _01_ Cheque o README
+
+Nós podemos mostrar que o arquivo `README` clonado não foi modificado.
+
+<Run>
+```
+cat README
+```
+</Run>
+
+<Output>
+```git
+==include[output/35-02.txt]
+```
+</Output>
+
+Nenhuma mudança, como você pode ver.

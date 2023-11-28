@@ -1,0 +1,48 @@
+---
+title: "30. Cloning repositories"
+---
+
+### Goals
+
+- Learn how to make copies of the repositories.
+
+If you are working in a team, the following 8 lessons are quite important to understand because you almost always have to work with cloned repositories.
+
+## _01_ Go to your `repositories` directory
+
+<Run>
+```
+cd ..
+pwd
+ls
+```
+</Run>
+
+<p className="highlight">Now we are in the `repositories` directory.</p>
+
+<Output>
+```git
+==include[output/30-01.txt]
+```
+</Output>
+
+At this point you should be in your `repositories` directory. It should contain a single repository named `work`.
+
+## _02_ Create a clone of the `work` repository
+
+Let's create a clone of the repository.
+
+<Run>
+```
+git clone work home
+ls
+```
+</Run>
+
+<Output>
+```git
+==include[output/30-02.txt]
+```
+</Output>
+
+Right now there should now be two repos in your working directory: the original `work` repo and the cloned repository named `home`.

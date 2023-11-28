@@ -1,0 +1,3 @@
+$ git reset HEAD hello.html
+Unstaged changes after reset:
+M	hello.html

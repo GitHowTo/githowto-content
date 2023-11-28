@@ -1,0 +1,123 @@
+---
+title: "Dentro do Git: Trabalhando diretamente com objetos do Git (bonus)"
+---
+
+### Metas
+
+- Explorar a estrutura dos objetos do banco de dados.
+- Usar hashes SHA1 para pesquisar por conteúdo no repositório.
+
+Vamos examinar os objetos do Git com algumas ferramentas.
+
+## _01_ Procurando pelo último commit
+
+<Run>
+```
+git log --max-count=1
+```
+</Run>
+
+Esse comando deve encontrar o último commit nesse repositório. A hash SHA1 provavelmente é diferente em nossos sistemas, mas você deve ver algo como isto.
+
+<Output>
+```git
+$ git log --max-count=1
+* 8029c07 2011-03-09 | Added index.html. (HEAD, main) [Alexander Shvets]
+```
+</Output>
+
+## _02_ Exibição do último commit
+
+Com a hash SHA1, tal como acima...
+
+<Run>
+```
+git cat-file -t <hash>
+git cat-file -p <hash>
+```
+</Run>
+
+Eu vejo isso ...
+
+<Output>
+```git
+$ git cat-file -t 8029c07
+commit
+$ git cat-file -p 8029c07
+tree 096b74c56bfc6b40e754fc0725b8c70b2038b91e
+parent 567948ac55daa723807c0c16e34c76797efbcbed
+author Alexander Shvets <alex@githowto.com> 1299684476 -0500
+committer Alexander Shvets <alex@githowto.com> 1299684476 -0500
+
+Added index.html.
+```
+</Output>
+
+Isso exibe o objeto de commit, que está no início do branch `main`.
+
+## _03_ Busca em árvore
+
+Nós podemos exibir a árvore referenciada no commit. Isso deveria ser uma descrição do arquivo no nosso projeto (para um commit específico). Use a hash SHA1 da string da árvore listada acima.
+
+<Run>
+```
+git cat-file -p <treehash>
+```
+</Run>
+
+Aqui está a minha árvore ...
+
+<Output>
+```git
+$ git cat-file -p 096b74c
+100644 blob 28e0e9d6ea7e25f35ec64a43f569b550e8386f90	index.html
+040000 tree e46f374f5b36c6f02fb3e9e922b79044f754d795	lib
+```
+</Output>
+
+Eu posso ver o arquivo e a pasta da lib do `index.html`.
+
+## _04_ Exibir diretório da lib
+
+<Run>
+```
+git cat-file -p <libhash>
+```
+</Run>
+
+<Output>
+```git
+$ git cat-file -p e46f374
+100644 blob c45f26b6fdc7db6ba779fc4c385d9d24fc12cf72	hello.html
+```
+</Output>
+
+Tem um arquivo `hello.html`.
+
+## _05_ Exibir o arquivo `hello.html`
+
+<Run>
+```
+git cat-file -p <hellohash>
+```
+</Run>
+
+<Output>
+```git
+$ git cat-file -p c45f26b
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</Output>
+
+E aí está. Objetos árvores, objetos de commits e objetos blob são exibidos diretamente do repositório do Git. E isso é tudo que tem - árvores, blobs e commits.
+
+## _06_ Explore você mesmo
+
+O repositório Git pode ser explorado manualmente. Tente achar manualmente o arquivo `hello.html` original do primeiro commit com ajuda da hash SHA1 referenciada no último commit.

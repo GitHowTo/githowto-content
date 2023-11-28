@@ -1,0 +1,10 @@
+$ git commit -m "Renamed hello.html; moved style.css"
+[style 0ee0113] Renamed hello.html; moved style.css
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename style.css => css/style.css (100%)
+ rename hello.html => index.html (100%)
+$ git log css/style.css
+0ee0113 2023-11-28 | Renamed hello.html; moved style.css (HEAD -> style) [Alexander Shvets]
+$ git log --follow css/style.css
+0ee0113 2023-11-28 | Renamed hello.html; moved style.css (HEAD -> style) [Alexander Shvets]
+555372e 2023-11-28 | Added css stylesheet [Alexander Shvets]

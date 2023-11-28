@@ -1,0 +1,39 @@
+---
+title: "34. Changing the original repository"
+---
+
+### Goals
+
+- To make changes to the original repository, so we can try to pull the changes.
+
+## _01_ Make a change in the original `work` repository
+
+<Run>
+```
+cd ../work
+```
+</Run>
+
+<p className="highlight">We are now in the `work` repository.</p>
+
+Make the following changes to the `README` file:
+
+<File file="README">
+```
+This is the Hello World example from the Git tutorial.
+(changed in origin)
+```
+</File>
+
+Now add and commit this change
+
+<Run>
+```
+git add README
+git commit -m "Changed README in original repo"
+```
+</Run>
+
+## _02_ Next
+
+Now the original repo has more recent changes that are not included in the cloned version. Next we will pull those changes across to the cloned repo.

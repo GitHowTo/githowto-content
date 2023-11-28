@@ -1,0 +1,9 @@
+$ mkdir css
+$ git mv style.css css/style.css
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    style.css -> css/style.css
+	renamed:    hello.html -> index.html
+

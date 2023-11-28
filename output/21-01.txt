@@ -1,0 +1,7 @@
+$ git switch main
+Switched to branch 'main'
+$ git add README
+$ git commit -m "Added README"
+[main ee16740] Added README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README

@@ -1,0 +1,133 @@
+---
+title: "8. Modificações, não arquivos"
+---
+
+### Metas
+
+- Entender que o Git trabalha com as modificações, não com os arquivos.
+
+A maioria dos sistemas de controle de versão trabalham com arquivos. Você adiciona o arquivo no controle de código e o sistema acompanha as mudanças a partir daquele momento..
+
+O Git se concentra nas mudanças de um arquivo, não no arquivo em si. Um comando `git add file` não fala para o Git adicionar o arquivo no repositório, mas para perceber o atual estado do arquivo para que ele seja parte de um commit depois.
+
+Nós vamos tentar investigar essa diferença nesta lição.
+
+## _01_ Primeira mudança: Adicionando tags padrão de páginas
+
+Mude a página "Hello, World" de maneira que ela passe a ter as tags padrão `<html>` e `<body>`.
+
+<File file="hello.html">
+```html
+→<html>←
+  →<body>←
+    <h1>Hello, World!</h1>
+  →</body>←
+→</html>←
+```
+</File>
+
+## _02_ Adicione essa modificação
+
+Agora adicione essa modificação para o stage do Git.
+
+<Run>
+```
+git add hello.html
+```
+</Run>
+
+## _03_ Segunda mudança: Adicione os headers do HTML
+
+Agora adicione os headers (`<head>` section) na página "Hello, World".
+
+<File file="hello.html">
+```html
+<html>
+  →<head>←
+  →</head>←
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+## _04_ Confira o status atual
+
+<Run>
+```
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/08-01.txt]
+```
+</Output>
+
+Note que o arquivo hello.html está listado duas vezes no status. A primeira mudança (a adição das tags padrão) está no stage e pronta para um commit. A segunda mudança (adição dos headers) não está no stage. Se você fizesse um commit agora, os headers não teriam sido salvos no repositório.
+
+Vamos conferir.
+
+## _05_ Commit
+
+Faça um commit das mudanças que estão no stage (as tags padrão) e então confira novamente o status.
+
+<Run>
+```
+git commit -m "Added standard HTML page tags"
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/08-02.txt]
+```
+</Output>
+
+O comando `status` sugere que o `hello.html` ainda tem alterações não registradas, mas a área de preparação está vazia.
+
+## _06_ Adicionando a segunda modificação
+
+Adicione a segunda modificação ao stage, depois execute o comando `git status`.
+
+<Run>
+```
+git add .
+git status
+```
+</Run>
+
+> O diretório atual (`.`) vai ser nosso arquivo a adicionar. Essa é a maneira mais conveniente de adicionar todas as mudanças dos arquivos do diretório atual e suas pastas. Mas como ele adiciona tudo, é uma boa ideia conferir o status antes de fazer um `add .`, para ter certeza que você não adicione nenhum arquivo que não deveria ser adicionado.
+>
+> Eu queria que você visse o truque do `add .`, mas nós vamos continuar adicionando os arquivos explicitamente no futuro, por via das dúvidas.
+
+Você verá:
+
+<Output>
+```git
+==include[output/08-03.txt]
+```
+</Output>
+
+A segunda modificação está no stage e pronta para um commit.
+
+## _07_ Faça um commit da segunda mudança
+
+<Run>
+```
+git commit -m "Added HTML header"
+```
+</Run>
+
+<Output>
+```git
+==include[output/08-04.txt]
+```
+</Output>

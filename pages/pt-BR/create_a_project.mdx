@@ -1,0 +1,60 @@
+---
+title: "2. Criando um projeto"
+---
+
+### Metas
+
+- Aprender a criar um repositório Git do início.
+
+## _01_ Crie uma página de "Hello, World"
+
+Comece com um diretório de trabalho vazio (por exemplo, `repositories`, se você fez download do arquivo do último passo) e crie um subdiretório vazio chamado `work`. Então, crie um arquivo `hello.html` dentro dele com o conteúdo indicado abaixo.
+
+<Run>
+```
+mkdir work
+cd work
+touch hello.html
+```
+</Run>
+
+<File file="hello.html">
+```html
+Hello, World
+```
+</File>
+
+## _02_ Crie um repositório
+
+Então você tem um diretório que tem um arquivo. Execute o comando `git init` para criar um repositório do Git a partir desse diretório.
+
+<Run>
+```
+git init
+```
+</Run>
+
+<Output>
+```git
+==include[output/02-01.txt]
+```
+</Output>
+
+## _03_ Adicione a página ao repositório
+
+Agora vamos adicionar a página “Hello, World” ao repositório.
+
+<Run>
+```
+git add hello.html
+git commit -m "Initial Commit"
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/02-02.txt]
+```
+</Output>

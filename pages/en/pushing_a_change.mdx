@@ -1,0 +1,42 @@
+---
+title: "40. Pushing changes"
+---
+
+### Goals
+
+- Learn how to push changes to the remote repository.
+
+Since bare repositories are usually shared on some sort of network server, it is usually difficult to cd into the repo and pull changes. So we need to push our changes into other repositories.
+
+Let’s start by creating a change to be pushed. Edit the `README` and commit it:
+
+<File file="README">
+```
+This is the Hello World example from the Git tutorial.
+(changed in the origin and pushed to shared)
+```
+</File>
+
+<Run>
+```
+git switch main
+git add README
+git commit -m "Added shared comment to readme"
+```
+</Run>
+
+Now send changes to the shared repository.
+
+<Run>
+```
+git push shared main
+```
+</Run>
+
+_The shared repository_ is the one receiving changes sent by us. Remember, we added it as a remote repository in the previous lesson?
+
+<Output>
+```git
+==include[output/40-01.txt]
+```
+</Output>

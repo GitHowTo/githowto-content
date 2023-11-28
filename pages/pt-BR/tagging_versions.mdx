@@ -1,0 +1,113 @@
+---
+title: "11. Adicionando tags a versões"
+---
+
+### Metas
+
+- Aprender como adicionar tags a commits para referenciamento futuro.
+
+Acho que você concordará que trabalhar diretamente com hashes é simplesmente inconveniente. Não seria ótimo se você pudesse rotular commits específicos com nomes legíveis por humanos? Dessa forma, você poderia ver claramente os marcos importantes no histórico do projeto. Além disso, você poderia navegar facilmente para uma versão específica do projeto pelo seu nome. É para isso que servem as tags no Git.
+
+Vamos chamar a versão atual do nosso página `hello.hml` de versão 1: `v1`.
+
+## _01_ Criando a tag do primeiro
+
+<Run>
+```
+git tag v1
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-01.txt]
+```
+</Output>
+
+Agora, a versão atual da página é conhecida como `v1`.
+
+## _02_ Tags em versões antigas
+
+Vamos marcar a versão anterior à versão atual com o nome `v1-beta`. Antes de tudo, vamos verificar a versão anterior. Em vez de procurar o hash, usaremos a notação `^`, especificamente `v1^`, indicando o commit anterior a `v1`.
+
+> Se a notação `v1^` lhe causar algum problema, você também pode tentar `v1~1`, que fará referência à mesma versão. A notação `V~N` significa "a N-ésima versão anterior a V" ou, no caso de `v1~1`, a primeira versão anterior a `v1`.
+
+<Run>
+```
+git checkout v1^
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-02.txt]
+```
+</Output>
+
+Essa é a versão com as tags `<html>` e `<body>`, mas sem `<head>`. Vamos fazer dessa a versão `v1-beta`.
+
+<Run>
+```
+git tag v1-beta
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-03.txt]
+```
+</Output>
+
+## _03_ Acessando através do nome da tag
+
+Agora tente executar um checkout entre as duas versões com tags.
+
+<Run>
+```
+git checkout v1
+git checkout v1-beta
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-04.txt]
+```
+</Output>
+
+## _04_ Vendo tags com o comando `tag`
+
+Você pode ver todas as tags usadas usando o comando `git tag`.
+
+<Run>
+```
+git tag
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-05.txt]
+```
+</Output>
+
+## _05_ Vendo tags nos logs
+
+Você também pode encontrar as tags no log.
+
+<Run>
+```
+git log main --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-06.txt]
+```
+</Output>
+
+Você pode ver as tags (`v1` e `v1-beta`) listadas no log juntamente com o nome do branch (`main`). O `HEAD` mostra o commit em que você está atualmente (`v1-beta`).

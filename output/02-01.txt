@@ -1,0 +1,1 @@
+Initialized empty Git repository in /home/alex/githowto/repositories/work/.git/

@@ -1,0 +1,46 @@
+---
+title: "33. Remote branches"
+---
+
+### Goals
+
+- Learn about local and remote branches.
+
+Let's take a look at the branches in our cloned repository.
+
+<Run>
+```
+git branch
+```
+</Run>
+
+<Output>
+```git
+$ git branch
+* main
+```
+</Output>
+
+As we can see only the `main` branch is listed in it. Where is the `style` branch? `git branch` only lists the local branches by default.
+
+## _01_ 01 List of the remote branches
+
+To see all the branches, try the following command:
+
+<Run>
+```
+git branch -a
+```
+</Run>
+
+<Output>
+```git
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/style
+  remotes/origin/main
+```
+</Output>
+
+Git lists all the branches from the original repo, but the remote repository branches are not treated as local ones. If we need our own **style** branch, we need to create it on our own. In a minute you will see how it is done.

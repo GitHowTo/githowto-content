@@ -1,0 +1,88 @@
+---
+title: "17. Внесение изменений в коммиты"
+---
+
+### Цели
+
+- Научиться изменять существующие коммиты.
+
+## _01_ Измените страницу, а затем сделайте коммит
+
+Добавьте в страницу комментарий автора.
+
+<File file="hello.html">
+```html
+→<!-- Author: Alexander Shvets -->←
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Added copyright statement"
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-01.txt]
+```
+</Output>
+
+## _02_ Ой... необходим email
+
+Однако после создания коммита вы понимаете, что любой хороший комментарий должен включать электронную почту автора. Обновите страницу `hello.html`, включив в нее email.
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets →(alex@githowto.com)← -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+## _03_ Измените предыдущий коммит
+
+Мы действительно не хотим создавать отдельный коммит только ради электронной почты. Давайте изменим предыдущий коммит, включив в него адрес электронной почты.
+
+<Run>
+```
+git add hello.html
+git commit --amend -m "Added copyright statement with email"
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-02.txt]
+```
+</Output>
+
+## _04_ Просмотр истории
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-03.txt]
+```
+</Output>
+
+Мы можем увидеть, что оригинальный коммит «автор» заменен коммитом «автор/email». Этого же эффекта можно достичь путем сброса последнего коммита в ветке, и повторного коммита новых изменений.

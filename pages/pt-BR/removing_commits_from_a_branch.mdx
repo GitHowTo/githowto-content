@@ -1,0 +1,99 @@
+---
+title: "15. Removendo um commit de um branch"
+---
+
+### Metas
+
+- Aprender a deletar os commits mais recentes de um branch.
+
+`Revert` é um comando poderoso da seção anterior que te permite cancelar quaisquer commits para um repositório. Apesar disso, tanto os commits originais quanto os cancelados permanecem visíveis no histórico do branch (quando usamos o comando `git log`).
+
+Frequentemente depois que um commit é feito percebemos que ele era um erro. Seria legal ter um comando de desfazer que permitisse deletar o commit incorreto imediatamente. Esse comando preveniria a aparição de um commit indesejado no histórico do `git log`.
+
+## _01_ O comando `reset`
+
+Já vimos o comando `reset` e o usamos para definir a área de preparação para ser consistente com um determinado commit (usamos o commit `HEAD` em nossa lição anterior).
+
+Quando você executa o comando `reset` junto com uma referência de commit (ou seja, um branch, hash ou nome de tag), o comando...
+
+1. Aponta o ramo atual para o commit especificado.
+2. Opcionalmente, redefinirá a área de preparação para que ela esteja em conformidade com o commit especificado.
+3. Opcionalmente, redefina o diretório de trabalho para que ele corresponda ao commit especificado.
+
+
+## _02_ Cheque nosso histórico
+
+Vamos fazer um rápido scan do nosso histórico de commits.
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-01.txt]
+```
+</Output>
+
+Nós vemos que os dois últimos commits desse branch são "Oops" and "Revert Oops". Vamos removê-los com o comando `reset`.
+
+## _03_ Marque esse branch primeiro
+
+Vamos marcar nosso último commit com tag, para que possamos achá-lo após remover commits.
+
+<Run>
+```
+git tag oops
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-02.txt]
+```
+</Output>
+
+## _04_ Resete o commit para o `oops` anterior
+
+No log de histórico (veja acima), o commit com tag `v1` está fazendo commit sobre um commit anterior incorreto. Vamos resetar o branch para aquele ponto. Como o branch tem uma tag, podemos usar o nome da tag no comando `reset` (se não possuir uma tag, podemos usar o valor hash).
+
+<Run>
+```
+git reset --hard v1
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-03.txt]
+```
+</Output>
+
+Nosso branch `main` está apontando para o commit `v1` e "Revert Oops", e commits "Oops" não mais existem no branch. O parâmetro  `--hard` aponta que o diretório de trabalho deve ser atualizado para refletir o novo head do branch.
+
+## _05_ Nada é perdido para sempre
+
+O que acontece com os commits errados? Eles ainda estão no repositório. Na verdade, ainda podemos nos referir a eles. No início da lição, criamos a tag `oops` para o commit cancelado. Vamos dar uma olhada em _all_ (todos) commits.
+
+<Run>
+```
+git log --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/15-04.txt]
+```
+</Output>
+
+Podemos ver que os commits errados não foram embora. Eles não estão listados mais no branch `main` mas ainda permanecem no repositório. Eles ainda estariam no repositório caso não tivéssemos colocado uma tag neles, mas só poderíamos referenciá-los por seus nomes hash. Commits não referenciados continuam no repositório até que um software coletor de lixo é acionado pelo sistema.
+
+## _06_ Perigos de resetar
+
+Resets em branches locais geralmente são inofensivos. As consequências de quaisquer "acidentes" podem ser revertidos usando um commit apropriado.
+
+Apesar disso, outros usuários que compartilham o branch podem ficar confusos se o branch compartilhado fica armazenado em repositórios remotos.

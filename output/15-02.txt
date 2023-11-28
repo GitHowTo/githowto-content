@@ -1,0 +1,7 @@
+$ git log
+86364a1 2023-11-28 | Revert "Oops, we didn't want this commit" (HEAD -> main, tag: oops) [Alexander Shvets]
+6a44bec 2023-11-28 | Oops, we didn't want this commit [Alexander Shvets]
+b7614c1 2023-11-28 | Added HTML header (tag: v1) [Alexander Shvets]
+46afaff 2023-11-28 | Added standard HTML page tags (tag: v1-beta) [Alexander Shvets]
+78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+5836970 2023-11-28 | Initial commit [Alexander Shvets]

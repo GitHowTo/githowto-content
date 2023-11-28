@@ -1,0 +1,5 @@
+$ git log --oneline
+b7614c1 Added HTML header
+46afaff Added standard HTML page tags
+78433de Added h1 tag
+5836970 Initial commit

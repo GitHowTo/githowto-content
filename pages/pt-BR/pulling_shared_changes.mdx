@@ -1,0 +1,28 @@
+---
+title: "41. Removendo modificações comuns"
+---
+
+### Metas
+
+- Aprender a extrair alterações do repositório compartilhado.
+
+Rapidamente mude para o repositório `home` e extraia as modificações recém enviadas ao repositório comum.
+
+<Run>
+```
+cd ../home
+```
+</Run>
+
+<p className="highlight">Agora nós estamos no repositório _home_.</p>
+
+Continue com ...
+
+<Run>
+```
+git remote add shared ../work.git
+git branch --track shared main
+git pull shared main
+cat README
+```
+</Run>

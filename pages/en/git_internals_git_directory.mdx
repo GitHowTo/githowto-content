@@ -1,0 +1,134 @@
+---
+title: "Inside Git: .Git directory (bonus)"
+---
+
+### Goals
+
+- Learn about Git directory structure`.git`.
+
+## _01_ The `.git` directory
+
+It is time to do some research. Starting from the project’s root directory...
+
+<Run>
+```
+ls -C .git
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git
+COMMIT_EDITMSG	MERGE_RR	config		hooks		info		objects		rr-cache
+HEAD		ORIG_HEAD	description	index		logs		refs
+```
+</Output>
+
+This is a special folder where all the Git stuff is. Let us explore the directory.
+
+## _02_ Object Database
+
+<Run>
+```
+ls -C .git/objects
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects
+09	24	28	45	59	6a	77	80	8c	97	af	c4	e7	info
+11	27	43	56	69	6b	78	84	91	9c	b5	e4	fa	pack
+```
+</Output>
+
+You should see a lot of folders named with two characters. The first two letters of the SHA1 hash of the objects stored in Git are the directory names.
+
+## _03_ Inquire the database objects
+
+<Run>
+```
+ls -C .git/objects/<dir>
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects/09
+6b74c56bfc6b40e754fc0725b8c70b2038b91e	9fb6f9d3a104feb32fcac22354c4d0e8a182c1
+```
+</Output>
+
+Let us look at one of the folders named with two characters. There should be files with names of 38 characters. These files contain objects stored in Git. They are compressed and encrypted, so it’s impossible to view their contents directly. Let us have a better look at Git directory
+
+## _04_ Config File
+
+<Run>
+```
+cat .git/config
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[user]
+	name = Alexander Shvets
+	email = alex@githowto.com
+```
+</Output>
+
+This configuration file is created for each individual project. At least in this project, entries in this file will overwrite the entries in the `.gitconfig` file of your main directory.
+
+## _05_ Branches and tags
+
+<Run>
+```
+ls .git/refs
+ls .git/refs/heads
+ls .git/refs/tags
+cat .git/refs/tags/v1
+```
+</Run>
+
+<Output>
+```git
+$ ls .git/refs
+heads
+tags
+$ ls .git/refs/heads
+main
+$ ls .git/refs/tags
+v1
+v1-beta
+$ cat .git/refs/tags/v1
+fa3c1411aa09441695a9e645d4371e8d749da1dc
+```
+</Output>
+
+Files in the tags subdirectory should be familiar to you. Each file corresponds to the tag previously created using the `git tag` command. Its content is nothing but a hash commit attached to the tag.
+
+The _heads_ folder is almost identical and is used not for tags, but branches. At the moment we have only one branch, and everything you see in this folder is a `main` branch.
+
+## _06_ HEAD File
+
+<Run>
+```
+cat .git/HEAD
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/HEAD
+ref: refs/heads/main
+```
+</Output>
+
+There is a reference to the current branch in the HEAD file. At the moment it must be the `main` branch.

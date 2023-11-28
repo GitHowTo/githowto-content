@@ -1,0 +1,81 @@
+---
+title: "14. Cancelling commits"
+---
+
+### Goals
+
+- Learn how to undo commits to the local repository.
+
+## _01_ Cancelling commits
+
+Sometimes you realize that the new commits are wrong, and you want to cancel them. There are several ways to handle the issue, and we use the safest here.
+
+To cancel the commit we will create a new commit, cancelling the unwanted changes.
+
+## _02_ Edit the file and make a commit
+
+Replace `hello.html` with the following file.
+
+<File file="hello.html">
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    →<!-- This is an unwanted but committed change -->←
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Oops, we didn't want this commit"
+```
+</Run>
+
+## _03_ Make a commit with new changes that discard previous changes
+
+To cancel the commit, we need to create a commit that deletes the changes saved by unwanted commit.
+
+<Run>
+```
+git revert HEAD
+```
+</Run>
+
+Go to the editor, where you can edit the default commit message or leave it as is. Save and close the file.
+
+You will see:
+
+<Output>
+```git
+==include[output/14-01.txt]
+```
+</Output>
+
+Since we have cancelled the last commit, we can use `HEAD` as the argument for cancelling. We may cancel any random commit in history, pointing out its hash value.
+
+## _04_ Check the log
+
+Checking the log shows the unwanted cancellations and commits in our repository.
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/14-02.txt]
+```
+</Output>
+
+This technique can be applied to any commit (however there may be conflicts). It is safe to use even in public branches of remote repositories.
+
+## _05_ Next
+
+Next let us look at the technique that can be used to remove the last commit from the history of the repository.

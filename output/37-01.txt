@@ -1,0 +1,11 @@
+$ git branch --track style origin/style
+Branch 'style' set up to track remote branch 'style' from 'origin'.
+$ git branch -a
+* main
+  style
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/style
+$ git log --all --graph --max-count=2
+* 71df43a 2023-11-28 | Changed README in original repo (HEAD -> main, origin/main, origin/HEAD) [Alexander Shvets]
+* 39a1e0f 2023-11-28 | Renamed hello.html; moved style.css (origin/style, style) [Alexander Shvets]

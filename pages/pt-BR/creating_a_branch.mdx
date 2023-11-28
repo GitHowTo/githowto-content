@@ -1,0 +1,80 @@
+---
+title: "22. Criando um Branch"
+---
+
+### Metas
+
+- Aprender como criar um branch local no repositório.
+
+O desenvolvimento de um novo recurso sempre envolve riscos: pode levar muito tempo, você pode querer cancelá-lo no final, etc. Por esse motivo, é melhor isolar o desenvolvimento do recurso em uma ramificação separada. Quando o recurso estiver pronto, você poderá mesclar essa ramificação com a ramificação `main`. Até lá, a ramificação `main` estará protegida de códigos arriscados e não testados. Você também pode trabalhar em vários recursos em paralelo, cada um em sua própria ramificação. Você também pode fazer alterações na ramificação `main` a qualquer momento, por exemplo, para corrigir um bug no código estável.
+
+## _01_ Crie um branch
+
+É hora de tornar nossa página mais elegante com um toque de CSS. Desenvolveremos esse recurso em uma nova ramificação chamada `style`.
+
+<Run>
+```
+git switch -c style
+git status
+```
+</Run>
+
+> Os mais antigos podem se opor porque foram ensinados a criar ramificações com o comando `git checkout -b style`. Lembra que mencionei que o comando `checkout` está sobrecarregado de recursos e sinalizadores? A maneira antiga ainda funciona, mas não é recomendada. O novo comando `git switch` é mais expressivo e menos propenso a erros. Ele também tem menos sinalizadores e opções, portanto, é mais fácil de lembrar.
+
+<Output>
+```git
+==include[output/18-01.txt]
+```
+</Output>
+
+Note que o comando `git status` avisa que você está no branch style.
+
+## _02_ Adicione o arquivo `style.css`
+
+<Run>
+```
+touch style.css
+```
+</Run>
+
+<File file="style.css">
+```css
+h1 {
+  color: red;
+}
+```
+</File>
+
+<Run>
+```
+git add style.css
+git commit -m "Added css stylesheet"
+```
+</Run>
+
+## _03_ Mude o `hello.html` para usar o `style.css`
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    →<link type="text/css" rel="stylesheet" media="all" href="style.css" />←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Included stylesheet into hello.html"
+```
+</Run>
+
+## _04_ Próximo
+
+Agora nós temos um novo branch chamado style com dois novos commits. A próxima lição vai te mostrar como navegar e alternar entre branches.

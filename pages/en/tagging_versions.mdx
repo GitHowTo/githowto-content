@@ -1,0 +1,113 @@
+---
+title: "11. Tagging versions"
+---
+
+### Goals
+
+- Learn how to tag commits for future references.
+
+For most people working with hashes directly is annoying at best. Wouldn't it be great if you could label specific commits with human-readable names? This way you could clearly see important milestones in the project history. Moreover, you could easily check out to a specific version of the project by its name. For this reason, Git has a feature called "tags".
+
+Let's call the current version of the `hello.html` page as version 1: `v1`.
+
+## _01_ Creating a tag for the first version
+
+<Run>
+```
+git tag v1
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-01.txt]
+```
+</Output>
+
+Now, the current version of the page is referred to as `v1`.
+
+## _02_ Tags for previous versions
+
+Let's tag the version prior to the current version with the name `v1-beta`. First of all we will check out the previous version. Instead of looking up the hash of the commit, we are going to use the `^` notation, specifically `v1^`, indicating the commit previous to `v1`.
+
+> If the `v1^` notation gives you any trouble, you can also try `v1~1`, which will reference the same version. The `V~N` notation means "the N-th version prior to V", or in case of `v1~1`, first version prior to `v1`.
+
+<Run>
+```
+git checkout v1^
+cat hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-02.txt]
+```
+</Output>
+
+This is the version with `<html>` and `<body>` tags, but without `<head>`. Let's make it’s the `v1-beta` version.
+
+<Run>
+```
+git tag v1-beta
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-03.txt]
+```
+</Output>
+
+## _03_ Check out by the tag name
+
+Now try to check out between the two tagged versions.
+
+<Run>
+```
+git checkout v1
+git checkout v1-beta
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-04.txt]
+```
+</Output>
+
+## _04_ Viewing tags with the `tag` command
+
+You can see the available tags using the `git tag` command.
+
+<Run>
+```
+git tag
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-05.txt]
+```
+</Output>
+
+## _05_ Viewing tags in logs
+
+You can also check for tags in the log.
+
+<Run>
+```
+git log main --all
+```
+</Run>
+
+<Output>
+```git
+==include[output/11-06.txt]
+```
+</Output>
+
+You can see tags (`v1` and `v1-beta`) listed in the log together with the name of the branch (`main`). The `HEAD` marker shows the commit you checked out (currently `v1-beta`).

@@ -1,0 +1,88 @@
+---
+title: "17. Mudando commits"
+---
+
+### Metas
+
+- Aprender como modificar um commit já existente.
+
+## _01_ Mude a página e faça um commit
+
+Coloque um comentário de autor na página.
+
+<File file="hello.html">
+```html
+→<!-- Author: Alexander Shvets -->←
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Added copyright statement"
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-01.txt]
+```
+</Output>
+
+## _02_ Oops... precisa do email
+
+Depois de fazer o commit, você percebe que todo bom comentário deveria incluir o email do autor. Edite a página `hello.html` para fornecer um email.
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets →(alex@githowto.com)← -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+## _03_ Mude o commit anterior
+
+Nós não queremos criar outro commit apenas para o email. Vamos mudar o commit anterior e adicionar o endereço de email.
+
+<Run>
+```
+git add hello.html
+git commit --amend -m "Added copyright statement with email"
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-02.txt]
+```
+</Output>
+
+## _04_ Olhar o histórico
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-03.txt]
+```
+</Output>
+
+O novo commit "author/email" substitui o commit original "author". O mesmo pode ser obtido usando o comando `reset` no branch e fazendo novamente o commit com as mudanças.

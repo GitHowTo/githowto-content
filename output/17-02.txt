@@ -1,0 +1,5 @@
+$ git add hello.html
+$ git commit --amend -m "Added copyright statement with email"
+[main 9288a33] Added copyright statement with email
+ Date: Tue Nov 28 05:51:38 2023 -0600
+ 1 file changed, 1 insertion(+)

@@ -1,0 +1,44 @@
+---
+title: "42. Divulgando o seu repositório"
+---
+
+> Parabéns por ter chegado até aqui! Considere este tópico como um bônus.
+
+### Metas
+
+- Aprender como configurar um servidor Git para compartilhar repositórios.
+
+Existem maneiras diferentes de compartilhar um repositório Git na rede. Essa é a mais rápida.
+
+## _01_ Execute Git server
+
+<Run>
+```
+# (Do diretório "repositories")
+git daemon --verbose --export-all --base-path=.
+```
+</Run>
+
+Agora, vá ao seu diretório `repositories` num terminal separado.
+
+<Run>
+```
+# (Do diretório "repositories")
+git clone git://localhost/work.git network_work
+cd network_work
+ls
+```
+</Run>
+
+Você encontrará uma cópia do projeto `work`.
+
+## _02_ Mandando para o Git Daemon
+
+Se você quer mover o repositório para o Git Daemon, adicione a tag `--enable=receive-pack` ao comando `git daemon`. Tenha atenção, esse servidor não tem autenticação, então qualquer um pode enviar mudanças para o seu repositório.
+
+
+## Compartilhamento de repositórios
+
+Neste ponto, o céu é o limite. Vá à loucura! Alugue um servidor, compre um nome de domínio, hospede seus repositórios nesse servidor e você desfrutará de seu GitHub particular!
+
+Mas, falando sério, você pode hospedar seu próprio [GitLab] privado (https://gitlab.com/). Ele é gratuito e de código aberto.

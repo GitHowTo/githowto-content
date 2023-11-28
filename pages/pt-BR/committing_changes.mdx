@@ -1,0 +1,75 @@
+---
+title: "7. Fazendo commit das modificações"
+---
+
+### Metas
+
+- Aprender a fazer commits para o repositório.
+
+## _01_ Fazendo commit das modificações
+
+Bem, chega de falar sobre stage. Vamos fazer commit das mudanças que estão no stage para o repositório.
+
+Quando você usou o comando `git commit` anteriormente para fazer commit da primeira versão do `hello.html` para o repositório, você incluiu a flag `-m` que permite um comentário na linha de comando. O comando de commit permite edição interativa de comentários para o commit. Agora, vamos ver como isso funciona.
+
+Se você omitir a flag `-m` da linha de comando, o Git vai abrir o editor da sua escolha, a partir dessa lista (em ordem de prioridade):
+
+- Variável de ambiente `GIT_EDITOR`.
+- Definição de configuração `core.editor`.
+- Variável de ambiente `VISUAL`.
+- Variável de ambiente `EDITOR`.
+
+Eu tenho a variável `EDITOR` configurada para o `vim`. Se você preferir um editor GUI, agora é possível usar o VS Code como um [editor Git](https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-editor).
+
+Vamos fazer um commit e conferir o status.
+
+<Run>
+```
+git commit
+```
+</Run>
+
+Você verá o seguinte no seu editor:
+
+<Output>
+```git
+|
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#       modified:   hello.html
+#
+```
+</Output>
+
+Na primeira linha, escreva o comentário: `Added h1 tag`. Salve o arquivo e saia do editor (para fazer isso no editor padrão, pressione ESC e então escreva `:wq` e aperte Enter). Você deverá ver:
+
+<Output>
+```git
+==include[output/07-01.txt]
+```
+</Output>
+
+"Waiting for Emacs&#8230;" é obtido pelo programa `emacsclient` estar enviando o arquivo para um programa emacs em execução e esperando para ele ser fechado. O resto das informações é a mensagem padrão de commits.
+
+## _02_ Conferindo o status
+
+No final, vamos conferir o status.
+
+<Run>
+```
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/07-02.txt]
+```
+</Output>
+
+O diretório de trabalho está limpo, você pode continuar trabalhando.

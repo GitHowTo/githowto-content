@@ -1,0 +1,88 @@
+---
+title: "17. Amending commits"
+---
+
+### Goals
+
+- Learn how to modify an existing commit.
+
+## _01_ Change the page and commit
+
+Put an author comment on the page.
+
+<File file="hello.html">
+```html
+→<!-- Author: Alexander Shvets -->←
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Added copyright statement"
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-01.txt]
+```
+</Output>
+
+## _02_ Oops... email required
+
+After making the commit you understand that every good comment should include the author's email. Edit the `hello.html` page to provide an email.
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets →(alex@githowto.com)← -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+## _03_ Change the previous commit
+
+We do not want to create another commit for adding the email address. Let us change the previous commit and add an email address.
+
+<Run>
+```
+git add hello.html
+git commit --amend -m "Added copyright statement with email"
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-02.txt]
+```
+</Output>
+
+## _04_ View history
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/17-03.txt]
+```
+</Output>
+
+The new "author/email" commit replaces the original "author" commit. The same effect can be achieved by resetting the last commit in the branch, and recommitting new changes.

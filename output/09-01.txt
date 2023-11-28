@@ -1,0 +1,24 @@
+$ git log
+commit b7614c1aea1ffbc46400fe1a163842d6ec620a43
+Author: Alexander Shvets <alex@githowto.com>
+Date:   Tue Nov 28 05:51:38 2023 -0600
+
+    Added HTML header
+
+commit 46afaff2232fc3d564c40f65cb82e7e94839a1bb
+Author: Alexander Shvets <alex@githowto.com>
+Date:   Tue Nov 28 05:51:38 2023 -0600
+
+    Added standard HTML page tags
+
+commit 78433de967102f2b59d0a8a60eb397b2663ed282
+Author: Alexander Shvets <alex@githowto.com>
+Date:   Tue Nov 28 05:51:38 2023 -0600
+
+    Added h1 tag
+
+commit 58369706affbc1c27fa03a65fc7a05847278045f
+Author: Alexander Shvets <alex@githowto.com>
+Date:   Tue Nov 28 05:51:38 2023 -0600
+
+    Initial commit

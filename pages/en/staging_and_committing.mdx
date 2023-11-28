@@ -1,0 +1,26 @@
+---
+title: "6. Staging and committing"
+---
+
+A separate indexing step in Git allows you to split large changes into small commits. For example, say, you washed your car and while doing so, also refilled the windshield washer fluid. These two changes are essentially independent, so it's better to commit them separately. Otherwise, the change log of the windshield wiper fluid tank will contain the entry "Washed the car", which does not correspond to the essence of the change and may confuse the person might be looking into this history later.
+
+Suppose you have edited three files (`a.html`, `b.html`, and `c.html`). After that you need to commit all the changes so that the changes to `a.html` and `b.html` were a single commit, while the changes to `c.html` were not logically associated with the first two files and were done in a separate commit.
+
+In theory, you can do the following:
+
+<Run no_title={true}>
+```
+git add a.html
+git add b.html
+git commit -m "Changes for a and b"
+```
+</Run>
+
+<Run no_title={true}>
+```
+git add c.html
+git commit -m "Unrelated change to c"
+```
+</Run>
+
+Separating staging and committing, you get the chance to easily customize what goes into a commit.

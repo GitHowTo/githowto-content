@@ -1,0 +1,13 @@
+$ git checkout hello.html
+Updated 1 path from the index
+$ git status
+On branch main
+nothing to commit, working tree clean
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+---
+title: "5. Staging the changes"
+---
+
+### Goals
+
+- Learn to stage changes for the upcoming commits.
+
+## _01_ Adding changes
+
+Now command Git to stage changes. Check the status:
+
+<Run>
+```
+git add hello.html
+git status
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/05-01.txt]
+```
+</Output>
+
+Changes to the hello.html have been staged. This means that Git knows about the change, but it is not permanent in the repository. The next commit will include the changes staged.
+
+Should you decide not to commit the change, the `status` command will remind you that you can use the `git reset` command to unstage these changes.

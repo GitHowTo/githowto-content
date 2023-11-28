@@ -1,0 +1,5 @@
+$ cd ..
+$ pwd
+/home/alex/githowto/repositories
+$ ls
+work

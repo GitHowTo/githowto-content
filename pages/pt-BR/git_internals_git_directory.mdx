@@ -1,0 +1,134 @@
+---
+title: "Dentro do Git: diretório .git (bonus)"
+---
+
+### Metas
+
+- Aprender sobre a estrutura do diretório `.git`.
+
+## _01_ O diretório `.git`
+
+É hora de fazer alguma pesquisa. Começando pelo diretório raíz do projeto...
+
+<Run>
+```
+ls -C .git
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git
+COMMIT_EDITMSG	MERGE_RR	config		hooks		info		objects		rr-cache
+HEAD		ORIG_HEAD	description	index		logs		refs
+```
+</Output>
+
+Essa é uma pasta especial onde todas as coisas do Git estão. Vamos explorar o diretório.
+
+## _02_ Banco de Dados de Objetos
+
+<Run>
+```
+ls -C .git/objects
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects
+09	24	28	45	59	6a	77	80	8c	97	af	c4	e7	info
+11	27	43	56	69	6b	78	84	91	9c	b5	e4	fa	pack
+```
+</Output>
+
+Você deve ver várias pastas nomeadas com dois caracteres. As duas primeiras letras do hash sha1 do objeto armazenado no Git são o nome dos seus diretórios.
+
+## _03_ Investigue os objetos do banco de dados
+
+<Run>
+```
+ls -C .git/objects/<dir>
+```
+</Run>
+
+<Output>
+```git
+$ ls -C .git/objects/09
+6b74c56bfc6b40e754fc0725b8c70b2038b91e	9fb6f9d3a104feb32fcac22354c4d0e8a182c1
+```
+</Output>
+
+Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos cont&ecute;m os objetos armazenados no Git. Eles são comprimidos e encriptados, então é impossível ver seu conteúdo diretamente. Vamos dar uma olhada melhor no diretório Git.
+
+## _04_ Arquivo Config
+
+<Run>
+```
+cat .git/config
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[user]
+	name = Alexander Shvets
+	email = alex@githowto.com
+```
+</Output>
+
+Esse arquivo de configurações é criado para cada projeto individual. Pelo menos nesse projeto, as entradas nesse arquivo vão sobrescrever as entradas no arquivo `.gitconfig` do seu diretório principal.
+
+## _05_ Branches e tags
+
+<Run>
+```
+ls .git/refs
+ls .git/refs/heads
+ls .git/refs/tags
+cat .git/refs/tags/v1
+```
+</Run>
+
+<Output>
+```git
+$ ls .git/refs
+heads
+tags
+$ ls .git/refs/heads
+main
+$ ls .git/refs/tags
+v1
+v1-beta
+$ cat .git/refs/tags/v1
+fa3c1411aa09441695a9e645d4371e8d749da1dc
+```
+</Output>
+
+Arquivos no subdiretório de tags devem ser familiares pra você. Cada arquivo corresponde a tag anteriormente criada usando o comando `git tag`. Seu conteúdo não é nada mais que um hash de um commit associado à tag.
+
+A pasta _heads_ é quase idêntica e é usada não para tags, mas para branches. No momento, nós só temos um branch e tudo que você vê nessa pasta é um branch `main`.
+
+## _06_ Arquivo HEAD
+
+<Run>
+```
+cat .git/HEAD
+```
+</Run>
+
+<Output>
+```git
+$ cat .git/HEAD
+ref: refs/heads/main
+```
+</Output>
+
+Existe uma referência para o branch atual no arquivo `HEAD`. Nesse momento, ela tem que ser para o branch `main`.

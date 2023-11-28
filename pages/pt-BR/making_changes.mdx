@@ -1,0 +1,39 @@
+---
+title: "4. Fazendo modificações"
+---
+
+### Metas
+
+- Aprender a monitorar o estado do dirétorio de trabalho.
+
+## _01_ Modificar a página de “Hello, World”
+
+Vamos adicionar algumas tags HTML para a nossa saudação. Modifique os conteúdos do arquivo para:
+
+<File file="hello.html">
+```html
+→<h1>←Hello, World!→</h1>←
+```
+</File>
+
+## _02_ Conferindo o status
+
+Confira o status do diretório de trabalho.
+
+<Run>
+```
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/04-01.txt]
+```
+</Output>
+
+O primeiro aspecto importante aqui é que o Git sabe que o arquivo `hello.html` foi modificado, mas essas modificações ainda não sofreram commit para o repositório.
+
+Outro aspecto é que a mensagem de status oferece dicas sobre o que fazer em seguida. Se você quiser adicionar essas modificações para o repositório, use `git add`. Para desfazer as modificações use `git checkout`.

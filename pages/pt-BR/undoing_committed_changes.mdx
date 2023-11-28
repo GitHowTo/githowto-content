@@ -1,0 +1,81 @@
+---
+title: "14. Desfazendo commits"
+---
+
+### Metas
+
+- Aprender como desfazer commits no repositório local.
+
+## _01_ Desfazendo commits
+
+Algumas vezes você percebe que os novos commits estão errados e você quer desfazê-los. Existem várias maneiras de resolver esse problema, mas nós usamos a mais segura aqui.
+
+Para desfazer o commit, vamos criar um novo commit desfazendo as modificações não desejadas.
+
+## _02_ Edite o arquivo e faça um commit
+
+Substitua o arquivo `hello.html` com o seguinte.
+
+<File file="hello.html">
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    →<!-- This is an unwanted but committed change -->←
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Oops, we didn't want this commit"
+```
+</Run>
+
+## _03_ Faça um commit com as novas modificações que desfazem as modificações anteriores
+
+Para desfazer o commit, precisamos criar um commit que deleta as modificações feitas pelo commit indesejado.
+
+<Run>
+```
+git revert HEAD
+```
+</Run>
+
+Vá para o editor, onde você consegue editar a mensagem padrão do commit ou deixá-la como está. Salve e feche o arquivo.
+
+Você verá:
+
+<Output>
+```git
+==include[output/14-01.txt]
+```
+</Output>
+
+Já que desfizemos o último commit, nós podemos usar `HEAD` como o argumento para desfazê-lo. Nós podemos cancelar qualquer commit no histórico, apontando seu hash.
+
+## _04_ Confira o log
+
+Conferir o log mostra os cancelamentos e commits indesejados no nosso repositório.
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/14-02.txt]
+```
+</Output>
+
+Essa técnica pode ser aplicada para qualquer commit (mas podem surgir conflitos). É seguro usá-la mesmo em branches públicos de repositórios remotos.
+
+## _05_ Próximo
+
+A seguir vamos olhar a técnica que pode ser usada para remover o último commit do histórico do repositório.

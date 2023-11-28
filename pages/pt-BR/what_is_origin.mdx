@@ -1,0 +1,35 @@
+---
+title: "32. O que é origin?"
+---
+
+### Metas
+
+- Aprender sobre os nomes dos repositórios remotos.
+
+<Run>
+```
+git remote
+```
+</Run>
+
+<Output>
+```git
+==include[output/32-01.txt]
+```
+</Output>
+
+Nós vemos que o repositório clonado sabe o nome do repositório remoto padrão. Para acessar mais informações sobre esse tal de origin:
+
+<Run>
+```
+git remote show origin
+```
+</Run>
+
+<Output>
+```git
+==include[output/32-02.txt]
+```
+</Output>
+
+Nós podemos ver que o `origin` do repositório remoto é o repositório `work` original. Repositórios remotos são tipicamente guardados em uma máquina separada ou em um servidor centralizado. Porém, como podemos ver, eles também podem apontar para um repositório na mesma máquina. Não tem nada especial sobre o nome `origin`, mas existe uma convenção de usá-lo para o repositório primário central (se houver algum).

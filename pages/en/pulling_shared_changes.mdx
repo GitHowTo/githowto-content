@@ -1,0 +1,34 @@
+---
+title: "41. Pulling shared changes"
+---
+
+### Goals
+
+- Learn how to pull changes from the shared repository.
+
+Quickly switch to the `home` repository and pull the changes we just sent to the shared repository.
+
+<Run>
+```
+cd ../home
+```
+</Run>
+
+<p className="highlight">We are now in the `home` repository.</p>
+
+Continue with...
+
+<Run>
+```
+git remote add shared ../work.git
+git branch --track shared main
+git pull shared main
+cat README
+```
+</Run>
+
+<Output>
+```git
+==include[output/41-01.txt]
+```
+</Output>

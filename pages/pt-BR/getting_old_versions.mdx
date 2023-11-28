@@ -1,0 +1,67 @@
+---
+title: "10. Usando versões anteriores"
+---
+
+### Metas
+
+- Aprender como aplicar qualquer snapshot anterior ao diretório de trabalho.
+
+O Git torna possível viajar no tempo, pelo menos para seu projeto. O comando `checkout` atualizará seu diretório de trabalho para qualquer commit anterior.
+
+## _01_ Conseguindo os hashes das versões anteriores
+
+<Run>
+```
+git log
+```
+</Run>
+
+<Output>
+```git
+==include[output/10-01.txt]
+```
+</Output>
+
+Confira a data do log e encontre o hash do primeiro commit. Você vai achar ele na última linha do `git log` Use o código (os seus 7 primeiros caracteres são suficientes) no comando abaixo. Depois disso, cheque o conteúdo do arquivo `hello.html`.
+
+<Run>
+```
+git checkout <hash>
+cat hello.html
+```
+</Run>
+
+> Muitos comandos do Git aceitam hashes de commit como argumentos. Os hashes de commit variam de repositório para repositório, portanto, quando você vir um comando com a marca `<hash>`, isso significa que você precisa substituí-lo pelo hash real do seu repositório.
+
+Você verá:
+
+<Output>
+```git
+==include[output/10-02.txt]
+```
+</Output>
+
+Observe que agora o conteúdo do arquivo `hello.html' é o mesmo do texto com o qual começamos.
+
+## _02_ Voltando para a versão mais atual no branch `main`
+
+Para retornar à versão mais recente do nosso código, precisamos alternar para a ramificação padrão `main`. Podemos usar o comando `switch` para alternar entre as ramificações.
+
+> O comando `checkout` tem sido um canivete suíço no mundo do Git há muito tempo. Ele tem várias opções que permitem que você execute coisas totalmente diferentes: alternar ramificações, redefinir código etc. Em algum momento, a equipe do Git decidiu dividir o comando em vários comandos. O comando `switch` é um deles - seu único objetivo é alternar entre as ramificações. O comando `checkout` ainda está disponível, mas não é mais recomendável usá-lo para alternar as ramificações.
+
+<Run>
+```
+git switch main
+cat hello.html
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/10-03.txt]
+```
+</Output>
+
+`main` é o nome do branch padrão. Ao mudar para uma ramificação, você vai para a versão mais recente.

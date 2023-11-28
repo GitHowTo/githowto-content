@@ -1,0 +1,49 @@
+---
+title: "35. Fetching changes"
+---
+
+### Goals
+
+- Learn how to pull changes from a remote repository.
+
+<Run>
+```
+cd ../home
+git fetch
+git log --all
+```
+</Run>
+
+<p className="highlight">We are now in the `home` repository.</p>
+
+<Output>
+```git
+==include[output/35-01.txt]
+```
+</Output>
+
+At the moment, the repository contains all the commits from the original repo; however, they aren't integrated into the local branches of the cloned repository.
+
+You'll find the commit named "Changed README in original repo" in the history. Notice that the commit includes `origin/main` and `origin/HEAD`.
+
+Now let's take a look at the "Renamed hello.html; moved style.css" commit. You'll see that the local `main` branch points to this very commit, not the new commit we've just fetched.
+
+This brings us to the conclusion that the `git fetch` command will fetch new commits from the remote repo, but won't merge them into the local branches.
+
+## _01_ Check the README
+
+We can show that the cloned `README` file has not been changed.
+
+<Run>
+```
+cat README
+```
+</Run>
+
+<Output>
+```git
+==include[output/35-02.txt]
+```
+</Output>
+
+No changes, as you can see.

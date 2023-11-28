@@ -1,0 +1,5 @@
+$ git add hello.html
+$ git commit -m "Initial commit"
+[main (root-commit) 5836970] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.html

@@ -1,0 +1,54 @@
+---
+title: "36. Merging pulled changes"
+---
+
+### Goals
+
+- Learn to get the fetched changes into the current branch and working directory.
+
+## _01_ Merge the pulled changes into the local `main` branch
+
+<Run>
+```
+git merge origin/main
+```
+</Run>
+
+<Output>
+```git
+==include[output/36-01.txt]
+```
+</Output>
+
+## _02_ Check the `README` again
+
+Now we should see the changes.
+
+<Run>
+```
+cat README
+```
+</Run>
+
+<Output>
+```git
+==include[output/36-02.txt]
+```
+</Output>
+
+These are the changes. Although `git fetch` does not merge the changes, we can manually merge them from the remote repo.
+
+## _03_ The `pull` command
+
+The `fetch` command gives you precise control over what is pulled and merged, but for convenience, there is also a command `pull` which fetches and merges changes from the remote branch into your current branch with one call.
+
+```
+git pull
+```
+
+...is equivalent to the following two steps:
+
+```
+git fetch
+git merge origin/main
+```

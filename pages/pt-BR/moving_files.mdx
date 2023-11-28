@@ -1,0 +1,116 @@
+---
+title: "18. Movendo arquivos"
+---
+
+### Metas
+
+- Aprender como mover um arquivo dentro do repositório.
+
+Estou satisfeito com nossas alterações no CSS, mas há apenas um aspecto que gostaria de abordar antes de mesclarmos nossas alterações no `main`. Vamos renomear o arquivo `hello.html` para `index.html`. Além disso, vamos mover nosso arquivo de estilos para um diretório `css` designado.
+
+## _01_ Ver o histórico de alterações em um determinado arquivo
+
+O Git permite que você veja o histórico de alterações de um determinado arquivo. Vamos ver o registro de alterações do arquivo `hello.html` antes de renomeá-lo.
+
+<Run>
+```
+git log hello.html
+git log style.css
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-01.txt]
+```
+</Output>
+
+## _02_ Ver um diff de um determinado arquivo
+
+A capacidade de ver o registro de alterações de um determinado arquivo é útil. Ele permite que você veja o que foi alterado, quem fez as alterações e quando. Também é possível ver as alterações associadas a um commit específico. Eu o utilizo o tempo todo para descobrir como funciona a versão atual do código.
+
+O comando `show` é usado para ver as alterações em um commit específico. Vejamos as alterações no arquivo `hello.html` no commit marcado com `v1` (você pode usar qualquer referência de commit, como `HEAD`, hash do commit, nome da tag ou do branch, etc.).
+
+<Run>
+```
+git show v1
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-02.txt]
+```
+</Output>
+
+
+## _03_ Renomear `hello.html`
+
+Como você vê, é muito conveniente poder ver o registro de alterações de um determinado arquivo. Mas quando você renomeia ou move algo, há o risco de perder o histórico desse arquivo se não o fizer corretamente.
+
+Vamos renomear nosso arquivo `hello.html` para `index.html` com o comando padrão `mv` e ver o que acontece.
+
+<Run>
+```
+mv hello.html index.html
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-03.txt]
+```
+</Output>
+
+O Git entende nossa alteração como se o arquivo tivesse sido excluído e um novo arquivo tivesse sido criado. Esse é um sinal de alerta. Precisamos informar ao Git que renomeamos o arquivo em vez de excluí-lo e criar um novo. Em um caso simples, o Git descobrirá que o arquivo foi renomeado assim que adicionarmos o arquivo ao índice:
+
+<Run>
+```
+git add .
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-04.txt]
+```
+</Output>
+
+Veja, o arquivo é listado como renomeado. Mas isso é o Git tentando ser inteligente. Nem sempre isso funciona. Por exemplo, se você renomeou **e** modificou vários arquivos, o Git pode não ser capaz de descobrir o que exatamente foi renomeado. Nesse caso, você pode perder a capacidade de ver o histórico do arquivo antes de renomeá-lo, pois o arquivo será tratado como um arquivo recém-adicionado.
+
+
+## _04_ Mover `style.css` com segurança
+
+Na maioria dos sistemas operacionais, renomear e mover arquivos é a mesma coisa. Portanto, vamos mover nosso arquivo `style.css` para o diretório `css`, mas, desta vez, faremos isso de forma segura com o comando `git mv`. Esse comando garante que uma movimentação seja registrada no histórico do Git como uma movimentação.
+
+<Run>
+```
+mkdir css
+git mv style.css css/style.css
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-05.txt]
+```
+</Output>
+
+Vamos confirmar nossas alterações e verificar o histórico de alterações no arquivo `css/styles.css`. Precisaremos adicionar a opção `--follow` para ver o histórico do arquivo antes de ele ser movido. Vamos executar as duas variantes do comando para saber a diferença.
+
+<Run>
+```
+git commit -m "Renamed hello.html; moved style.css"
+git log css/style.css
+git log --follow css/style.css
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-06.txt]
+```
+</Output>

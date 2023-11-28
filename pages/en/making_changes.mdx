@@ -1,0 +1,39 @@
+---
+title: "4. Making changes"
+---
+
+### Goals
+
+- Learn to monitor the working directory’s state.
+
+## _01_ Changing the “Hello, World” page
+
+Let's add some HTML-tags to our greeting. Change the file contents to:
+
+<File file="hello.html">
+```html
+→<h1>←Hello, World!→</h1>←
+```
+</File>
+
+## _02_ Checking the status
+
+Check the working directory’s status.
+
+<Run>
+```
+git status
+```
+</Run>
+
+You will see:
+
+<Output>
+```git
+==include[output/04-01.txt]
+```
+</Output>
+
+The first important aspect here is that Git knows `hello.html` file has been changed, but these changes are not yet committed to the repository.
+
+Another aspect is that the status message hints about what to do next. If you want to add these changes to the repository, use `git add`. To undo the changes use `git checkout`.

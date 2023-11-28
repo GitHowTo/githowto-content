@@ -1,0 +1,6 @@
+$ git log
+9288a33 2023-11-28 | Added copyright statement with email (HEAD -> main) [Alexander Shvets]
+b7614c1 2023-11-28 | Added HTML header (tag: v1) [Alexander Shvets]
+46afaff 2023-11-28 | Added standard HTML page tags (tag: v1-beta) [Alexander Shvets]
+78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+5836970 2023-11-28 | Initial commit [Alexander Shvets]

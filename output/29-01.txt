@@ -1,0 +1,10 @@
+$ git switch main
+Switched to branch 'main'
+$ git merge style
+Updating 85c14e9..39a1e0f
+Fast-forward
+ css/style.css            | 3 +++
+ hello.html => index.html | 1 +
+ 2 files changed, 4 insertions(+)
+ create mode 100644 css/style.css
+ rename hello.html => index.html (73%)

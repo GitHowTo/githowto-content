@@ -1,0 +1,56 @@
+---
+title: "27. Resetando o branch <code>style</code>"
+---
+
+### Metas
+
+- Resetar o branch `style` para o ponto anterior ao primeiro merge.
+
+## _01_ Resetando o branch `style`
+
+Vamos para o branch `style` no ponto _antes_ de darmos merge com o branch `main`. Podemos redefinir uma branch para qualquer commit usando o comando `reset`. Na verdade, isso faz com que o ponteiro do branch aponte para qualquer commit contido na árvore.
+
+Aqui, queremos voltar no `style` branch para um ponto anterior ao merge com o `main`. Temos que encontrar o último commit antes do merge
+
+<Run>
+```
+git switch style
+git log --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-01.txt]
+```
+</Output>
+
+É um pouco difícil de ler, mas podemos perceber pelos dados que o commit "Renamed hello.html; moved style.css" foi o último no branch `style` anterior ao merging. Vamos redefinir o ramo `style` para esse commit. Para fazer referência a esse commit, usamos seu hash ou deduzimos que esse commit está 2 commits antes do `HEAD`, ou `HEAD~2` na notação do Git.
+
+<Run>
+```
+git reset --hard HEAD~2
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-02.txt]
+```
+</Output>
+
+## _02_ Cheque o branch
+
+Agora, vamos verificar o registro da ramificação `style`. Não deve haver commits de mesclagem no registro.
+
+<Run>
+```
+git log --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-03.txt]
+```
+</Output>

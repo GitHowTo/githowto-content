@@ -1,0 +1,80 @@
+---
+title: "18. Creating a branch"
+---
+
+### Goals
+
+- Learn how to create a local branch in the repository.
+
+Developing a new feature is always risky: it may take a while, you might want to cancel it in the end, etc. For this reason, it is best to isolate feature development in a separate branch. When the feature is ready, you can merge that branch into the `main` branch. Until then, your `main` is kept safe from risky and untested code. Moreover, you can work on multiple features in parallel, each in its own branch. You can also commit to `main` at any time, for example, to fix a bug.
+
+## _01_ Create a branch
+
+It is time to make our page more stylish with a touch of CSS. We'll develop this feature in a new branch called `style`.
+
+<Run>
+```
+git switch -c style
+git status
+```
+</Run>
+
+> Old timers may object because they were taught to create branches with the `git checkout -b style` command. Remember I mentioned that the `checkout` command is overloaded with features and flags? The old way still works, but it's discouraged. The new `git switch` command is more expressive and less error-prone. It also has fewer flags and options, so it's easier to remember.
+
+<Output>
+```git
+==include[output/18-01.txt]
+```
+</Output>
+
+Note that the `git status` command reports that we are in the `style` branch.
+
+## _02_ Add the `style.css` file
+
+<Run>
+```
+touch style.css
+```
+</Run>
+
+<File file="style.css">
+```css
+h1 {
+  color: red;
+}
+```
+</File>
+
+<Run>
+```
+git add style.css
+git commit -m "Added css stylesheet"
+```
+</Run>
+
+## _03_ Change `hello.html` to use `style.css`
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    →<link type="text/css" rel="stylesheet" media="all" href="style.css" />←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Included stylesheet into hello.html"
+```
+</Run>
+
+## _04_ Next
+
+We now have a new branch named `style` with two new commits. In the next lesson, we will see how to switch between branches.

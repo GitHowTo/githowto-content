@@ -1,0 +1,85 @@
+---
+title: "Псевдоніми (бонус)"
+---
+
+### Цілі
+
+- Навчитися налаштовувати псевдоніми та скорочені шляхи для команд Git.
+
+## _01_ Загальні псевдоніми
+
+Для користувачів Windows:
+
+<Run>
+```
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+```
+</Run>
+
+Також, для користувачів Unix/Mac:
+`git status`, `git add`, `git commit`, `git checkout` — загальні команди, для котрих корисно мати скорочення.
+
+Додайте наступне у файл `.gitconfig` у вашій директорії `$HOME`:
+
+<File file=".gitconfig">
+```shell
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+```
+</File>
+
+Ми вже встигли розібрати команди `commit` та `status`, у попередньому уроці вивчили команду `log` і зовсім скоро познайомимось з `checkout`. Головне, що варто запам'ятати з цього уроку, це те, що тепер ви можете вводити `git st` там, де раніше мали набирати `git status`. Аналогічно, пишемо `git co` замість `git checkout` та `git ci` замість `git commit`. Найкраще те, що команда `git log` дозволить уникнути введення довжелезної команди `log`.
+
+Спробуйте використовувати нові команди.
+
+## _02_ Задайте псевдонім `hist` у файлі `.gitconfig`
+
+Здебільшого, я буду продовжувати використовувати повні команди у цьому керівництві. Єдиним виключенням буде використання псевдоніма `hist`, згаданого вище, коли мені знадобиться подивитися Git лог. Якщо ви хочете повторювати мої дії, переконайтеся, що псевдонім `hist` встановлено у вашому файлі `.gitconfig`.
+
+## _03_ `Type` та `Dump`
+
+Ми додали кілька псевдонімів для команд, котрі ми ще не торкалися. З командою `git branch` розберемося трохи пізніше, а команду `git cat-file` використовується для дослідження Git, у цьому ми невдовзі переконаємось.
+
+## _04_ Псевдоніми команд (опціонально)
+
+Якщо ваша оболонка підтримує псевдоніми чи скорочені шляхи, ви можете додавати псевдоніми ще й на цьому рівні. Я користуюся:
+
+<File file=".profile">
+```shell
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias gco='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+
+alias got='git '
+alias get='git '
+```
+</File>
+
+Скорочення `gco` для команди `git checkout` особливо корисне. Воно дозволяє мені вводити:
+
+<Run no_title={true}>
+```
+gco назва_гілки
+```
+</Run>
+
+...для переходу в окрему гілку.
+
+І так, я достатньо часто пишу замість `git` `get` чи `got`, тому створю псевдоніми й для них.

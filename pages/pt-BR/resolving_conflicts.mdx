@@ -1,0 +1,136 @@
+---
+title: "25. Resolvendo conflitos"
+---
+
+### Metas
+
+- Aprender a resolver conflitos de merge.
+
+## _01_ Fazer merge do branch `main` com o `style`
+
+Vamos voltar ao ramo `style` e mesclar todas as alterações recentes do `main`.
+
+<Run>
+```
+git switch style
+git merge main
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-01.txt]
+```
+</Output>
+
+Parece que estamos em um conflito. Nenhuma surpresa! Vamos ver o que o Git tem a dizer sobre isso:
+
+<Run>
+```
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-02.txt]
+```
+</Output>
+
+Se você abrir o `index.html`, verá:
+
+<File file="index.html">
+```html
+==include[output/25-02-1.txt]
+```
+</File>
+
+A parte entre `<<<<<<<` e `>>>>>>>` é o conflito. A seção na parte superior corresponde à ramificação `style`, que é a ramificação atual (ou `HEAD`) do repositório. A parte inferior corresponde às alterações da ramificação `main`. O Git não consegue decidir quais alterações aplicar, portanto, ele solicita que você resolva o conflito manualmente. Você pode deixar as alterações do ramo `style` ou do `main`, ou pode combiná-las da maneira que desejar. Você também pode fazer qualquer outra alteração no arquivo.
+
+A propósito, você notou que nossa segunda alteração, a tag `<p>`, não faz parte do conflito? Isso se deve ao fato de o Git ter conseguido mesclá-la automaticamente.
+
+## _02_ Abortando a fusão
+
+Antes de começarmos a resolver nosso conflito, deixe-me mencionar que ir direto para a resolução do conflito nem sempre é o melhor caminho a seguir. O conflito pode ser causado por alterações das quais você não está ciente. Ou as alterações são grandes demais para serem resolvidas imediatamente. Por esse motivo, o Git permite que você aborte a mesclagem e volte ao estado anterior à mesclagem. Para fazer isso, você pode usar o comando `git merge --abort`, conforme sugerido pelo comando `status` que executamos anteriormente.
+
+<Run>
+```
+git merge --abort
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-03.txt]
+```
+</Output>
+
+## _03_ Resolução do conflito
+
+Depois de meditar um pouco, estamos prontos para lidar com o conflito. Vamos executar a mesclagem novamente.
+
+<Run>
+```
+git merge main
+```
+</Run>
+
+Para resolver o conflito, precisamos editar o arquivo até o estado em que estamos satisfeitos e, em seguida, fazer o commit como de costume. No nosso caso, combinaremos as alterações de ambas as ramificações. Portanto, editamos o arquivo para o seguinte estado:
+
+<File file="index.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    <title>Hello World Page</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Let's learn Git together.</p>
+  </body>
+</html>
+```
+</File>
+
+## _04_ Faça o commit do conflito resolvido
+
+<Run>
+```
+git add index.html
+git commit -m "Resolved merge conflict"
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-04.txt]
+```
+</Output>
+
+Vamos examinar o estado atual do nosso repositório e nos certificar de que tudo está bem:
+
+<Run>
+```
+git status
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/25-05.txt]
+```
+</Output>
+
+
+## _05_ Merging avançado
+
+Git não tem ferramentas gráficas de merging, mas aceita qualquer ferramenta de merge produzida por terceiros. ([leia mais sobre essas ferramentas no StackOverflow](http://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git).)
+
+Ao trabalhar com código de programação em um ambiente de desenvolvimento integrado (IDE) moderno, como o Visual Studio ou o IntelliJ IDEA, você provavelmente usará uma ferramenta de mesclagem integrada. Por exemplo, veja como é a resolução de conflitos no IntelliJ IDEA:
+
+<img src="/images/screenshots/ide-merge.png" srcSet="/images/screenshots/ide-merge-2x.png 2x" alt="IntelliJ IDEA merge tool" width="1000" height="409"/>

@@ -1,0 +1,3 @@
+$ git add index.html
+$ git commit -m "Resolved merge conflict"
+[style 79ac6fa] Resolved merge conflict

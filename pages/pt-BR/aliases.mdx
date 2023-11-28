@@ -1,0 +1,86 @@
+---
+title: "Aliases (bonus)"
+---
+
+### Metas
+
+- Aprender como configurar aliases e atalhos para comandos do Git.
+
+## _01_ Aliases comuns
+
+Para usuários do Windows:
+
+<Run>
+```
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+```
+</Run>
+
+Além disso, para usuários de Unix/Mac:
+
+`git status`, `git add`, `git commit`, e `git checkout` são comandos comuns, então é uma boa ideia ter abreviações para eles.
+
+Adicione o seguinte no arquivo `.gitconfig` no seu diretório `$HOME`.
+
+<File file=".gitconfig">
+```shell
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+```
+</File>
+
+Nós já falamos sobre os comandos commit e status. Nas lições anteriores, nós cobrimos o comando `log` e vamos conhecer o comando `checkout` em breve. O mais importante a se aprender dessa lição é que você pode digitar `git st` onde você antes tinha que digitar `git status`. O melhor de tudo é que o comando `git log` evita que você precise do comando `log`, que é muito comprido.
+
+Vá em frente e teste os novos comandos.
+
+## _02_ Defina o alias `hist` no arquivo `.gitconfig`
+
+Na maioria das vezes, eu vou continuar a escrever o comando completo nessas instruções. A única exceção vai ser o alias `hist` definido acima, que eu vou usar quando precisar de verificar o Git log. Tenha certeza que você tem um `hist` alias configurado em seu arquivo `.gitconfig` antes de continuar se você deseja repetir minhas ações.
+
+## _03_ `Type` e `Dump`
+
+Nós adicionamos alguns aliases para comandos que nós ainda não discutimos. Nós vamos falar sobre o comando `git branch` em breve, e o comando `git cat-file` é muito útil para explorar o Git.
+
+## _04_ Aliases de comandos (opcional)
+
+Se sua shell suporta aliases ou atalhos, você pode adicioná-los por lá também. Eu uso:
+
+<File file=".profile">
+```shell
+alias gs='git status'
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit '
+alias gd='git diff '
+alias gco='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all '
+
+alias got='git '
+alias get='git '
+```
+</File>
+
+A abreviação `gco` para `git checkout` é muito útil, pois me permite digitar:
+
+<Run no_title={true}>
+```
+gco your_branch_name
+```
+</Run>
+
+...para mudar para um branch em específico.
+
+Além disso, eu costumo digitar `get` ou `got` quando vou digitar `git`, então criei aliases para eles também.

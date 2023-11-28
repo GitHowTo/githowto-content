@@ -1,0 +1,30 @@
+---
+title: "5. Adicionando modificações ao stage"
+---
+
+### Metas
+
+- Aprender a adicionar modificações ao stage para os próximos commits.
+
+## _01_ Adicionando modificações
+
+Agora mande o Git adicionar as modificações ao stage. Confira o status.
+
+<Run>
+```
+git add hello.html
+git status
+```
+</Run>
+
+Você verá:
+
+<Output>
+```git
+==include[output/05-01.txt]
+```
+</Output>
+
+Modificações no hello.html foram adicionadas ao stage. Isso quer dizer que o Git sabe da modificação, mas não é permanente no repositório. O próximo commit incluirá as modificações que estão no stage.
+
+Se você decidir não fazer commit da modificação, o comando `status` vai te lembrar que você pode usar o comando `git reset` para remover essas mudanças do stage.

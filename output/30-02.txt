@@ -1,0 +1,6 @@
+$ git clone work home
+Cloning into 'home'...
+done.
+$ ls
+home
+work

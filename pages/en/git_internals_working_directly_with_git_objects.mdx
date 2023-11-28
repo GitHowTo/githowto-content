@@ -1,0 +1,123 @@
+---
+title: "Git inside: Direct work with Git objects (bonus)"
+---
+
+### Goals
+
+- Explore the structure of the database objects.
+- Using SHA1 hashes for searching the content in repository.
+
+Let us examine Git objects with some tools.
+
+## _01_ Searching for the last commit
+
+<Run>
+```
+git log --max-count=1
+```
+</Run>
+
+This command should find the last commit in the repository. SHA1 hash is probably different on our systems; however, you should see something like this.
+
+<Output>
+```git
+$ git log --max-count=1
+* 8029c07 2011-03-09 | Added index.html. (HEAD, main) [Alexander Shvets]
+```
+</Output>
+
+## _02_ Display of the last commit
+
+With the SHA1 hash of a commit, as above...
+
+<Run>
+```
+git cat-file -t <hash>
+git cat-file -p <hash>
+```
+</Run>
+
+I see this...
+
+<Output>
+```git
+$ git cat-file -t 8029c07
+commit
+$ git cat-file -p 8029c07
+tree 096b74c56bfc6b40e754fc0725b8c70b2038b91e
+parent 567948ac55daa723807c0c16e34c76797efbcbed
+author Alexander Shvets <alex@githowto.com> 1299684476 -0500
+committer Alexander Shvets <alex@githowto.com> 1299684476 -0500
+
+Added index.html.
+```
+</Output>
+
+This displays the commit object, which is in the head of main branch.
+
+## _03_ Tree search
+
+We can display the tree referenced in the commit. This should be a file description (top level) in our project (for a specific commit). Use the SHA1 hash of the tree string from the list above.
+
+<Run>
+```
+git cat-file -p <treehash>
+```
+</Run>
+
+Here is my tree...
+
+<Output>
+```git
+$ git cat-file -p 096b74c
+100644 blob 28e0e9d6ea7e25f35ec64a43f569b550e8386f90	index.html
+040000 tree e46f374f5b36c6f02fb3e9e922b79044f754d795	lib
+```
+</Output>
+
+I can see the `index.html` file and lib folder.
+
+## _04_ Display lib directory
+
+<Run>
+```
+git cat-file -p <libhash>
+```
+</Run>
+
+<Output>
+```git
+$ git cat-file -p e46f374
+100644 blob c45f26b6fdc7db6ba779fc4c385d9d24fc12cf72	hello.html
+```
+</Output>
+
+There is a `hello.html` file.
+
+## _05_ Display `hello.html` file
+
+<Run>
+```
+git cat-file -p <hellohash>
+```
+</Run>
+
+<Output>
+```git
+$ git cat-file -p c45f26b
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</Output>
+
+And there it is. Tree objects, commit objects and blob objects are displayed directly from the Git repository. That's all there is - trees, blobs and commits.
+
+## _06_ Explore  by yourself
+
+The Git repository can be explored manually. Try to manually find the original `hello.html` file from the initial commit with help of SHA1 hash references in the last commit.

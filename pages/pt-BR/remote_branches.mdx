@@ -1,0 +1,46 @@
+---
+title: "33. Branches remotos"
+---
+
+### Metas
+
+- Aprender sobre branches locais e remotos.
+
+Vamos dar uma olhada nos branches do nosso repositório clonado.
+
+<Run>
+```
+git branch
+```
+</Run>
+
+<Output>
+```git
+$ git branch
+* main
+```
+</Output>
+
+Como podemos ver, apenas o branch `main` está listado. Onde está o branch `style`? `git branch` lista apenas os branches locais, por padrão.
+
+## _01_ Lista dos branches remotos
+
+Para ver todos os branches, use o seguinte comando:
+
+<Run>
+```
+git branch -a
+```
+</Run>
+
+<Output>
+```git
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/style
+  remotes/origin/main
+```
+</Output>
+
+O Git lista todos os commits do repositório original, mas os branches do repositório remoto não são tratados como os locais. Se nós precisamos do nosso próprio branch `style`, teremos que criá-lo. Em um minuto você verá como isso é feito.

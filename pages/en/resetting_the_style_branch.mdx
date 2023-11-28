@@ -1,0 +1,56 @@
+---
+title: "27. Resetting the <code>style</code> branch"
+---
+
+### Goals
+
+- Reset the branch `style` to the point before the first merge with `main`.
+
+## _01_ Resetting the `style` branch
+
+Let us go to the `style` branch to the point _before_ we had merged it with the `main` branch. We can `reset` the branch to any commit. In fact, the `reset` command can change the branch pointer to point to any commit in the tree.
+
+Here, we want to go back in the `style` branch to a point before merging with the `main`. We have to find the last commit before the merge.
+
+<Run>
+```
+git switch style
+git log --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-01.txt]
+```
+</Output>
+
+It's a little hard to read, but we can see from the output that the "Renamed hello.html; moved style.css" commit was the latest on the `style` branch prior to the first merging with `main`. Let us reset the `style` branch to this commit. To reference that commit, we either use its hash, or deduct that this commit is 2 commits before the `HEAD`, or `HEAD~2` in Git notation.
+
+<Run>
+```
+git reset --hard HEAD~2
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-02.txt]
+```
+</Output>
+
+## _02_ Check the branch
+
+Now, lets check the log of the `style` branch. There should be no merge commits in the log.
+
+<Run>
+```
+git log --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/27-03.txt]
+```
+</Output>

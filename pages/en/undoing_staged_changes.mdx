@@ -1,0 +1,85 @@
+---
+title: "13. Cancel staged changes (before committing)"
+---
+
+### Goals
+
+- Learn how to undo changes that have been staged.
+
+## _01_ Edit file and stage changes
+
+Make changes to the `hello.html` file in the form of an unwanted comment
+
+<File file="hello.html">
+```html
+<html>
+  <head>
+    →<!-- This is an unwanted but staged comment -->←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+Stage the modified file.
+
+<Run>
+```
+git add hello.html
+```
+</Run>
+
+## _02_ Check the status
+
+Check the status of unwanted changes .
+
+<Run>
+```
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-01.txt]
+```
+</Output>
+
+Status shows that the change has been staged and is ready to commit.
+
+## _03_ Reset the staging area
+
+The `reset` command resets the staging area to `HEAD`. This clears the staging area from the changes that we have just staged.
+
+<Run>
+```
+git reset HEAD hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-02.txt]
+```
+</Output>
+
+The `reset` command (default) does not change the working directory. Therefore, the working directory still contains unwanted comments. We can use the `checkout` command from the previous tutorial to remove unwanted changes from working directory.
+
+## _04_ Switch to commit version
+
+<Run>
+```
+git checkout hello.html
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-03.txt]
+```
+</Output>
+
+Our working directory is clean again.

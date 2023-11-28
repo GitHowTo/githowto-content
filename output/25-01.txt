@@ -1,0 +1,6 @@
+$ git switch style
+Switched to branch 'style'
+$ git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.

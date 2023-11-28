@@ -1,0 +1,29 @@
+---
+title: "38. Repositórios bare"
+---
+
+### Metas
+
+- Aprender como criar repositórios bare.
+
+Um repositório bare é um repositório que não tem um diretório de trabalho. Ele contém apenas o diretório `.git`, o diretório no qual o Git armazena todos os seus dados internos. O principal objetivo desses repositórios é ser um repositório central para o qual os desenvolvedores podem enviar e receber arquivos, portanto, não há necessidade de ter um diretório de trabalho. Os repositórios básicos também são usados nos serviços de hospedagem do Git, como o GitHub e o GitLab. Nas próximas lições, aprenderemos a criar um repositório bare e a fazer push para ele.
+
+## _01_ Criando um repositório bare
+
+<Run>
+```
+cd ..
+git clone --bare work work.git
+ls work.git
+```
+</Run>
+
+<p className="highlight">Agora nós estamos no diretório `repositories`.</p>
+
+<Output>
+```git
+==include[output/38-01.txt]
+```
+</Output>
+
+A convenção é que os repositórios que terminam em `.git` são repositórios simples. Podemos ver que não há diretório de trabalho no repositório `work.git`. Essencialmente, ele nada mais é do que o diretório `.git` de um repositório normal.

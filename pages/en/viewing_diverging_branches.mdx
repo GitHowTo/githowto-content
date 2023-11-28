@@ -1,0 +1,27 @@
+---
+title: "22. Viewing diverging branches"
+---
+
+### Goals
+
+- Learn how to view diverging branches in a repository.
+
+## _01_ View current branches
+
+We now have two diverging branches in the repository. Use the following `log` command to view the branches and how they diverge.
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/22-01.txt]
+```
+</Output>
+
+The `--all` flag guarantees that we see all the branches. By default, only the current branch is displayed.
+
+The `--graph` option adds a simple commit tree represented with basic text lines. We see both branches (`style` and `main`) and that the branch `main` is marked as `HEAD`, meaning that it's current. The common ancestor to both branches is the branch where the "Added copyright statement with email" commit has been introduced.

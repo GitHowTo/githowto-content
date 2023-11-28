@@ -1,0 +1,42 @@
+---
+title: "29. Merging to the <code>main</code> branch"
+---
+
+### Goals
+
+- We have kept our `style` branch up to date with the `main` branch (using `rebase`), but now let's merge the `style` branch changes back into the `main`.
+
+## _01_ Merge `style` into `main`
+
+<Run>
+```
+git switch main
+git merge style
+```
+</Run>
+
+<Output>
+```git
+==include[output/29-01.txt]
+```
+</Output>
+
+Since the last commit in `main` directly precedes the last commit of the `style` branch, Git can merge fast-forward by simply moving the branch pointer forward, pointing to the same commit as the `style` branch.
+
+Conflicts do not arise in the fast-forward merge. Also, fast-forward merges do not create a merge commit.
+
+## _02_ Check the logs
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/29-02.txt]
+```
+</Output>
+
+Now the `style` and `main` branches are identical.

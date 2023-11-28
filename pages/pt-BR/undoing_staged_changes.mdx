@@ -1,0 +1,85 @@
+---
+title: "13. Descartando mudanças no stage (antes do commit)"
+---
+
+### Metas
+
+- Aprender como desfazer mudanças que já estão no stage.
+
+## _01_ Edite o arquivo e adicione as mudanças ao stage
+
+Faça mudanças ao arquivo `hello.html` na forma de um comentário indesejado.
+
+<File file="hello.html">
+```html
+<html>
+  <head>
+    →<!-- This is an unwanted but staged comment -->←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+</File>
+
+Adicione o arquivo modificado ao stage.
+
+<Run>
+```
+git add hello.html
+```
+</Run>
+
+## _02_ Verifique o status
+
+Verifique o status da mudança indesejada.
+
+<Run>
+```
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-01.txt]
+```
+</Output>
+
+O status mostra que a mudança está no stage e pronta para um commit;
+
+## _03_ Revertendo a área de preparação
+
+O comando `reset` retorna a área de preparação para `HEAD`. Isso limpa a área de preparação das mudanças que nós acabamos de adicionar ao stage.
+
+<Run>
+```
+git reset HEAD hello.html
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-02.txt]
+```
+</Output>
+
+O comando `reset` (padrão) não altera o diretório de trabalho. Logo, o diretório de trabalho ainda tem os comentários indesejados. Nós podemos usar o comando `checkout` do tutorial anterior para remover as mudanças do repositório de trabalho.
+
+## _04_ Mudando para a versão do commit
+
+<Run>
+```
+git checkout hello.html
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/13-03.txt]
+```
+</Output>
+
+Nosso diretório de trabalho está limpo novamente.

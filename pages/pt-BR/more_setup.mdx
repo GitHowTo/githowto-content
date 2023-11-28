@@ -1,0 +1,50 @@
+---
+title: "1. A preparação final"
+---
+
+### Metas
+
+- Estar completamente preparado para usar o Git.
+
+## _01_ Configurando nome e endereço de email
+
+Se você nunca usou Git antes, o primeiro passo é configurar seu nome e endereço de email. Execute os seguintes comandos para fazer com que o Git saiba seu nome e endereço de email. Esses dados são usados para assinar as alterações que você faz, o que lhe permitirá rastrear quem fez as alterações no arquivo e quando.
+
+<Run>
+```
+git config --global user.name "Seu Nome"
+git config --global user.email "seu_email@qualquercoisa.com"
+```
+</Run>
+
+
+## _02_ Nome padrão do branch
+
+Usaremos `main` como o nome padrão da ramificação. Para configurar isso, execute o seguinte comando:
+
+<Run>
+```
+git config --global init.defaultBranch main
+```
+</Run>
+
+
+## _03_ Tratamento de términos de linhas
+
+Além disso, para usuários de Unix/Mac:
+
+<Run>
+```
+git config --global core.autocrlf input
+git config --global core.safecrlf warn
+```
+</Run>
+
+Para usuários do Windows:
+
+<Run>
+```
+git config --global core.autocrlf true
+git config --global core.safecrlf warn
+```
+</Run>

@@ -1,0 +1,5 @@
+$ cd home
+$ ls
+css
+index.html
+README

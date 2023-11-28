@@ -1,0 +1,14 @@
+$ git remote add shared ../work.git
+$ git branch --track shared main
+Branch 'shared' set up to track local branch 'main'.
+$ git pull shared main
+From ../work
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> shared/main
+Updating 71df43a..d9d2bea
+Fast-forward
+ README | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ cat README
+This is the Hello World example from the Git tutorial.
+(changed in the origin and pushed to shared)

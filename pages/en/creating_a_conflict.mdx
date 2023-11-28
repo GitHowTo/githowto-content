@@ -1,0 +1,63 @@
+---
+title: "24. Creating a merge conflict"
+---
+
+### Goals
+
+- Create a conflicting change in the `main` branch.
+
+When you merge two branches, Git tries to move the changes from one branch to the other. If the same part of the file was changed in both branches, Git may not be able to combine the changes automatically. In this case, Git will report a conflict and ask you to resolve it manually. In this lesson, we will simulate a conflict and later learn how to resolve it.
+
+In real life merge conflicts happen regularly when working in the team. For example, you and your colleague started working on two different features, affecting the same files. Your colleague finished his work first and merged his changes to the `main` branch. Now you want to merge your own changes to the `main` branch as well. But the `main` branch is now different from the one you started working on—there is new code, submitted by your colleague. Most likely, Git will not be able to merge your changes automatically and will ask for human assistance.
+
+## _01_ Switch back to the `main` and create conflict
+
+Remember, in our `main` branch, the page is still called `hello.html`? Switch back to the `main` branch and make the following changes:
+
+<Run no_title={true}>
+```
+git switch main
+```
+</Run>
+
+<File file="hello.html">
+```html
+<!-- Author: Alexander Shvets (alex@githowto.com) -->
+<html>
+  <head>
+    →<title>Hello World Page</title>←
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    →<p>Let's learn Git together.</p>←
+  </body>
+</html>
+```
+</File>
+
+<Run>
+```
+git add hello.html
+git commit -m "Added meta title"
+```
+</Run>
+
+## _02_ View branches
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/24-01.txt]
+```
+</Output>
+
+After the "Added README" commit, the `main` branch has been merged with the `style` branch, but there is an additional `main` commit, which was not merged back to the `style` branch.
+
+## _03_ Next
+
+The last change in `main` conflicts with some changes in the `style` branch. In the next step we will solve this conflict.

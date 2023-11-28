@@ -1,0 +1,27 @@
+---
+title: "37. Adding a tracking branch"
+---
+
+### Goals
+
+- Learn how to add a local branch that tracks a remote branch.
+
+Branches that start with `remotes/origin` belong to the original repository. Note that you don't have a `style` branch anymore, but Git knows that it was in the original repository.
+
+## _01_ Add a local branch tracking the remote branch
+
+<Run>
+```
+git branch --track style origin/style
+git branch -a
+git log --max-count=2
+```
+</Run>
+
+<Output>
+```git
+==include[output/37-01.txt]
+```
+</Output>
+
+Now we can see the `style` branch in the branch list and log.

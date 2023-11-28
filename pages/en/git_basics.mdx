@@ -1,0 +1,45 @@
+---
+title: "Part I: Git basics"
+---
+
+### Goals
+
+- Understand what Git is and why it's useful.
+
+Over the next 30 lessons or so, we'll be learning the basics of Git. Git is a **version control system** that allows you to track changes to your code over time. It's a very powerful tool that is used by most software developers nowadays. It's also a great way to collaborate with others on a project.
+
+## What is Git?
+
+You can think of Git as a sort of "time machine" for your code. It allows you to go back in time and see what your code looked like at a certain point in time. It also allows you to see who made what changes to the code, and when. It even allows you to undo changes that you made to your code.
+
+Git itself is a command line tool. If you are not used to using the command line, it can look a little bit intimidating at first. But don't worry, we'll be learning how to use the command line in this course as well. Besides, most modern code editors have a built-in Git client that makes it easy to interact with Git using graphical user interface. However, it's still a good idea to learn how to use Git from the command line:
+
+- It gives you a better understanding of how Git works.
+- It allows you to use Git on any computer, even if it doesn't have your favorite dev tools installed.
+- It allows you to use Git on a remote server, that don't gave any graphical user interface.
+
+Before we get started, let's go over some terminology that we'll be using throughout this course.
+
+## Terminology
+
+#### Repository
+
+A Git repository, often referred to as a "repo", is a storage space where your project lives. It can be local storage on your computer, or it can be a remote storage on a service like GitHub or another online host. The repository is used to track changes in the project, coordinate work among multiple people, and track the project's history.
+
+Say, you have a directory on your computer that contains all the files of your project. When you init a Git repository in that directory, Git creates a hidden subdirectory named `.git` where all the information about the repository is stored. This includes the history of all the changes that were made to the repository, as well as the current state of the repository.
+
+> **Nerd fact #1:** If you are 100% sure that your repository is a Git repository, but you don't see the `.git` directory, then it's probably hidden. Make sure that you have enabled the option to show hidden files in your file manager.
+
+#### Commit
+
+Think of a commit as a snapshot of your repository at a certain point in time. A commit only carries information about the changes that were made to the repository since the last commit. It doesn't contain the entire repository (unless it's a first commit). So, each commit is a small piece of the repository's history, based on a previous commit. They all are link together in a chain, forming a timeline of the repository's history.
+
+#### Branch
+
+A branch is a parallel version of a repository. It allows you to work on a new feature of your project without affecting the main version of the project. Once you are done working on the new feature, you can merge the branch back into the main version of the project.
+
+> **Nerd fact #2:** there's always at least one branch in a repository, even if you don't create any branches yourself. It is usually called the "main" (or "main") branch.
+
+---
+
+You now have a basic understanding of what Git is and how it works. In the next lesson, we'll finally get our hands dirty and run some Git commands.

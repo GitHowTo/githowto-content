@@ -1,0 +1,3 @@
+$ git push shared main
+To ../work.git
+   71df43a..d9d2bea  main -> main

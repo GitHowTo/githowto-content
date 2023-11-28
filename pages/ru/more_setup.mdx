@@ -1,0 +1,50 @@
+---
+title: "1. Финальные приготовления"
+---
+
+### Цели
+
+- Полная готовность к работе с Git.
+
+## _01_ Установка имени и электронной почты
+
+Если вы никогда ранее не использовали Git, для начала вам необходимо осуществить установку. Выполните следующие команды, чтобы Git узнал ваше имя и электронную почту. Эти данные используются для подписи изменений сделанных вами, что позволит отслеживать, кто и когда сделал изменения в файле.
+
+<Run>
+```
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+```
+</Run>
+
+
+## _02_ Имя ветки по умолчанию
+
+Мы будем использовать `main` в качестве имени ветки по умолчанию. Чтобы установить его, выполните следующую команду:
+
+<Run>
+```
+git config --global init.defaultBranch main
+```
+</Run>
+
+
+## _03_ Корректная обработка окончаний строк
+
+Для пользователей Unix/Mac:
+
+<Run>
+```
+git config --global core.autocrlf input
+git config --global core.safecrlf warn
+```
+</Run>
+
+Для пользователей Windows:
+
+<Run>
+```
+git config --global core.autocrlf true
+git config --global core.safecrlf warn
+```
+</Run>

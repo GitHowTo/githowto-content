@@ -1,0 +1,114 @@
+---
+title: "20. Moving files"
+---
+
+### Goals
+
+- Understand how to move files within the repository.
+
+I'm pleased with the CSS modifications we've made, but there's one more thing I'd like to address before we merge our changes into the `main` branch. We should rename the `hello.html` file to `index.html` and moving our styles file into a dedicated `css` directory.
+
+## _01_ Examining the history of changes in a specific file
+
+Git provides the capability to examine the change history of a specific file. Let's take a look at the change log for the `hello.html` file before we proceed with renaming it.
+
+<Run>
+```
+git log hello.html
+git log style.css
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-01.txt]
+```
+</Output>
+
+## _02_ Comparing different versions of a specific file
+
+Being able to view the change log of a specific file is incredibly useful. It allows you to track what modifications were made, who made them, and when they were made. You can also see the changes associated with a specific commit. I frequently use this feature to understand the workings of the current version of the code.
+
+The `show` command is used to display the changes in a specific commit. Let's examine the changes in the `hello.html` file in the commit tagged with `v1` (you can use any commit reference, such as `HEAD`, branch or tag name, commit hash, etc.)
+
+<Run>
+```
+git show v1
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-02.txt]
+```
+</Output>
+
+## _03_ Renaming `hello.html`
+
+As you can see, having the ability to view the change log of a specific file is extremely handy. However, when renaming or moving a file, there's a risk of losing its history if not done correctly.
+
+Let's proceed to rename our `hello.html` file to `index.html` using the standard `mv` command and observe the outcome.
+
+<Run>
+```
+mv hello.html index.html
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-03.txt]
+```
+</Output>
+
+Git interprets our modification as if we've deleted the file and created a new one. This is a red flag. We need to inform Git that we've renamed the file, not deleted and created a new one. In straightforward cases, Git will deduce that the file has been renamed as soon as we add the file to the index:
+
+<Run>
+```
+git add .
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-04.txt]
+```
+</Output>
+
+As you can see, Git lists the file as renamed. However, this is Git's attempt to be intelligent, and it doesn't always succeed. For instance, if you've renamed and modified several files, Git might struggle to determine what exactly was renamed. In such cases, you might lose the ability to view the file's history prior to its renaming, as Git would treat it as a newly added file.
+
+## _04_ Safely moving `style.css`
+
+In most operating systems, renaming and moving files are essentially the same operation. So, let's move our `style.css` file to the `css` directory. This time, however, we'll use the `git mv` command to ensure the move is recorded in Git's history as a move, not as a deletion and addition of a new file.
+
+<Run>
+```
+mkdir css
+git mv style.css css/style.css
+git status
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-05.txt]
+```
+</Output>
+
+Now, let's commit our changes and examine the change history of the `css/styles.css` file. To see the file's history prior to its relocation, we'll need to include the `--follow` option. Let's execute both versions of the command to understand the difference.
+
+<Run>
+```
+git commit -m "Renamed hello.html; moved style.css"
+git log css/style.css
+git log --follow css/style.css
+```
+</Run>
+
+<Output>
+```git
+==include[output/20-06.txt]
+```
+</Output>

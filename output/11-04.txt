@@ -1,0 +1,6 @@
+$ git checkout v1
+Previous HEAD position was 46afaff Added standard HTML page tags
+HEAD is now at b7614c1 Added HTML header
+$ git checkout v1-beta
+Previous HEAD position was b7614c1 Added HTML header
+HEAD is now at 46afaff Added standard HTML page tags

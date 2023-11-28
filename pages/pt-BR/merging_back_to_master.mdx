@@ -1,0 +1,42 @@
+---
+title: "29. Fundindo com o branch <code>main</code>"
+---
+
+### Metas
+
+- Nós mantivemos nosso branch `style` atualizado em relação ao branch `main` (usando `rebase`), mas agora vamos fundir as modificações de volta no `main`.
+
+## _01_ Fundindo `style` no `main`
+
+<Run>
+```
+git switch main
+git merge style
+```
+</Run>
+
+<Output>
+```git
+==include[output/29-01.txt]
+```
+</Output>
+
+Como o último commit em `main` precede diretamente o último commit do ramo `style`, o Git pode fazer a mesclagem rápida simplesmente movendo o ponteiro do ramo para frente, apontando para o mesmo commit do ramo `style`.
+
+Os conflitos não surgem na mesclagem de avanço rápido. Além disso, as mesclagens de avanço rápido não criam um commit de mesclagem.
+
+## _02_ Confira os logs
+
+<Run>
+```
+git log --all --graph
+```
+</Run>
+
+<Output>
+```git
+==include[output/29-02.txt]
+```
+</Output>
+
+Agora, as ramificações `style` e `main` são idênticas.

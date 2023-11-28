@@ -1,0 +1,30 @@
+$ git switch style
+Already on 'style'
+$ git rebase main
+Rebasing (1/3)Rebasing (2/3)Auto-merging hello.html
+CONFLICT (content): Merge conflict in hello.html
+error: could not apply 903eb1d... Included stylesheet into hello.html
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 903eb1d... Included stylesheet into hello.html
+$ git status
+interactive rebase in progress; onto 85c14e9
+Last commands done (2 commands done):
+   pick 555372e Added css stylesheet
+   pick 903eb1d Included stylesheet into hello.html
+Next command to do (1 remaining command):
+   pick 0ee0113 Renamed hello.html; moved style.css
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'style' on '85c14e9'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")

@@ -1,0 +1,41 @@
+---
+title: "40. Submetendo modificações"
+---
+
+### Metas
+
+- Aprender a enviar alterações para o repositório remoto.
+
+Como os repositórios bare geralmente são compartilhados em algum tipo de servidor de rede, geralmente é difícil entrar no repositório e fazer alterações. Portanto, precisamos enviar nossas alterações para outros repositórios.
+
+Vamos começar criando uma alteração a ser enviada. Edite o `README` e faça o commit:
+
+<File file="README">
+```
+This is the Hello World example from the Git tutorial.
+(changed in the origin and pushed to shared)
+```
+</File>
+
+<Run>
+```
+git switch main
+git add README
+git commit -m "Added shared comment to readme"
+```
+</Run>
+
+Agora envie as modificações para o repositório compartilhado.
+
+<Run>
+```
+git push shared main
+```
+</Run>
+_O repositório comum_ está recebendo nossas modificações enviadas. (Lembre-se, nós adicionamos ele como um repositório remoto na lição anterior).
+
+<Output>
+```git
+==include[output/40-01.txt]
+```
+</Output>
