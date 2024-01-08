@@ -52,9 +52,7 @@ git commit -m "Added css stylesheet"
 ```
 </Run>
 
-## _03_ Измените основную страницу
-
-Обновите файл `hello.html`, чтобы использовать стили `style.css`.
+## _03_ Измените `hello.html`, чтобы он использовал `style.css`.
 
 <File file="hello.html">
 ```html
@@ -77,29 +75,6 @@ git commit -m "Included stylesheet into hello.html"
 ```
 </Run>
 
-## _04_ Измените `hello.html`, чтобы он использовал `style.css`.
-
-<File file="hello.html">
-```html
-<!-- Author: Alexander Shvets (alex@githowto.com) -->
-<html>
-  <head>
-    →<link type="text/css" rel="stylesheet" media="all" href="style.css" />←
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-```
-</File>
-
-<Run>
-```
-git add hello.html
-git commit -m "Included stylesheet into hello.html"
-```
-</Run>
-
-## _05_ Далее
+## _04_ Далее
 
 Теперь у нас есть новая ветка под названием `style` с двумя новыми коммитами. Далее мы узнаем, как переключаться между ветками.
