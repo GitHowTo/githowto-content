@@ -49,13 +49,13 @@ git status
 
 O status mostra que a mudança está no stage e pronta para um commit;
 
-## _03_ Revertendo a área de preparação
+## _03_ Restaurar o índice
 
-O comando `reset` retorna a área de preparação para `HEAD`. Isso limpa a área de preparação das mudanças que nós acabamos de adicionar ao stage.
+O comando `restore` com o sinalizador `--staged` limpa a área de preparação.
 
 <Run>
 ```
-git reset HEAD hello.html
+git restore --staged hello.html
 ```
 </Run>
 
@@ -65,13 +65,15 @@ git reset HEAD hello.html
 ```
 </Output>
 
-O comando `reset` (padrão) não altera o diretório de trabalho. Logo, o diretório de trabalho ainda tem os comentários indesejados. Nós podemos usar o comando `checkout` do tutorial anterior para remover as mudanças do repositório de trabalho.
+O comando `restore` com a opção `--staged` não altera o diretório de trabalho. Portanto, o diretório de trabalho ainda contém comentários indesejados. No entanto, você deve ter cuidado, pois o comando `restore` sem o sinalizador `--staged` também eliminará as alterações no diretório de trabalho.
 
-## _04_ Mudando para a versão do commit
+## _04_ Mudar para o estado do último commit
+
+Vamos restaurar nossa árvore de trabalho para o estado do último commit.
 
 <Run>
 ```
-git checkout hello.html
+git restore hello.html
 git status
 ```
 </Run>

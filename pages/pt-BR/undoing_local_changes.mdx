@@ -18,7 +18,7 @@ git switch main
 
 ## _02_ Mude o `hello.html`
 
-Acontece de você modificar o arquivo no seu diretório de trabalho local e às vezes querer descartar as mudanças que você fez commit. É aqui que o comando `checkout` vai te ajudar.
+Acontece de você modificar o arquivo no seu diretório de trabalho local e às vezes querer descartar as mudanças que você fez commit. É aqui que o comando `restore` vai te ajudar.
 
 Faça mudanças ao arquivo `hello.html` na forma de um comentário indesejado.
 
@@ -55,11 +55,11 @@ Nós vemos que o arquivo `hello.html` foi modificado, mas ainda não está no st
 
 ## _04_ Desfazendo as mudanças no diretório de trabalho
 
-Use o comando `checkout` para remover a versão do arquivo `hello.html` que está no repositório.
+Use o comando `restore` para redefinir o conteúdo do arquivo `hello.html`.
 
 <Run>
 ```
-git checkout hello.html
+git restore hello.html
 git status
 cat hello.html
 ```

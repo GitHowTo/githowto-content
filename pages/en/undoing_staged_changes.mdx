@@ -49,13 +49,13 @@ git status
 
 Status shows that the change has been staged and is ready to commit.
 
-## _03_ Reset the staging area
+## _03_ Restore the staging area
 
-The `reset` command resets the staging area to `HEAD`. This clears the staging area from the changes that we have just staged.
+The `restore` command with the `--staged` flag clears the staging area.
 
 <Run>
 ```
-git reset HEAD hello.html
+git restore --staged hello.html
 ```
 </Run>
 
@@ -65,13 +65,15 @@ git reset HEAD hello.html
 ```
 </Output>
 
-The `reset` command (default) does not change the working directory. Therefore, the working directory still contains unwanted comments. We can use the `checkout` command from the previous tutorial to remove unwanted changes from working directory.
+The `restore` command with the `--staged` option does not change the actual files in the working directory. Therefore, the hello.html still contains unwanted comments. You should be careful, though, because `restore` without the `--staged` flag will also drop the changes in the working directory.
 
-## _04_ Switch to commit version
+## _04_ Restore the workign tree
+
+Let's restore our file to the state of the last commit.
 
 <Run>
 ```
-git checkout hello.html
+git restore hello.html
 git status
 ```
 </Run>

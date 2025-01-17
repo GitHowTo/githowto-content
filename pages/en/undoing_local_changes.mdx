@@ -18,7 +18,7 @@ git switch main
 
 ## _02_ Change `hello.html`
 
-Sometimes you have modified a file in your local working directory and you wish to just revert to what has already been committed. The `checkout` command will handle that.
+Sometimes you have modified a file in your local working directory, and you wish to just revert to what has already been committed. The `restore` command will handle that.
 
 Make changes to the `hello.html` file in the form of an unwanted comment.
 
@@ -55,11 +55,11 @@ We see that the `hello.html` file has been modified, but not staged yet.
 
 ## _04_ Undoing the changes in the working directory
 
-Use the `checkout` command in order to check out the repository's version of the `hello.html` file.
+Use the `restore` command in order to reset the content of the file `hello.html`.
 
 <Run>
 ```
-git checkout hello.html
+git restore hello.html
 git status
 cat hello.html
 ```
