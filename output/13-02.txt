@@ -1,3 +1,1 @@
-$ git reset HEAD hello.html
-Unstaged changes after reset:
-M	hello.html
+$ git restore --staged hello.html

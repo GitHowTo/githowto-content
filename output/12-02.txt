@@ -1,5 +1,4 @@
-$ git checkout hello.html
-Updated 1 path from the index
+$ git restore hello.html
 $ git status
 On branch main
 nothing to commit, working tree clean
